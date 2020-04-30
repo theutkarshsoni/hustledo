@@ -8,24 +8,32 @@ class Home extends Component {
                 <View style={{flex: 1, flexDirection: 'row'}}>
                     <View style={{flex: 1, borderRightWidth: 0.5, borderBottomWidth: 0.5, borderColor: "white"}}>
                         <ImageBackground source={require('../assets/home_workouts.webp')} style={styles.container}>
-                            <Text style={styles.text}>Workouts</Text>
+                            <View style={styles.BgText}>
+                                <Text style={styles.text}>Workouts</Text>
+                            </View>
                         </ImageBackground>
                     </View>
                     <View style={{flex: 1, borderLeftWidth: 0.5, borderBottomWidth: 0.5, borderColor: "white"}}>
                         <ImageBackground source={require('../assets/home_challenges.webp')} style={styles.container}>
-                            <Text style={styles.text}>Challenges</Text>
+                            <View style={styles.BgText}>
+                                <Text style={styles.text}>Challenges</Text>
+                            </View>
                         </ImageBackground>
                     </View>
                 </View>
                 <View style={{flex: 1, flexDirection: 'row'}}>
                     <View style={{flex: 1, borderRightWidth: 0.5, borderTopWidth: 0.5, borderColor: "white"}}>
                         <ImageBackground source={require('../assets/home_yoga.webp')} style={styles.container}>
-                            <Text style={styles.text}>Yoga</Text>
+                            <View style={styles.BgText}>
+                                <Text style={styles.text}>Yoga</Text>
+                            </View>
                         </ImageBackground>
                     </View>
                     <View style={{flex: 1, borderLeftWidth: 0.5, borderTopWidth: 0.5, borderColor: "white"}}>
                         <ImageBackground source={require('../assets/home_nutrition.webp')} style={styles.container}>
-                            <Text style={styles.text}>Nutrition</Text>
+                            <View style={styles.BgText}>
+                                <Text style={styles.text}>Nutrition</Text>
+                            </View>
                         </ImageBackground>
                     </View>
                 </View>
@@ -40,6 +48,11 @@ const styles = StyleSheet.create({
       resizeMode: "cover",
       justifyContent: "center",
       alignItems:"center"
+    },
+    BgText:{
+        padding: 5,
+        backgroundColor: 'rgba(87, 162, 204, 0.5)',
+        borderRadius: 5
     },
     text:{
       color: "white",
