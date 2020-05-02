@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Share, Linking, FlatList, SafeAreaView, TouchableHighlight } from 'react-native';
+import { SafeAreaView, FlatList, TouchableHighlight, Platform, Linking, Share } from 'react-native';
 import { ListItem } from 'react-native-elements';
+import * as MailComposer from 'expo-mail-composer';
 
 const list = [
     {
@@ -12,7 +13,7 @@ const list = [
     {
         id: 1,
         title: 'Send Feedback',
-        icon: 'comments',
+        icon: 'comment',
         type: 'font-awesome'
     },
     {
@@ -29,35 +30,54 @@ const list = [
     },
     {
         id: 4,
-        title: 'Share app on Instagram',
-        icon: 'instagram',
+        title: 'Tweet app on Twitter',
+        icon: 'twitter',
         type: 'font-awesome'
     },
     {
         id: 5,
-        title: 'Tweet app on Twitter',
-        icon: 'twitter',
+        title: 'Share app on other app',
+        icon: 'th',
         type: 'font-awesome'
     }
 ];
 
-const shareToWhatsApp = () => {
-    Linking.openURL(`whatsapp://send?text=Description of app \nFor android user: https://playstore.com \nFor iOs user: https://appstore.com`);
+const rateUs = () => {
+    var androidAppID = 'com.biglaundry';
+    var iosAppID = 'com.biglaundry';
+    if(Platform.OS == 'android'){
+        Linking.openURL('market://details?id=' + androidAppID);
+    }
+    else if(Platform.OS == 'ios'){
+        Linking.openURL('itms-apps://itunes.apple.com/us/app/apple-store/' + iosAppID + '?mt=8');
+    }
 }
 
-const shareToFacebook = () => {
-    Share.share({
-        message: `Description of app \nFor android user: \nhttps://playstore.com \nFor iOs user: \nhttps://appstore.com`,
+const sendFeedback = () => {
+    MailComposer.composeAsync({
+        recipients: ['hustlehutteam@gmail.com'],
+        subject: 'Feedback for Hustle Hut',
+        body: 'Hello, Hustle Hut Team\n\n'
     });
 }
 
-const shareToTwitter = () => {
-    Linking.openURL(`twitter://post?message=Description of app \nFor android user: \nhttps://playstore.com \nFor iOs user: \nhttps://appstore.com`);
+var shareMessage = `Description of app \nFor android user: https://playstore.com \nFor iOs user: https://appstore.com`;
+
+const shareToWhatsApp = () => {
+    Linking.openURL(`whatsapp://send?text=`+ shareMessage);
 }
 
-const shareToInstagram = () => {
+const shareToFacebook = () => {
+    Linking.openURL(`fb://feed?message=` + shareMessage);
+}
+
+const shareToTwitter = () => {
+    Linking.openURL(`twitter://post?message=` + shareMessage);
+}
+
+const shareToOtherApp = () => {
     Share.share({
-        message: `Description of app \nFor android user: \nhttps://playstore.com \nFor iOs user: \nhttps://appstore.com`,
+        message: shareMessage,
     });
 }
 
@@ -69,7 +89,7 @@ const renderListItem = ({item, index}) => {
                 case 'star': 
                     rateUs();
                     break;
-                case 'comments': 
+                case 'comment': 
                     sendFeedback();
                     break;
                 case 'whatsapp': 
@@ -78,12 +98,12 @@ const renderListItem = ({item, index}) => {
                 case 'facebook-square': 
                     shareToFacebook();
                     break;
-                case 'instagram': 
-                    shareToInstagram();
-                    break;
                 case 'twitter': 
                     shareToTwitter();
-                    break;                    
+                    break;
+                case 'th': 
+                    shareToOtherApp();
+                    break;        
             }
         }}>
             <ListItem
