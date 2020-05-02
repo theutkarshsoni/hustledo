@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SafeAreaView, FlatList, TouchableHighlight, Platform, Linking, Share } from 'react-native';
+import { SafeAreaView, FlatList, Platform, Linking, Share } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import * as MailComposer from 'expo-mail-composer';
 
@@ -84,36 +84,36 @@ const shareToOtherApp = () => {
 
 const renderListItem = ({item, index}) => {
     return(
-        <TouchableHighlight onPress={() => {
-            switch(item.icon){
-                case 'star': 
-                    rateUs();
-                    break;
-                case 'comment': 
-                    sendFeedback();
-                    break;
-                case 'whatsapp': 
-                    shareToWhatsApp();
-                    break;
-                case 'facebook-square': 
-                    shareToFacebook();
-                    break;
-                case 'twitter': 
-                    shareToTwitter();
-                    break;
-                case 'th': 
-                    shareToOtherApp();
-                    break;        
-            }
-        }}>
-            <ListItem
-                key={index}
-                title={item.title}
-                leftIcon={{ name: item.icon, type: item.type }}
-                bottomDivider
-                chevron
-            />
-        </TouchableHighlight>
+        <ListItem
+            key={index}
+            title={item.title}
+            leftIcon={{ name: item.icon, type: item.type }}
+            bottomDivider
+            chevron
+            button
+            onPress={() => {
+                switch(item.icon){
+                    case 'star': 
+                        rateUs();
+                        break;
+                    case 'comment': 
+                        sendFeedback();
+                        break;
+                    case 'whatsapp': 
+                        shareToWhatsApp();
+                        break;
+                    case 'facebook-square': 
+                        shareToFacebook();
+                        break;
+                    case 'twitter': 
+                        shareToTwitter();
+                        break;
+                    case 'th': 
+                        shareToOtherApp();
+                        break;        
+                }
+            }}
+        />
     );
 }
 
