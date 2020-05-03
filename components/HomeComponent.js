@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { View, ImageBackground, Text, StyleSheet } from 'react-native';
+import { View, TouchableHighlight, ImageBackground, Text, StyleSheet } from 'react-native';
 
 class Home extends Component {
     render(){
+        const { navigate } = this.props.navigation;
+
         return(
             <View style={{flex: 1}}>
                 <View style={{flex: 1, flexDirection: 'row'}}>
@@ -30,11 +32,13 @@ class Home extends Component {
                         </ImageBackground>
                     </View>
                     <View style={{flex: 1, borderLeftWidth: 0.5, borderTopWidth: 0.5, borderColor: "white"}}>
-                        <ImageBackground source={require('../assets/home_nutrition.webp')} style={styles.container}>
-                            <View style={styles.BgText}>
-                                <Text style={styles.text}>Nutrition</Text>
-                            </View>
-                        </ImageBackground>
+                        <TouchableHighlight style={{ flex: 1 }} onPress={() => navigate('Nutrition', {})}>
+                            <ImageBackground source={require('../assets/home_nutrition.webp')} style={styles.container}>
+                                <View style={styles.BgText}>
+                                    <Text style={styles.text}>Nutrition</Text>
+                                </View>
+                            </ImageBackground>
+                        </TouchableHighlight>
                     </View>
                 </View>
             </View>

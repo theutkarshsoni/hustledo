@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './HomeComponent';
 import Fitness from './FitnessComponent';
 import Category from './CategoryComponent';
+import Nutrition from './NutritionComponent';
 import More from './MoreComponent';
 import { Icon } from 'react-native-elements';
 import { NavigationContainer } from '@react-navigation/native';
@@ -10,6 +11,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const HomeNavigator = createStackNavigator();
 const FitnessNavigator = createStackNavigator();
+const NutritionNavigator = createStackNavigator();
 const MoreNavigaotr = createStackNavigator();
 const MainNavigator = createDrawerNavigator();
 
@@ -32,7 +34,7 @@ function getHomeNavigator() {
         >
             <HomeNavigator.Screen name="Welcome, Hustler!" component={Home} 
                 options={ ({ navigation }) => ({ 
-                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20}} onPress={() => navigation.toggleDrawer()} />
+                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     })
                 } 
             />
@@ -48,12 +50,28 @@ function getFitnessNavigator() {
         >
             <FitnessNavigator.Screen name="Choose a category" component={Fitness} 
                 options={ ({ navigation }) => ({ 
-                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20}} onPress={() => navigation.toggleDrawer()} />
+                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     })
                 } 
             />
             <FitnessNavigator.Screen name="Category" component={Category} options={({ route }) => ({ title: route.params.name })} />
         </FitnessNavigator.Navigator>
+    );
+}
+
+function getNutritionNavigator() {
+    return(
+        <NutritionNavigator.Navigator
+            initialRouteName="Nutrition"
+            screenOptions={HeaderOptions}
+        >
+            <NutritionNavigator.Screen name="Nutrition" component={Nutrition} 
+                options={ ({ navigation }) => ({ 
+                        headerLeft: () => <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
+                    })
+                }
+            />
+        </NutritionNavigator.Navigator>
     );
 }
 
@@ -65,7 +83,7 @@ function getMoreNavigator() {
         >
             <MoreNavigaotr.Screen name="More" component={More} 
                 options={ ({ navigation }) => ({ 
-                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20}} onPress={() => navigation.toggleDrawer()} />
+                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     })
                 } 
             />
@@ -91,11 +109,13 @@ class Main extends Component {
                         }
                     }}>
                     <MainNavigator.Screen name="Home" component={getHomeNavigator} 
-                        options={{ drawerLabel: 'Home', drawerIcon: () => <Icon name='home' type='font-awesome' color='white' />}}></MainNavigator.Screen>
+                        options={{ drawerLabel: 'Home', drawerIcon: () => <Icon name='home' type='font-awesome-5' color='white' />}}></MainNavigator.Screen>
                     <MainNavigator.Screen name="Fitness" component={getFitnessNavigator} 
-                        options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' size={18} color='white' />}}></MainNavigator.Screen>
+                        options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' color='white' />}}></MainNavigator.Screen>
+                    <MainNavigator.Screen name="Nutrition" component={getNutritionNavigator}
+                        options={{ drawerLabel: 'Nutrition', drawerIcon: () => <Icon name='utensils' type='font-awesome-5' color='white' /> }}></MainNavigator.Screen>
                     <MainNavigator.Screen name="More" component={getMoreNavigator} 
-                        options={{ drawerLabel: 'More', drawerIcon: () => <Icon name='plus-circle' type='font-awesome' size={26} color='white' />}}></MainNavigator.Screen>
+                        options={{ drawerLabel: 'More', drawerIcon: () => <Icon name='plus-circle' type='font-awesome-5' color='white' />}}></MainNavigator.Screen>
                 </MainNavigator.Navigator>
             </NavigationContainer>
         );
