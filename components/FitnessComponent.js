@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { SafeAreaView, FlatList } from 'react-native';
-import { CATEGORIES } from '../shared/category';
+import { CATEGORIES } from '../shared/categories';
 import { ListItem } from 'react-native-elements';
 import { baseUrl } from '../shared/baseUrl';
 
 class Fitness extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            categories: CATEGORIES
+        }
+    }
+
     render(){
         const { navigate } = this.props.navigation;
 
@@ -25,7 +33,7 @@ class Fitness extends Component {
         return(
             <SafeAreaView>
                 <FlatList
-                    data={CATEGORIES}
+                    data={this.state.categories}
                     renderItem={renderCategoryItem}
                     keyExtractor={item => item.id.toString()}
                 >
