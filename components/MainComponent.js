@@ -43,7 +43,7 @@ function getHomeNavigator() {
 function getFitnessNavigator() {
     return(
         <FitnessNavigator.Navigator
-            initialRouteName="ListOfCategories"
+            initialRouteName="Fitness"
             screenOptions={HeaderOptions}
         >
             <FitnessNavigator.Screen name="Choose a category" component={Fitness} 
@@ -92,7 +92,7 @@ class Main extends Component {
                     }}>
                     <MainNavigator.Screen name="Home" component={getHomeNavigator} 
                         options={{ drawerLabel: 'Home', drawerIcon: () => <Icon name='home' type='font-awesome' color='white' />}}></MainNavigator.Screen>
-                    <MainNavigator.Screen name="ListOfCategories" component={getFitnessNavigator} 
+                    <MainNavigator.Screen name="Fitness" component={getFitnessNavigator} 
                         options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' size={18} color='white' />}}></MainNavigator.Screen>
                     <MainNavigator.Screen name="More" component={getMoreNavigator} 
                         options={{ drawerLabel: 'More', drawerIcon: () => <Icon name='plus-circle' type='font-awesome' size={26} color='white' />}}></MainNavigator.Screen>
