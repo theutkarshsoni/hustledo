@@ -4,22 +4,24 @@ import { CATEGORIES } from '../shared/category';
 import { ListItem } from 'react-native-elements';
 import { baseUrl } from '../shared/baseUrl';
 
-const renderCategoryItem = ({item, index}) => {
-    return(
-        <ListItem 
-            key={index}
-            leftAvatar={{ source: { uri: baseUrl + 'images/category/' + item.image }}}
-            title={item.name}
-            chevron
-            bottomDivider
-            button
-            onPress={() => console.log('item.title')}
-        />
-    );
-}
-
 class Fitness extends Component {
     render(){
+        const { navigate } = this.props.navigation;
+
+        const renderCategoryItem = ({item, index}) => {
+            return(
+                <ListItem 
+                    key={index}
+                    leftAvatar={{ source: { uri: baseUrl + 'images/category/' + item.image }}}
+                    title={item.name}
+                    chevron
+                    bottomDivider
+                    button
+                    onPress={() => navigate('Category', { trainings: item.trainings, name: item.name })}
+                />
+            );
+        }
+        
         return(
             <SafeAreaView>
                 <FlatList

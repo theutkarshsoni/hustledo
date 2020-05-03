@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
 import Fitness from './FitnessComponent';
+import Category from './CategoryComponent';
 import More from './MoreComponent';
 import { Icon } from 'react-native-elements';
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,65 +13,62 @@ const FitnessNavigator = createStackNavigator();
 const MoreNavigaotr = createStackNavigator();
 const MainNavigator = createDrawerNavigator();
 
-function getHomeNavigator({ navigation }) {
+const HeaderOptions = {
+    headerStyle: {
+        backgroundColor: '#57A2CC',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+        fontWeight: 'bold',
+        color: "#fff"
+    }
+};
+
+function getHomeNavigator() {
     return(
         <HomeNavigator.Navigator
             initialRouteName="Home"
-            screenOptions={{
-                headerStyle: {
-                    backgroundColor: '#57A2CC',
-                },
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                    fontWeight: 'bold',
-                    color: "#fff"
-                },
-                headerLeft: () => <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 15 }} onPress={() => navigation.toggleDrawer()} />
-            }}
+            screenOptions={HeaderOptions}
         >
-            <HomeNavigator.Screen name="Welcome, Hustler!" component={Home} />
+            <HomeNavigator.Screen name="Welcome, Hustler!" component={Home} 
+                options={ ({ navigation }) => ({ 
+                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20}} onPress={() => navigation.toggleDrawer()} />
+                    })
+                } 
+            />
         </HomeNavigator.Navigator>
     );
 }
 
-function getFitnessNavigator({ navigation }) {
+function getFitnessNavigator() {
     return(
         <FitnessNavigator.Navigator
             initialRouteName="ListOfCategories"
-            screenOptions={{
-                headerStyle: {
-                    backgroundColor: '#57A2CC',
-                },
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                    fontWeight: 'bold',
-                    color: "#fff"
-                },
-                headerLeft: () => <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 15 }} onPress={() => navigation.toggleDrawer()} />
-            }}
+            screenOptions={HeaderOptions}
         >
-            <FitnessNavigator.Screen name="Choose a category" component={Fitness} />
+            <FitnessNavigator.Screen name="Choose a category" component={Fitness} 
+                options={ ({ navigation }) => ({ 
+                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20}} onPress={() => navigation.toggleDrawer()} />
+                    })
+                } 
+            />
+            <FitnessNavigator.Screen name="Category" component={Category} options={({ route }) => ({ title: route.params.name })} />
         </FitnessNavigator.Navigator>
     );
 }
 
-function getMoreNavigator({ navigation }) {
+function getMoreNavigator() {
     return(
         <MoreNavigaotr.Navigator
             initialRouteName="More"
-            screenOptions={{
-                headerStyle: {
-                    backgroundColor: '#57A2CC',
-                },
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                    fontWeight: 'bold',
-                    color: "#fff"
-                },
-                headerLeft: () => <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 15 }} onPress={() => navigation.toggleDrawer()} />
-            }}
+            screenOptions={HeaderOptions}
         >
-            <MoreNavigaotr.Screen name="More" component={More} />
+            <MoreNavigaotr.Screen name="More" component={More} 
+                options={ ({ navigation }) => ({ 
+                        headerLeft: () =>  <Icon name='bars' type='font-awesome' color='white' containerStyle={{ paddingLeft: 20}} onPress={() => navigation.toggleDrawer()} />
+                    })
+                } 
+            />
         </MoreNavigaotr.Navigator>
     );
 }
@@ -97,7 +95,7 @@ class Main extends Component {
                     <MainNavigator.Screen name="ListOfCategories" component={getFitnessNavigator} 
                         options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' size={18} color='white' />}}></MainNavigator.Screen>
                     <MainNavigator.Screen name="More" component={getMoreNavigator} 
-                        options={{ drawerLabel: 'More', drawerIcon: () => <Icon name='plus' type='font-awesome' color='white' />}}></MainNavigator.Screen>
+                        options={{ drawerLabel: 'More', drawerIcon: () => <Icon name='plus-circle' type='font-awesome' size={26} color='white' />}}></MainNavigator.Screen>
                 </MainNavigator.Navigator>
             </NavigationContainer>
         );
