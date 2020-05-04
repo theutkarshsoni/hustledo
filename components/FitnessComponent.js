@@ -25,7 +25,7 @@ class Fitness extends Component {
                     chevron
                     bottomDivider
                     button
-                    onPress={() => navigate('Category', { trainings: item.trainings, name: item.name })}
+                    onPress={() => navigate('Category', { list: item.trainings, name: item.name })}
                 />
             );
         }

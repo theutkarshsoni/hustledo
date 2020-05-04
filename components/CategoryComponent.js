@@ -35,14 +35,14 @@ class Category extends Component {
     constructor(props){
         super(props);
         this.state = {
-            ex: TRAININGS
+            trainings: TRAININGS
         }
     }
 
     render(){
-        const { trainings } = this.props.route.params;
+        const { list } = this.props.route.params;
         return(
-            <RenderTrainings ex={this.state.ex.filter( (e) => trainings.includes(e.id) ) } />
+            <RenderTrainings ex={this.state.trainings.filter( (e) => list.includes(e.id) ) } />
         );
     }
 }

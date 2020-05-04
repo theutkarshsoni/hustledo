@@ -1,4 +1,4 @@
-export const NUTRITION = [
+export const NUTRITIONS = [
     {
         "id": 0,
         "tag": "BM",
