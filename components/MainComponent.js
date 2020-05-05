@@ -7,7 +7,8 @@ import More from './MoreComponent';
 import { Icon } from 'react-native-elements';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
+import { ScrollView, View, Image, StyleSheet } from 'react-native';
 
 const HomeNavigator = createStackNavigator();
 const FitnessNavigator = createStackNavigator();
@@ -91,6 +92,17 @@ function getMoreNavigator() {
     );
 }
 
+function CustomDrawerContent(props) {
+    return(
+        <DrawerContentScrollView {...props}>
+            <View style={styles.drawerHeader}>
+                <Image source={require('../assets/logo.png')} style={styles.drawerImage} />
+            </View>
+            <DrawerItemList {...props} />
+        </DrawerContentScrollView>
+    );
+}
+
 class Main extends Component {
     render(){
         return(
@@ -107,7 +119,9 @@ class Main extends Component {
                         style:{
                             paddingTop: 20
                         }
-                    }}>
+                    }}
+                    drawerContent={CustomDrawerContent}
+                >
                     <MainNavigator.Screen name="Home" component={getHomeNavigator} 
                         options={{ drawerLabel: 'Home', drawerIcon: () => <Icon name='home' type='font-awesome-5' color='white' />}}></MainNavigator.Screen>
                     <MainNavigator.Screen name="Fitness" component={getFitnessNavigator} 
@@ -121,5 +135,19 @@ class Main extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    drawerHeader: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1,
+        flexDirection: 'row'
+    },
+    drawerImage: {
+        width: 150,
+        height: 150,
+        marginBottom: 50
+    }
+})
 
 export default Main;

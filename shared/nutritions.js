@@ -221,7 +221,7 @@ export const NUTRITIONS = [
         "name": "Sweet Chili Salmon",
         "image": "BM_5_4.jpg",
         "ingredients": ["1 salmon fillet" , "salt" , "black pepper" , "1 tsp oil" , "4 tbsp sweet chili sauce" , "1.5 tsp lime juice" , "½ tsp white sesame"],
-        "steps": "Season the salmon with salt &amp; pepper. Mix the chili sauce, lime juice, sesame and cilantro leaves together. to combine well. Heat up a skillet over medium heat and add drizzle of oil. Pan–sear the salmon on both sides, until cooked. Enjoy!"
+        "steps": "Season the salmon with salt & pepper. Mix the chili sauce, lime juice, sesame and cilantro leaves together. to combine well. Heat up a skillet over medium heat and add drizzle of oil. Pan–sear the salmon on both sides, until cooked. Enjoy!"
     },
     {
         "id": 28,
@@ -250,7 +250,7 @@ export const NUTRITIONS = [
     {
         "id": 31,
         "tag": "BM",
-        "name": "Turkey &amp; Veggie Omelette Rolls",
+        "name": "Turkey & Veggie Omelette Rolls",
         "image": "BM_6_2.jpg",
         "ingredients": ["1 egg" , "4 egg whites" , "85 g / 3 oz lean ground turkey, cooked" , "1 handful spinach (raw)" , "58 g / 2.1 oz bell pepper" , "8 g / 1 oz goat cheese"],
         "steps": "Season and cook a lean ground turkey in skillet. Measure a daily portion of eggs and cook in a separate skillet. Add goat cheese, spinach, bell peppers and ground turkey. Wait for it to cool a little while before and wrap it in aluminum foil instead. Enjoy!"
@@ -258,7 +258,7 @@ export const NUTRITIONS = [
     {
         "id": 32,
         "tag": "BM",
-        "name": "Chicken &amp; Pineapple Stir–Fry",
+        "name": "Chicken & Pineapple Stir–Fry",
         "image": "BM_6_3.jpg",
         "ingredients": ["110 g chicken breasts, 4 oz" , "40 g pineapple, 1.4 oz" , "120 g brown rice, 4.4 oz" , "⅓ tbsp olive oil" , "½ tsp brown mustard" , "1/6 tbsp smoked paprika" , "sea salt" , "pepper"],
         "steps": "Chop the raw chicken breasts into small pieces. Season the chicken pieces with smoked paprika and brown mustard. Add olive oil to a skillet then toss in the chicken breast pieces. Cook for about 4 minutes until the chicken is about 80% finished, then add chopped bell pepper. Cook for another 2 or 3 minutes before adding the diced pineapple. Enjoy!"
@@ -324,13 +324,13 @@ export const NUTRITIONS = [
         "tag": "BM",
         "name": "Grilled Southwest Salmon",
         "image": "BM_7_5.jpg",
-        "ingredients": ["110 g / ¼ lb wild salmon" , "1 tbsp olive oil" , "1 tbsp smoked paprika" , "salt &amp; pepper"],
+        "ingredients": ["110 g / ¼ lb wild salmon" , "1 tbsp olive oil" , "1 tbsp smoked paprika" , "salt & pepper"],
         "steps": "Set your oven to 350°F. Rub the fillets in the seasoning and grill for about 15 minutes, or until desired readiness. Enjoy!"
     },
     {
         "id": 41,
         "tag": "BM",
-        "name": "Bacon &amp; Egg Stuffed Sweet Potato",
+        "name": "Bacon & Egg Stuffed Sweet Potato",
         "image": "BM_7_6.jpg",
         "ingredients": ["1 sweet potato, raw," , "2 eggs" , "2 slices turkey bacon" , "fresh rosemary" , "salt" , "pepper"],
         "steps": "Set oven to 400 degrees F/ 200°C. Bake the sweet potato for about 45 minutes until it’s soft, but still a little firm. Carve a hole in the potato deep enough for the egg. Use the leftover sweet potato to make a delicious mash with cinnamon and coconut oil. Wrap one slice of turkey bacon around the inside of the sweet potato. First, pour the egg white in the hole, then add the egg yolk. Enjoy!"
@@ -498,7 +498,7 @@ export const NUTRITIONS = [
     {
         "id": 62,
         "tag": "LB",
-        "name": "Bacon &amp; Egg Stuffed Sweet Potato",
+        "name": "Bacon & Egg Stuffed Sweet Potato",
         "image": "LB_5_1.jpg",
         "ingredients": ["1 sweet potato, raw," , "2 eggs" , "2 slices turkey bacon" , "fresh rosemary" , "salt" , "pepper"],
         "steps": "Set oven to 400 degrees F/ 200°C. Bake the sweet potato for about 45 minutes until it’s soft, but still a little firm. Carve a hole in the potato deep enough for the egg. Use the leftover sweet potato to make a delicious mash with cinnamon and coconut oil. Wrap one slice of turkey bacon around the inside of the sweet potato. First, pour the egg white in the hole, then add the egg yolk. Enjoy!"
@@ -557,7 +557,7 @@ export const NUTRITIONS = [
         "name": "Mediterranean Greek Chopped Salad (Wrap)",
         "image": "LB_6_3.jpg",
         "ingredients": ["1 whole grain flour tortilla, 10 inch (25 cm) size" , "140 g / 5 oz cooked chicken breasts" , "3 romaine lettuce leaves" , "4 tbsp fresh basil" , "50 g / 1.8 oz red onion" , "50 g 1.8 oz cucumber" , "5 cherry tomatoes, cut in halve" , "⅓ lemon" , "3/4 tbsp olive oil" , "⅓ tsp garlic" , "salt" , "pepper"],
-        "steps": "In a bowl, mix together the ingredients for the lemon vinaigrette and season with salt &amp; pepper. Add it to a mixing bowl then add 1 serving of lemon vinaigrette. Mix the salad together with a spatula, then place some of the contents on whole wheat tortilla. Enjoy!"
+        "steps": "In a bowl, mix together the ingredients for the lemon vinaigrette and season with salt & pepper. Add it to a mixing bowl then add 1 serving of lemon vinaigrette. Mix the salad together with a spatula, then place some of the contents on whole wheat tortilla. Enjoy!"
     },
     {
         "id": 70,
@@ -578,7 +578,7 @@ export const NUTRITIONS = [
     {
         "id": 72,
         "tag": "LB",
-        "name": "Turkey &amp; Veggie Omelette Rolls",
+        "name": "Turkey & Veggie Omelette Rolls",
         "image": "LB_7_1.jpg",
         "ingredients": ["1 egg" , "4 egg whites" , "85 g / 3 oz lean ground turkey, cooked" , "1 handful spinach (raw)" , "58 g / 2.1 oz bell pepper" , "8 g / 1 oz goat cheese"],
         "steps": "Season and cook a lean ground turkey in skillet. Measure a daily portion of eggs and cook in a separate skillet. Add goat cheese, spinach, bell peppers and ground turkey. Wait for it to cool a little while before and wrap it in aluminum foil instead. Enjoy!"
@@ -604,7 +604,7 @@ export const NUTRITIONS = [
         "tag": "LB",
         "name": "Papaya",
         "image": "LB_7_4.jpg",
-        "ingredients": ["2 medium papayas, pitted &amp; chopped" , "1 cup raspberries" , "¼ small pineapple" , "ginger" , "1 cup milk" , "2 tbsp greek yogurt" , "1.5 cubes ice" , "berries to top"],
+        "ingredients": ["2 medium papayas, pitted & chopped" , "1 cup raspberries" , "¼ small pineapple" , "ginger" , "1 cup milk" , "2 tbsp greek yogurt" , "1.5 cubes ice" , "berries to top"],
         "steps": "Throw ingredients into a blender. Blend until smooth. Enjoy!"
     },
     {
