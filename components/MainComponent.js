@@ -3,6 +3,9 @@ import Home from './HomeComponent';
 import Fitness from './FitnessComponent';
 import Category from './CategoryComponent';
 import Yoga from './YogaComponent';
+import Poses from './PosesComponent';
+import Classes from './ClassesComponent';
+import Level from './LevelComponent';
 import Nutrition from './NutritionComponent';
 import More from './MoreComponent';
 import { View, Image, StyleSheet } from 'react-native';
@@ -73,6 +76,9 @@ function getYogaNavigator() {
                     headerLeft: () => <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                 }) }
             />
+            <YogaNavigator.Screen name="Poses" component={Poses} />
+            <YogaNavigator.Screen name="Classes" component={Classes} />
+            <YogaNavigator.Screen name="Level" component={Level} />
         </YogaNavigator.Navigator>
     );
 }

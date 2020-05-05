@@ -4,6 +4,8 @@ import { Tile } from 'react-native-elements';
 
 class Yoga extends Component {
     render() {
+        const { navigate } = this.props.navigation;
+
         return(
             <View style={{ flex: 1}}>
                 <View style={{ flex: 1, borderBottomWidth: 3, borderColor: "white" }}>
@@ -19,6 +21,7 @@ class Yoga extends Component {
                         imageContainerStyle={{
                             backgroundColor: 'rgba(87, 162, 204, 0.5)'
                         }}
+                        onPress={() => navigate('Poses', {})}
                     />
                 </View>
                 <View style={{ flex: 1, borderTopWidth: 3, borderColor: "white" }}>
@@ -34,6 +37,7 @@ class Yoga extends Component {
                         imageContainerStyle={{
                             backgroundColor: 'rgba(87, 162, 204, 0.5)'
                         }}
+                        onPress={() => navigate('Classes', {})}
                     />
                 </View>
             </View>

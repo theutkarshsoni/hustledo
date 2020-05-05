@@ -54,7 +54,7 @@ function RenderCarousel(props) {
 
 function renderCarouselItem ({item, index}, parallaxProps) {
     return (
-        <View style={styles.item}>
+        <View style={styles.item} key={index}>
             <ParallaxImage
                 source={{ uri: baseUrl + 'images/nutrition/' + item.image }}
                 containerStyle={styles.imageContainer}
