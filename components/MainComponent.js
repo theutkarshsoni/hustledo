@@ -38,8 +38,9 @@ function getHomeNavigator() {
             initialRouteName="Home"
             screenOptions={HeaderOptions}
         >
-            <HomeNavigator.Screen name="Welcome, Hustler!" component={Home} 
+            <HomeNavigator.Screen name="Home" component={Home} 
                 options={ ({ navigation }) => ({ 
+                        title: 'Welcome, Hustler!',
                         headerLeft: () =>  <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     })
                 } 
@@ -54,8 +55,9 @@ function getFitnessNavigator() {
             initialRouteName="Fitness"
             screenOptions={HeaderOptions}
         >
-            <FitnessNavigator.Screen name="Choose a category" component={Fitness} 
-                options={ ({ navigation }) => ({ 
+            <FitnessNavigator.Screen name="Fitness" component={Fitness} 
+                options={ ({ navigation }) => ({
+                        title: 'Choose a category',
                         headerLeft: () =>  <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     })
                 } 
@@ -71,14 +73,15 @@ function getYogaNavigator() {
             initialRouteName="Yoga"
             screenOptions={HeaderOptions}
         >
-            <YogaNavigator.Screen name="All or Categorized ?" component={Yoga} 
+            <YogaNavigator.Screen name="Yoga" component={Yoga} 
                 options={ ({ navigation }) => ({
+                    title: 'All or Categorized?',
                     headerLeft: () => <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                 }) }
             />
             <YogaNavigator.Screen name="Poses" component={Poses} options={({ route }) => ({ title: route.params.name })} />
-            <YogaNavigator.Screen name="Classes" component={Classes} />
-            <YogaNavigator.Screen name="Level" component={Level} />
+            <YogaNavigator.Screen name="Classes" component={Classes} options={{ title: 'Select a class' }}  />
+            <YogaNavigator.Screen name="Level" component={Level} options={{ title: 'Pick a level' }} />
         </YogaNavigator.Navigator>
     );
 }
@@ -91,6 +94,7 @@ function getNutritionNavigator() {
         >
             <NutritionNavigator.Screen name="Nutrition" component={Nutrition} 
                 options={ ({ navigation }) => ({ 
+                        title: 'Meals as per goal',
                         headerLeft: () => <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     })
                 }
@@ -106,7 +110,8 @@ function getMoreNavigator() {
             screenOptions={HeaderOptions}
         >
             <MoreNavigaotr.Screen name="More" component={More} 
-                options={ ({ navigation }) => ({ 
+                options={ ({ navigation }) => ({
+                        title:'Help us grow',
                         headerLeft: () =>  <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     })
                 } 

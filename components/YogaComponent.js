@@ -21,7 +21,7 @@ class Yoga extends Component {
                         imageContainerStyle={{
                             backgroundColor: 'rgba(87, 162, 204, 0.5)'
                         }}
-                        onPress={() => navigate('Poses', { name: 'Poses'})}
+                        onPress={() => navigate('Poses', { name: 'Alphabetically Poses'})}
                     />
                 </View>
                 <View style={{ flex: 1, borderTopWidth: 3, borderColor: "white" }}>

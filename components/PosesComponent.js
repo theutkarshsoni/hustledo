@@ -17,7 +17,7 @@ class Poses extends Component{
 
         const { name } = this.props.route.params;
 
-        if(name === 'Poses') {
+        if(name === 'Alphabetically Poses') {
             var list = this.state.yogas;
         }
         else {
@@ -37,7 +37,7 @@ class Poses extends Component{
                 case 'Flexibility Advanced': var time = 27; var num = 23; break;
                 default: var time = 0; var num = 0;
             }
-            if(name === 'Poses') {
+            if(name === 'Alphabetically Poses') {
                 return(
                     <View></View>
                 );
