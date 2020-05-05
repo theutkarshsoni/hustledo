@@ -1042,4 +1042,4 @@ export const TRAININGS = [
         "images": ["stabilityballtricepsextension1.png", "stabilityballtricepsextension2.png", "stabilityballtricepsextension3.png"],
         "video": "149.mp4"
     }
-]
+];

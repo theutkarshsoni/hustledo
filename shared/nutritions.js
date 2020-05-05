@@ -615,4 +615,4 @@ export const NUTRITIONS = [
         "ingredients": ["1 pound large shrimp" , "2 red hot peppers" , "1 leek, thinly sliced" , "0.5–1 tbsp capers, rinsed and drained" , "2 cloves garlic, thinly sliced" , "½ cup coarsely chopped parsley" , "3 tbsp lemon juice" , "2 tbsp olive oil"],
         "steps": "Place a sauté pan over medium heat and add oil. Add shrimp, peppers, leek, capers, garlic, salt and pepper and cook for 4 minutes until shrimp is pink. Remove from heat. Add lemon juice, scraping the bottom of the pan with a spoon. Serve shrimp sprinkled with fresh parsley and basil. Enjoy!"
     }
-]
+];

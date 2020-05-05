@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './HomeComponent';
 import Fitness from './FitnessComponent';
 import Category from './CategoryComponent';
+import Workouts from './WorkoutsComponent';
 import Yoga from './YogaComponent';
 import Poses from './PosesComponent';
 import Classes from './ClassesComponent';
@@ -16,9 +17,11 @@ import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '
 
 const HomeNavigator = createStackNavigator();
 const FitnessNavigator = createStackNavigator();
+const WorkoutsNavigator = createStackNavigator();
 const NutritionNavigator = createStackNavigator();
 const YogaNavigator = createStackNavigator();
 const MoreNavigaotr = createStackNavigator();
+
 const MainNavigator = createDrawerNavigator();
 
 const HeaderOptions = {
@@ -64,6 +67,23 @@ function getFitnessNavigator() {
             />
             <FitnessNavigator.Screen name="Category" component={Category} options={({ route }) => ({ title: route.params.name })} />
         </FitnessNavigator.Navigator>
+    );
+}
+
+function getWorkoutsNavigator() {
+    return(
+        <WorkoutsNavigator.Navigator
+            initialRouteName="Workouts"
+            screenOptions={HeaderOptions}
+        >
+            <WorkoutsNavigator.Screen name="Workouts" component={Workouts} 
+                options={ ({ navigation }) => ({
+                        title: 'Go for a workout',
+                        headerLeft: () => <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
+                    })
+                }
+            />
+        </WorkoutsNavigator.Navigator>
     );
 }
 
@@ -155,6 +175,9 @@ class Main extends Component {
                     />
                     <MainNavigator.Screen name="Fitness" component={getFitnessNavigator} 
                         options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' color='white' />}}
+                    />
+                    <MainNavigator.Screen name="Workouts" component={getWorkoutsNavigator}
+                        options={{ drawerLabel: 'Workouts', drawerIcon: () => <Icon name='fire-alt' type='font-awesome-5' color='white' /> }}
                     />
                     <MainNavigator.Screen name="Yoga" component={getYogaNavigator}
                         options={{ drawerLabel: 'Yoga', drawerIcon: () => <Icon name='om' type='font-awesome-5' color='white' /> }}

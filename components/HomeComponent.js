@@ -9,11 +9,13 @@ class Home extends Component {
             <View style={{flex: 1}}>
                 <View style={{flex: 1, flexDirection: 'row'}}>
                     <View style={{flex: 1, borderRightWidth: 0.5, borderBottomWidth: 0.5, borderColor: "white"}}>
-                        <ImageBackground source={require('../assets/home_workouts.webp')} style={styles.container}>
-                            <View style={styles.BgText}>
-                                <Text style={styles.text}>Workouts</Text>
-                            </View>
-                        </ImageBackground>
+                        <TouchableHighlight style={{ flex: 1}} onPress={() => navigate('Workouts', {})}>
+                            <ImageBackground source={require('../assets/home_workouts.webp')} style={styles.container}>
+                                <View style={styles.BgText}>
+                                    <Text style={styles.text}>Workouts</Text>
+                                </View>
+                            </ImageBackground>
+                        </TouchableHighlight>
                     </View>
                     <View style={{flex: 1, borderLeftWidth: 0.5, borderBottomWidth: 0.5, borderColor: "white"}}>
                         <ImageBackground source={require('../assets/home_challenges.webp')} style={styles.container}>
