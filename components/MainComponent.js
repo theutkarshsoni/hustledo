@@ -76,7 +76,7 @@ function getYogaNavigator() {
                     headerLeft: () => <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                 }) }
             />
-            <YogaNavigator.Screen name="Poses" component={Poses} />
+            <YogaNavigator.Screen name="Poses" component={Poses} options={({ route }) => ({ title: route.params.name })} />
             <YogaNavigator.Screen name="Classes" component={Classes} />
             <YogaNavigator.Screen name="Level" component={Level} />
         </YogaNavigator.Navigator>

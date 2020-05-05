@@ -8,7 +8,7 @@ class Classes extends Component{
         const { navigate } = this.props.navigation;
         return(
             <View style={{ flex: 1 }}>
-                <TouchableOpacity style={{ flex: 1 }} onPress={() => navigate('Level', {})}>
+                <TouchableOpacity style={{ flex: 1 }} onPress={() => navigate('Level', { selectedClass: 'Balance' })}>
                     <View style={styles.row}>
                         <View style={styles.imageContainer}>
                             <Image source={{ uri: baseUrl + 'images/classes/balance.png' }} style={styles.image} />
@@ -22,7 +22,7 @@ class Classes extends Component{
                         </View>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={{ flex: 1 }} onPress={() => navigate('Level', {})}>
+                <TouchableOpacity style={{ flex: 1 }} onPress={() => navigate('Level', { selectedClass: 'Strength' })}>
                     <View style={styles.row}>
                         <View style={styles.imageContainer}>
                             <Image source={{ uri: baseUrl + 'images/classes/strength.png' }} style={styles.image} />
@@ -36,7 +36,7 @@ class Classes extends Component{
                         </View>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={{ flex: 1 }} onPress={() => navigate('Level', {})}>
+                <TouchableOpacity style={{ flex: 1 }} onPress={() => navigate('Level', { selectedClass: 'Flexibility' })}>
                     <View style={styles.row}>
                         <View style={styles.imageContainer}>
                             <Image source={{ uri: baseUrl + 'images/classes/flexibility.png' }} style={styles.image}  />
