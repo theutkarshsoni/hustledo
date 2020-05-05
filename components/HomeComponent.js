@@ -25,11 +25,13 @@ class Home extends Component {
                 </View>
                 <View style={{flex: 1, flexDirection: 'row'}}>
                     <View style={{flex: 1, borderRightWidth: 0.5, borderTopWidth: 0.5, borderColor: "white"}}>
-                        <ImageBackground source={require('../assets/home_yoga.webp')} style={styles.container}>
-                            <View style={styles.BgText}>
-                                <Text style={styles.text}>Yoga</Text>
-                            </View>
-                        </ImageBackground>
+                        <TouchableHighlight style={{ flex: 1 }} onPress={() => navigate('Yoga', {})}>
+                            <ImageBackground source={require('../assets/home_yoga.webp')} style={styles.container}>
+                                <View style={styles.BgText}>
+                                    <Text style={styles.text}>Yoga</Text>
+                                </View>
+                            </ImageBackground>
+                        </TouchableHighlight>
                     </View>
                     <View style={{flex: 1, borderLeftWidth: 0.5, borderTopWidth: 0.5, borderColor: "white"}}>
                         <TouchableHighlight style={{ flex: 1 }} onPress={() => navigate('Nutrition', {})}>
