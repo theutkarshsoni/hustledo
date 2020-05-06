@@ -35,7 +35,7 @@ class Workouts extends Component {
                         fontSize: 10,
                         paddingLeft: 75
                     }}
-                    onPress={() => navigate('List', { name: item.name, exercises: item.exercises })}
+                    onPress={() => navigate('List', { name: item.name, wid: item.id })}
                 />
             );
         }

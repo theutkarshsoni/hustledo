@@ -79,6 +79,9 @@ class Poses extends Component{
                     data={list}
                     renderItem={renderPose}
                     keyExtractor={item => item.id.toString()}
+                    contentContainerStyle= {{ 
+                        paddingBottom: 60
+                    }}
                 />
             </SafeAreaView>
         );
