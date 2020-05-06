@@ -18,7 +18,7 @@ class Classes extends Component{
                             <Text>Different yoga styles are combined that are focused to improve your balance.</Text>
                         </View>
                         <View style={styles.iconContainer}>
-                            <Icon name='chevron-right' type='font-awesome-5' size={16} color='#57A2CC' />
+                            <Icon name='chevron-right' type='font-awesome-5' size={12} color='#57A2CC' />
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -32,7 +32,7 @@ class Classes extends Component{
                             <Text>A combination of power yoga poses that will help you to build your body strength.</Text>
                         </View>
                         <View style={styles.iconContainer}>
-                            <Icon name='chevron-right' type='font-awesome-5' size={16} color='#57A2CC' />
+                            <Icon name='chevron-right' type='font-awesome-5' size={12} color='#57A2CC' />
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -46,7 +46,7 @@ class Classes extends Component{
                             <Text>Fit yoga into a busy day with a sequence that is both grounding and energizing.</Text>
                         </View>
                         <View style={styles.iconContainer}>
-                            <Icon name='chevron-right' type='font-awesome-5' size={16} color='#57A2CC' />
+                            <Icon name='chevron-right' type='font-awesome-5' size={12} color='#57A2CC' />
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -60,26 +60,26 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         borderBottomColor: '#000',
-        borderBottomWidth: 0.2
+        borderBottomWidth: 0.25
     },
     imageContainer: {
-        flex: 6,
+        flex: 5,
         paddingHorizontal: 5,
         justifyContent: 'center'
     },
     image: {
-        width: 120,
-        height: 120
+        width: 100,
+        height: 100
     },
     textContainer: {
-        flex: 10,
+        flex: 9,
         paddingLeft: 10,
         justifyContent: 'center'
     },
     text: {
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: 'bold',
-        marginBottom:5
+        marginBottom: 5
     },
     iconContainer:{
         flex: 1, 

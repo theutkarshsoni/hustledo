@@ -19,7 +19,7 @@ class Level extends Component{
                             <Text>Focuses on building strength and endurance by creating a firm foundation.</Text>
                         </View>
                         <View style={styles.iconContainer}>
-                            <Icon name='chevron-right' type='font-awesome-5' size={16} color='#57A2CC' />
+                            <Icon name='chevron-right' type='font-awesome-5' size={12} color='#57A2CC' />
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -33,7 +33,7 @@ class Level extends Component{
                             <Text>This is for those who have strong practice and prior yoga experience.</Text>
                         </View>
                         <View style={styles.iconContainer}>
-                            <Icon name='chevron-right' type='font-awesome-5' size={16} color='#57A2CC' />
+                            <Icon name='chevron-right' type='font-awesome-5' size={12} color='#57A2CC' />
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -47,7 +47,7 @@ class Level extends Component{
                             <Text>This is for dedicated and very committed who have strong practice to participate.</Text>
                         </View>
                         <View style={styles.iconContainer}>
-                            <Icon name='chevron-right' type='font-awesome-5' size={16} color='#57A2CC' />
+                            <Icon name='chevron-right' type='font-awesome-5' size={12} color='#57A2CC' />
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -61,22 +61,22 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         borderBottomColor: '#000',
-        borderBottomWidth: 0.2
+        borderBottomWidth: 0.25
     },
     starContainer: {
-        flex: 6,
+        flex: 5,
         paddingHorizontal: 5,
         justifyContent: 'center'
     },
     textContainer: {
-        flex: 10,
+        flex: 9,
         paddingLeft: 10,
         justifyContent: 'center'
     },
     text: {
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: 'bold',
-        marginBottom:5
+        marginBottom: 5
     },
     iconContainer:{
         flex: 1, 

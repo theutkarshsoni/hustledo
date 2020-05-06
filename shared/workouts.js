@@ -17,7 +17,7 @@ export const WORKOUTS = [
         "time": 7,
         "exercises": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "kcal": 100,
-        "accessories": "EXERCISE MAT",
+        "accessories": "MAT",
         "rounds": 1,
         "duration": 30
     },
