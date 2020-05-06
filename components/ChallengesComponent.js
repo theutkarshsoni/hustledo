@@ -50,7 +50,7 @@ class Challenges extends Component {
                         imageContainerStyle={{
                             backgroundColor: 'rgba(87, 162, 204, 0.5)'
                         }}
-                        onPress={() => navigate('Poses', { name: 'Alphabetically Poses'})}
+                        onPress={() => navigate('Day', { name: challenge.name, cid: challenge.id })}
                     />
                 </View>
             );

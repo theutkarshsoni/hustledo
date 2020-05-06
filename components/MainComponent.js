@@ -5,13 +5,14 @@ import Category from './CategoryComponent';
 import Workouts from './WorkoutsComponent';
 import List from './ListComponent';
 import Challenges from './ChallengesComponent';
+import Day from './DayComponent';
 import Yoga from './YogaComponent';
 import Poses from './PosesComponent';
 import Classes from './ClassesComponent';
 import Level from './LevelComponent';
 import Nutrition from './NutritionComponent';
 import More from './MoreComponent';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, Text } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -99,10 +100,12 @@ function getChallengesNavigator() {
         >
             <ChallengesNavigator.Screen name="Challenges" component={Challenges}
                 options={ ({ navigation }) => ({
+                        title: 'Take a challenge',
                         headerLeft: () => <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
                     }) 
                 }
             />
+            <ChallengesNavigator.Screen name="Day" component={Day} options={ ({ route }) => ({ title: route.params.name })} />
         </ChallengesNavigator.Navigator>
     );
 }
@@ -167,6 +170,7 @@ function CustomDrawerContent(props) {
                 <Image source={require('../assets/logo.png')} style={styles.drawerImage} />
             </View>
             <DrawerItemList {...props} />
+            <Text style={{ color: 'white', textAlign: 'center', fontSize: 10 }}>Developed with ❤️ by Utkarsh Soni</Text>
         </DrawerContentScrollView>
     );
 }
@@ -183,9 +187,6 @@ class Main extends Component {
                         labelStyle:{
                             color: '#fff',
                             fontSize: 16
-                        },
-                        style:{
-                            paddingTop: 20
                         }
                     }}
                     drawerContent={CustomDrawerContent}
@@ -197,16 +198,16 @@ class Main extends Component {
                         options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' color='white' size={18} />}}
                     />
                     <MainNavigator.Screen name="Workouts" component={getWorkoutsNavigator}
-                        options={{ drawerLabel: 'Workouts', drawerIcon: () => <Icon name='fire-alt' type='font-awesome-5' color='white' /> }}
+                        options={{ drawerLabel: 'Workouts', drawerIcon: () => <Icon name='fire-alt' type='font-awesome-5' color='white' size={26} /> }}
                     />
                     <MainNavigator.Screen name="Challenges" component={getChallengesNavigator}
-                        options={{ drawerLabel: 'Challenges', drawerIcon: () => <Icon name='trophy' type='font-awesome' color='white' /> }}
+                        options={{ drawerLabel: 'Challenges', drawerIcon: () => <Icon name='trophy' type='font-awesome' color='white' size={26} /> }}
                     />
                     <MainNavigator.Screen name="Yoga" component={getYogaNavigator}
                         options={{ drawerLabel: 'Yoga', drawerIcon: () => <Icon name='om' type='font-awesome-5' color='white' /> }}
                     />
                     <MainNavigator.Screen name="Nutrition" component={getNutritionNavigator}
-                        options={{ drawerLabel: 'Nutrition', drawerIcon: () => <Icon name='utensils' type='font-awesome-5' color='white' size={30} /> }}
+                        options={{ drawerLabel: 'Nutrition', drawerIcon: () => <Icon name='hamburger' type='font-awesome-5' color='white' /> }}
                     />
                     <MainNavigator.Screen name="More" component={getMoreNavigator} 
                         options={{ drawerLabel: 'More', drawerIcon: () => <Icon name='plus-circle' type='font-awesome-5' color='white' />}}
