@@ -3,6 +3,7 @@ import Home from './HomeComponent';
 import Fitness from './FitnessComponent';
 import Category from './CategoryComponent';
 import Workouts from './WorkoutsComponent';
+import List from './ListComponent';
 import Yoga from './YogaComponent';
 import Poses from './PosesComponent';
 import Classes from './ClassesComponent';
@@ -83,6 +84,7 @@ function getWorkoutsNavigator() {
                     })
                 }
             />
+            <WorkoutsNavigator.Screen name="List" component={List} options={ ({ route }) => ({ title: route.params.name }) } />
         </WorkoutsNavigator.Navigator>
     );
 }

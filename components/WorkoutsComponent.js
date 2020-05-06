@@ -15,6 +15,8 @@ class Workouts extends Component {
     
     render(){
 
+        const { navigate } = this.props.navigation;
+
         const renderWorkoutItem = ({ item, index }) => {
             return(
                 <ListItem
@@ -33,6 +35,7 @@ class Workouts extends Component {
                         fontSize: 10,
                         paddingLeft: 75
                     }}
+                    onPress={() => navigate('List', { name: item.name, exercises: item.exercises })}
                 />
             );
         }
