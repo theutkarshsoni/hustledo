@@ -4,6 +4,7 @@ import Fitness from './FitnessComponent';
 import Category from './CategoryComponent';
 import Workouts from './WorkoutsComponent';
 import List from './ListComponent';
+import Challenges from './ChallengesComponent';
 import Yoga from './YogaComponent';
 import Poses from './PosesComponent';
 import Classes from './ClassesComponent';
@@ -19,6 +20,7 @@ import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '
 const HomeNavigator = createStackNavigator();
 const FitnessNavigator = createStackNavigator();
 const WorkoutsNavigator = createStackNavigator();
+const ChallengesNavigator = createStackNavigator();
 const NutritionNavigator = createStackNavigator();
 const YogaNavigator = createStackNavigator();
 const MoreNavigaotr = createStackNavigator();
@@ -86,6 +88,22 @@ function getWorkoutsNavigator() {
             />
             <WorkoutsNavigator.Screen name="List" component={List} options={ ({ route }) => ({ title: route.params.name }) } />
         </WorkoutsNavigator.Navigator>
+    );
+}
+
+function getChallengesNavigator() {
+    return(
+        <ChallengesNavigator.Navigator
+            initialRouteName="Challenges"
+            screenOptions={HeaderOptions}
+        >
+            <ChallengesNavigator.Screen name="Challenges" component={Challenges}
+                options={ ({ navigation }) => ({
+                        headerLeft: () => <Icon name='bars' type='font-awesome-5' color='white' containerStyle={{ paddingLeft: 20 }} onPress={() => navigation.toggleDrawer()} />
+                    }) 
+                }
+            />
+        </ChallengesNavigator.Navigator>
     );
 }
 
@@ -173,19 +191,22 @@ class Main extends Component {
                     drawerContent={CustomDrawerContent}
                 >
                     <MainNavigator.Screen name="Home" component={getHomeNavigator} 
-                        options={{ drawerLabel: 'Home', drawerIcon: () => <Icon name='home' type='font-awesome-5' color='white' />}} 
+                        options={{ drawerLabel: 'Home', drawerIcon: () => <Icon name='home' type='font-awesome-5' color='white' size={20} />}} 
                     />
                     <MainNavigator.Screen name="Fitness" component={getFitnessNavigator} 
-                        options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' color='white' />}}
+                        options={{ drawerLabel: 'Fitness', drawerIcon: () => <Icon name='dumbbell' type='font-awesome-5' color='white' size={18} />}}
                     />
                     <MainNavigator.Screen name="Workouts" component={getWorkoutsNavigator}
                         options={{ drawerLabel: 'Workouts', drawerIcon: () => <Icon name='fire-alt' type='font-awesome-5' color='white' /> }}
+                    />
+                    <MainNavigator.Screen name="Challenges" component={getChallengesNavigator}
+                        options={{ drawerLabel: 'Challenges', drawerIcon: () => <Icon name='trophy' type='font-awesome' color='white' /> }}
                     />
                     <MainNavigator.Screen name="Yoga" component={getYogaNavigator}
                         options={{ drawerLabel: 'Yoga', drawerIcon: () => <Icon name='om' type='font-awesome-5' color='white' /> }}
                     />
                     <MainNavigator.Screen name="Nutrition" component={getNutritionNavigator}
-                        options={{ drawerLabel: 'Nutrition', drawerIcon: () => <Icon name='utensils' type='font-awesome-5' color='white' /> }}
+                        options={{ drawerLabel: 'Nutrition', drawerIcon: () => <Icon name='utensils' type='font-awesome-5' color='white' size={30} /> }}
                     />
                     <MainNavigator.Screen name="More" component={getMoreNavigator} 
                         options={{ drawerLabel: 'More', drawerIcon: () => <Icon name='plus-circle' type='font-awesome-5' color='white' />}}
