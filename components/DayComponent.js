@@ -14,34 +14,59 @@ class Day extends Component {
     }
 
     render() {
+        const { navigate } = this.props.navigation;
         const { cid } = this.props.route.params;
 
         function RenderDay(props) {
             var day = props.day;
             return(
-                <TouchableOpacity onPress={() => navigate('List', {})}>
+                <TouchableOpacity onPress={() => navigate('List', { name: 'DAY ' + (parseInt(day.id, 10) + 1), cid: cid, did: day.id })}>
                     <ImageBackground source={{ uri: baseUrl + 'images/challenges/' + day.image }} style={styles.image}>
                         <View style={styles.textContainter}>
                             <Text style={styles.heading}>DAY {day.id + 1}</Text>
                             <Text style={styles.subheading}>{day.parts}</Text>
-                            <View style={styles.row}>
-                                <View style={styles.column}>
-                                    <Icon name='clock' type='font-awesome-5' size={16} color='white' /> 
-                                    <Text style={styles.text}>{day.time} MIN</Text>
-                                </View>
-                                <View style={styles.column}>
-                                    <Icon name='tasks' type='font-awesome-5' size={16} color='white' /> 
-                                    <Text style={styles.text}>{day.exercises.length} EXERCISES</Text>
-                                </View>
-                                <View style={styles.column}>
-                                    <Icon name='burn' type='font-awesome-5' size={16} color='white' /> 
-                                    <Text style={styles.text}>{day.kcal} KCAL</Text>
-                                </View>
-                            </View>
+                            <RenderRow day={day}/>
                         </View>
                     </ImageBackground>
                 </TouchableOpacity>
             );
+        }
+
+        function RenderRow(props) {
+            var day = props.day;
+
+            if(day.parts === 'CARDIO') {
+                return(
+                    <View style={styles.row}>
+                        <View style={styles.column}>
+                            <Text style={styles.text}>20 - 40 MIN</Text>
+                        </View>
+                    </View>
+                );
+            }
+            else if(day.parts === 'ACTIVE REST DAY'){
+                return(
+                    <View></View>
+                );
+            }
+            else{
+                return(
+                    <View style={styles.row}>
+                        <View style={styles.column}>
+                            <Icon name='clock' type='font-awesome-5' size={16} color='white' /> 
+                            <Text style={styles.text}>{day.time} MIN</Text>
+                        </View>
+                        <View style={styles.column}>
+                            <Icon name='tasks' type='font-awesome-5' size={16} color='white' /> 
+                            <Text style={styles.text}>{day.exercises.length} EXERCISES</Text>
+                        </View>
+                        <View style={styles.column}>
+                            <Icon name='burn' type='font-awesome-5' size={16} color='white' /> 
+                            <Text style={styles.text}>{day.kcal} KCAL</Text>
+                        </View>
+                    </View>
+                );
+            }
         }
 
         return(

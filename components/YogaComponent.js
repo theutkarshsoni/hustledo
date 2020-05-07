@@ -11,12 +11,15 @@ class Yoga extends Component {
                 <View style={{ flex: 1, borderBottomWidth: 3, borderColor: "white" }}>
                     <Tile
                         imageSrc={require('../assets/home_yoga_1.webp')}
-                        title='Poses'
-                        caption='Freedom to practice whatever you want'
+                        title='POSES'
+                        caption='FREEDOM TO PRACTICE WHATEVER YOU WANT'
                         featured
                         titleStyle={{
                             fontSize: 30,
                             fontWeight: 'bold'
+                        }}
+                        captionStyle={{
+                            fontSize: 12
                         }}
                         imageContainerStyle={{
                             backgroundColor: 'rgba(87, 162, 204, 0.5)'
@@ -27,12 +30,15 @@ class Yoga extends Component {
                 <View style={{ flex: 1, borderTopWidth: 3, borderColor: "white" }}>
                     <Tile
                         imageSrc={require('../assets/home_yoga_2.webp')}
-                        title='Classes'
-                        caption='Focus on flexibility, strength and balance'
+                        title='CLASSES'
+                        caption='FOCUS ON FLEXIBILITY, STRENGTH AND BALANCE'
                         featured
                         titleStyle={{
                             fontSize: 30,
                             fontWeight: 'bold'
+                        }}
+                        captionStyle={{
+                            fontSize: 12
                         }}
                         imageContainerStyle={{
                             backgroundColor: 'rgba(87, 162, 204, 0.5)'

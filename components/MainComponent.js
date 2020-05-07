@@ -106,6 +106,7 @@ function getChallengesNavigator() {
                 }
             />
             <ChallengesNavigator.Screen name="Day" component={Day} options={ ({ route }) => ({ title: route.params.name })} />
+            <WorkoutsNavigator.Screen name="List" component={List} options={ ({ route }) => ({ title: route.params.name }) } />
         </ChallengesNavigator.Navigator>
     );
 }
