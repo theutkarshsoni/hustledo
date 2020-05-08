@@ -1,862 +1,985 @@
 export const EXERCISES = [
     {
         "id": 0,
-        "name": "BODYWEIGHT HIGH KNEES",
-        "description": "MUSCLE GROUP:QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET WIDER THAN SHOULDER WIDTH APART. HOLD MEDICINE BALL IN FRONT OF YOU WITH ARMS FULLY EXTENDED. ADJUST FEET TO FACE SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF BY BENDING YOUR KNEES. YOUR BACK IS STRAIGHT THROUGHOUT THE WHOLE MOVEMENT. STOP WHEN YOUR THIGHS ARE NEARLY PARALLEL WITH THE GROUND. WHEN YOU RETURN THE STARTING POSITION, GENERATE ENERGY FROM YOUR LOWER BACK.",
+        "name": "Bodyweight High Knees",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet wider than shoulder-width apart. Hold the medicine ball in front of you with arms fully extended. Adjust feet to face slightly outward.\n\nStep 2: Lower yourself by bending your knees. Your back is straight throughout the whole movement. Stop when your thighs are nearly parallel with the ground. When you return the starting position, generate energy from your lower back.",
         "images": ["bodyweight_high_knees_0.jpg", "bodyweight_high_knees_1.jpg"],
         "video": "BODYWEIGHT_HIGH_KNEES.mp4"
     },
     {
         "id": 1,
-        "name": "PUSH UP ROTATING T EXTENSION",
-        "description": "MUSCLE NAME: QUADRICEPS \n STEP 1. START IN A PUSHUP POSITION. KEEPING YOUR ARMS STRAIGHT AND YOUR CORE ENGAGED \n STEP 2. SHIFT YOUR WEIGHT ONTO YOUR LEFT ARM, ROTATE YOUR TORSO TO THE RIGHT, AND RAISE YOUR RIGHT ARM TOWARD THE CEILING SO THAT YOUR BODY FORMS A T. \n STEP 3. HOLD FOR THREE SECONDS, THEN RETURN TO START AND REPEAT ON THE OTHER SIDE. THAT'S ONE REP.",
+        "name": "Push-Up Rotating T Extension",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Start in a push-up position. Keeping your arms straight and your core engaged.\n\nStep 2: Shift your weight onto your left arm, rotate your torso to the right, and raise your right arm toward the ceiling so that your body forms at.\n\nStep 3: Hold for three seconds, then return to start and repeat on the other side. That's one rep.",
         "images": ["push_up_rotating_t_extension_0.jpg", "push_up_rotating_t_extension_1.jpg"],
         "video": "PUSH_UP_ROTATING_T_EXTENSION.mp4"
     },
     {
         "id": 2,
-        "name": "BODYWEIGHT PUSH-UP EXTENSION",
-        "description": "MUSCLE GROUP: PRCTORIALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS UNDER YOUR SHOULDERS. DISTANCE BETWEEN YOUR HANDS SHOULD BE NARROWER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. \n STEP 3: EXTEND ONE ARM AFTER EVERY TIME YOU COME UP. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Push-Up Extension",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands under your shoulders. Distance between your hands should be narrower than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet.\n\nStep 3: Extend one arm after every time you come up. Hold for one second. Return to starting position.",
         "images": ["bodyweight_push_up_extension_0.jpg", "bodyweight_push_up_extension_1.jpg", "bodyweight_push_up_extension_2.jpg"],
         "video": "BODYWEIGHT_PUSH-UP_EXTENSION.mp4"
     },
     {
         "id": 3,
-        "name": "BENT-LEG V-UP",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR, PUT YOUR ARMS AT THE SIDES. BENT YOUR KNEES OP AND HOLD THEM STILL. \n STEP 2: QUICKLY LIFT YOUR TORSO AS YOU PULL YOUR CHEST TO YOUR KNEES. KEEP YOUR ARMS PARALLEL TO THE FLOOR.",
+        "name": "Bent-Leg V-Up",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor, put your arms at the sides. Bent your knees op and hold them still.\n\nStep 2: quickly lift your torso as you pull your chest to your knees. Keep your arms parallel to the floor.",
         "images": ["bent_leg_v_up_0.jpg", "bent_leg_v_up_1.jpg"],
         "video": "BENT-LEG_V-UP.mp4"
     },
     {
         "id": 4,
-        "name": "BODYWEIGHT HIGHT KNEE BOXING",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET CLOSE TO EACH OTHER. RUN IN PLACE WHILE LIFTING KNEE TO STOMACH LEVEL. KEEP THE DUMBBELL IN YOUR HANDS AND BOXING IN THE SAME TIME WITH MOVING YOUR LEGS. \n STEP 2: AS ONE FOOT LOWERS, THE OTHER RISES. THIS IS ONE REPETITION.",
+        "name": "Bodyweight Hight Knee Boxing",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet close to each other. Run in place while lifting knee to stomach level. Keep the dumbbell in your hands and boxing at the same time with moving your legs.\n\nStep 2: As one foot lowers, the other rises. This is one repetition.",
         "images": ["bodyweight_hight_knee_boxing_0.jpg", "bodyweight_hight_knee_boxing_1.jpg"],
         "video": "BODYWEIGHT_HIGHT_KNEE_BOXING.mp4"
     },
     {
         "id": 5,
-        "name": "BODYWEIGHT MOUNTAIN CLIMBERS",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR PALMS ON THE FLOOR. POSITION HANDS NEXT TO YOUR HEAD. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD \n STEP 2: BEND ONE LEG TOWARDS THE UPPER BODY. \n STEP 3: AS YOU BRING YOUR LEG BACK TO STARTING POSITION, BEND OTHER LEG TOWARDS THE UPPER BODY. THIS IS ONE REPETITION.",
+        "name": "Bodyweight Mountain Climbers",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Lie down chest first with your palms on the floor. Position hands next to your head. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Bend one leg towards the upper body.\n\nStep 3: As you bring your leg back to starting position, bend another leg towards the upper body. This is one repetition.",
         "images": ["bodyweight_mountain_climbers_0.jpg", "bodyweight_mountain_climbers_1.jpg"],
         "video": "BODYWEIGHT_MOUNTAIN_CLIMBERS.mp4"
     },
     {
         "id": 6,
-        "name": "BODYWEIGHT JUMPING JACKS",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND TALL WITH YOUR BACK STRAIGHT. KEEP YOUR HANDS AT YOUR SIDES. \n STEP 2: JUMP OUTWARD WITH YOUR FEET WIDER THAN SHOULDER WIDTH APART. AT THE SAME TIME, RAISE YOUR ARMS OVERHEAD. PAUSE BRIEFLY AND RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Jumping Jacks",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand tall with your back straight. Keep your hands at your sides.\n\nStep 2: Jump outward with your feet wider than shoulder-width apart. At the same time, raise your arms overhead. Pause briefly and return to starting position.",
         "images": ["bodyweight_jumping_jacks_0.jpg"],
         "video": "BODYWEIGHT_JUMPING_JACKS.mp4"
     },
     {
         "id": 7,
-        "name": "BODYWEIGHT HIGHT KNEE JUMP",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND TALL WITH YOUR BACK STRAIGHT. KEEP YOUR HANDS AT YOUR SIDES. \n STEP 2: BEND KNEES SLIGHTLY. \n STEP 3: JUMP UP AS HIGH AS YOU CAN. BRING YOUR KNEES TOWARD YOUR CHEST.",
+        "name": "Bodyweight High Knee Jump",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand tall with your back straight. Keep your hands at your sides.\n\nStep 2: Bend knees slightly.\n\nStep 3: Jump up as high as you can. Bring your knees toward your chest.",
         "images": ["bodyweight_hight_knee_jump_0.jpg", "bodyweight_hight_knee_jump_1.jpg", "bodyweight_hight_knee_jump_2.jpg", "bodyweight_hight_knee_jump_3.jpg"],
         "video": "BODYWEIGHT_HIGHT_KNEE_JUMP.mp4"
     },
     {
         "id": 8,
-        "name": "BICYCLE",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: LIE DOWN ON THE FLOOR. LIFT LEGS SO THAT YOUR THIGHS ARE PERPENDICULAR WITH THE GROUND. PUT HANDS BEHIND YOUR HEAD. \n STEP 2: MOVE LEFT ELBOW AND RIGHT LEG TOWARD THE BODY UNTIL THEY TOUCH \n STEP 3: MOVE LEFT ELBOW AND RIGHT LEG BACK TO STARTING POSITION. AT THE SAME TIME, MOVE RIGHT ELBOW AND LEFT LEG TOWARD THE BODY UNTIL THEY TOUCH. THIS IS ONE REPETITION.",
+        "name": "Bicycle",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie down on the floor. Lift legs so that your thighs are perpendicular with the ground. Put hands behind your head.\n\nStep 2: Move left elbow and right leg toward the body until they touch.\n\nStep 3: Move left elbow and right leg back to starting position. At the same time, move right elbow and left leg toward the body until they touch. This is one repetition.",
         "images": ["bodyweight_crunch_2_0.jpg", "bodyweight_crunch_2_1.jpg"],
         "video": "BODYWEIGHT_CRUNCH_2.mp4"
     },
     {
         "id": 9,
-        "name": "BODYWEIGHT PUSH-UP",
-        "description": "MUSCLE GROUP: PECTORALIS \n STEP 1: LIE DOWN CHEST RST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS NEXT TO YOUR LOWER CHEST. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. AT THE SAME TIME, BRING ONE KNEE TOWARDS YOUR ELBOW. HOLD FOR ONE SECOND \n STEP 3: RETURN TO STARTING POSITION. \n STEP 4: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. AT THE SAME TIME, BRING YOUR OTHER KNEE TOWARDS YOUR ELBOW. HOLD FOR ONE SECOND.",
+        "name": "Bodyweight Push-Up",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest rest with your hands on the floor. Position hands next to your lower chest. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. At the same time, bring one knee towards your elbow. Hold for one second.\n\nStep 3: Return to the starting position.\n\nStep 4: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. At the same time, bring your other knee towards your elbow. Hold for one second.",
         "images": ["bodyweight_push_up__0.jpg", "bodyweight_push_up__1.jpg", "bodyweight_push_up__2.jpg"],
         "video": "BODYWEIGHT_PUSH-UP.mp4"
     },
     {
         "id": 10,
-        "name": "TOE TOUCH 3",
-        "description": "MUSCLE: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. POSITION YOUR HANDS AND LEGS ON THE FLOOR. \n STEP 2: RAISE YOUR UPPER BODY UPWARD. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Toe Touch 3",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Position your hands and legs on the floor.\n\nStep 2: Raise your upper body upward. Hold for one second. Return to starting position.",
         "images": ["reaching_leg_up_0.jpg", "reaching_leg_up_1.jpg", "reaching_leg_up_3.jpg"],
         "video": "REACHING_LEG-UP.mp4"
     },
     {
         "id": 11,
-        "name": "PUSH-UP WALKING",
-        "description": "MUSCLE GROUP: PECTORALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS NEXT TO YOUR LOWER CHEST. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. KEEP YOUR BACK AND LEGS STRAIGHT. \n STEP 2: WITHOUT MOVING YOUR ARMS, HOP TOWARD YOUR ARMS. HOP BACK TO STARTING POSITION AFTERWARD.",
+        "name": "Push-Up Walking",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands next to your lower chest. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward. Keep your back and legs straight.\n\nStep 2: Without moving your arms, hop toward your arms. Hop back to starting position afterwards.",
         "images": ["push_up_walking_0.jpg", "push_up_walking_1.jpg", "push_up_walking_2.jpg"],
         "video": "PUSH-UP_WALKING.mp4"
     },
     {
         "id": 12,
-        "name": "BODYWEIGHT PULL IN",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE ON THE FLOOR. PLACE HANDS UNDER YOUR HIP. EXTEND LEGS FULLY. SLIGHTLY RAISE LEGS. \n STEP 2: BEND LEGS TOWARDS YOUR UPPER BODY. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Pull In",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie on the floor. Place hands under your hip. Extend legs fully. Slightly raise legs.\n\nStep 2: Bend legs towards your upper body. Hold for one second. Return to starting position.",
         "images": ["bodyweight_pull_in_0.jpg", "bodyweight_pull_in_1.jpg"],
         "video": "BODYWEIGHT_PULL_IN.mp4"
     },
     {
         "id": 13,
-        "name": "PLANK",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: POSITION LEGS STRAIGHT EXTENDED. WHILE KEEPING BACK STRAIGHT, PLACE FOREARMS ON THE FLOOR. YOUR FOREARMS ARE PERPENDICULAR WITH YOUR UPPER ARMS. HOLD FOR AS LONG AS YOU CAN.",
+        "name": "Plank",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Position legs straight extended. While keeping back straight, place forearms on the floor. Your forearms are perpendicular with your upper arms. Hold for as long as you can.",
         "images": ["plank_0.jpg"],
         "video": "PLANK.mp4"
     },
     {
         "id": 14,
-        "name": "BODYWEIGHT OPEN JUMP",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND TALL WITH YOUR BACK STRAIGHT. KEEP YOUR HANDS AT YOUR SIDES. \n STEP 2: BEND KNEES SLIGHTLY. \n STEP 3: JUMP UP AS HIGH AS YOU CAN.",
+        "name": "Bodyweight Open Jump",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand tall with your back straight. Keep your hands at your sides.\n\nStep 2: Bend knees slightly.\n\nStep 3: Jump up as high as you can.",
         "images": ["bodyweight_open_jump_0.jpg", "bodyweight_open_jump_1.jpg"],
         "video": "BODYWEIGHT_OPEN_JUMP.mp4"
     },
     {
         "id": 15,
-        "name": "BODYWEIGHT PUSH-UP TOUCH",
-        "description": "MUSCLE GROUP: PRCTORIALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS UNDER YOUR SHOULDERS. DISTANCE BETWEEN YOUR HANDS SHOULD BE NARROWER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. \n STEP 3: TOUCH YOUR OPPOSITE SHOULDER AFTER EVERY TIME YOU COME UP. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Push-Up Touch",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands under your shoulders. Distance between your hands should be narrower than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet.\n\nStep 3: Touch your opposite shoulder after every time you come up. Hold for one second. Return to starting position.",
         "images": ["bodyweight_push_up_touch_0.jpg", "bodyweight_push_up_touch_1.jpg", "bodyweight_push_up_touch_2.jpg", "bodyweight_push_up_touch_3.jpg"],
         "video": "BODYWEIGHT_PUSH-UP_TOUCH.mp4"
     },
     {
         "id": 16,
-        "name": "BODYWEIGHT TOE TOUCH",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. LIFT LEGS UNTIL ONE LEG IS PERPENDICULAR WITH THE FLOOR. FULLY EXTEND YOUR ARMS ABOVE YOU. \n STEP 2: REACH FOR TOES WITH YOUR HANDS. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Toe Touch",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Lift legs until one leg is perpendicular with the floor. Fully extend your arms above you.\n\nStep 2: Reach for toes with your hands. Hold for one second. Return to starting position.",
         "images": ["bodyweight_toe_touch_0.jpg", "bodyweight_toe_touch_1.jpg"],
         "video": "BODYWEIGHT_TOE_TOUCH.mp4"
     },
     {
         "id": 17,
-        "name": "DUMBBELL PUSH-UP ROW",
-        "description": "MUSCLE GROUP: PECTORALIS \n STEP 1 HOLD ONTO TWO DUMBBELLS WITH NEUTRAL GRIP. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY THE DUMBBELLS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. \n STEP 3: RETURN TO STARTING POSITION. \n STEP 4: LIFT ONE DUMBBELL UP BY MOVING YOUR ELBOW UPWARD. YOUR HAND SHOULD MOVE IN A VERTICAL LINE. HOLD FOR ONE SECOND. \n STEP 5: RETURN TO STARTING POSITION. \n STEP 6: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. \n STEP 7: RETURN TO STARTING POSITION \n STEP 8: LIFT THE OTHER DUMBBELL UP BY MOVING YOUR ELBOW UPWARD. YOUR HAND SHOULD MOVE IN A VERTICAL LINE. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Push-Up Row",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: hold onto two dumbbells with a neutral grip. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only the dumbbells and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second.\n\nStep 3: Return to the starting position.\n\nStep 4: Lift one dumbbell up by moving your elbow upward. Your hand should move in a vertical line. Hold for one second.\n\nStep 5: Return to the starting position.\n\nStep 6: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second.\n\nStep 7: Return to the starting position.\n\nStep 8: lift the other dumbbell up by moving your elbow upward. Your hand should move in a vertical line. Hold for one second. Return to starting position.",
         "images": ["dumbbell_push_up_row_0.jpg", "dumbbell_push_up_row_1.jpg", "dumbbell_push_up_row_2.jpg", "dumbbell_push_up_row_3.jpg"],
         "video": "DUMBBELL_PUSH-UP_ROW.mp4"
     },
     {
         "id": 18,
-        "name": "BENCH DIP",
-        "description": "MUSCLE GROUP: TRICEPS BRACHII \n STEP 1. PLACE YOUR PALMS ON A BENCH SO THEY FACE FORWARD, AND POSITION YOURSELF AS ILLUSTRATED. KEEP YOUR LEGS RELATIVELY STRAIGHT OUT IN FRONT, WITH BOTH HEELS FIRMLY ON THE FLOOR. STRAIGHTEN YOUR ARMS AND MOVE YOUR TORSO FORWARD SO THAT YOUR BEHIND AND BACK ARE JUST IN FRONT OF THE BENCH. \n STEP 2. BEND YOUR ARMS TO RIGHT ANGLES, LOWERING YOUR BEHIND TOWARD THE FLOOR AS SHOWN. YOU CAN MAKE THE EXERCISE EASIER BY BY BENDING YOUR KNEES AND MOVING YOUR FEET CLOSER TO THE BENCH.",
+        "name": "Bench Dip",
+        "muscle": "Triceps Brachii",
+        "description": "\nStep 1: Place your palms on a bench so they face forward, and position yourself as illustrated. Keep your legs relatively straight out in front, with both heels firmly on the floor. Straighten your arms and move your torso forward so that your behind and back are just in front of the bench.\n\nStep 2: Bend your arms to right angles, lowering your behind toward the floor as shown. You can make the exercise easier by bending your knees and moving your feet closer to the bench.",
         "images": ["bench_dip_0.jpg", "bench_dip_1.jpg"],
         "video": "BENCH_DIP.mp4"
     },
     {
         "id": 19,
-        "name": "DOUBLE SQUAT",
-        "description": "MUSCLE GROUP:PRCTORIALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS UNDER YOUR SHOULDERS. DISTANCE BETWEEN YOUR HANDS SHOULD BE NARROWER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. \n STEP 3: TOUCH YOUR OPPOSITE SHOULDER AFTER EVERY TIME YOU COME UP. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Double Squat",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands under your shoulders. Distance between your hands should be narrower than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet.\n\nStep 3: Touch your opposite shoulder after every time you come up. Hold for one second. Return to starting position.",
         "images": ["bodyweight_hight_knee_jump_0.jpg", "bodyweight_hight_knee_jump_2.jpg"],
         "video": "DOUBLE_SQUAT.mp4"
     },
     {
         "id": 20,
-        "name": "DUMBBELL SNATCH 1",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1: BEGIN BY SQUATTING LOWER OVER A DUMBBELL. MAINTAIN A LOCKED AND RIGID LOWER BACK AND HAVE YOUR FEET PLACED A SHOULDER WIDTH APART. \n STEP 2. GRASP THE DUMBBELL AND TIGHTEN THE ABDOMINAL MUSCLES. IN A RAPID AND US MOTION, LIFT THE DUMBBELL UPWARD UNTIL YOUR ARM IS STRAIGHT AND LOOKED, AS ILLUSTRATED. THE DUMBBELL SHOULD TRAVEL CLOSE TO THE BODY AND NOT SWING OUT OR AWAY. \n STEP 3. BRIEFLY HOLD IT ABOVE YOUR HEAD, THEN BRING IT DOWN TO THE STARTING POSITION.",
+        "name": "Dumbbell Snatch 1",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Begin by squatting lower over the dumbbell. Maintain a locked and rigid lower back and have your feet placed a shoulder-width apart.\n\nStep 2: Grasp the dumbbell and tighten the abdominal muscles. In a rapid and our motion, lift the dumbbell upward until your arm is straight and looked, as illustrated. The dumbbell should travel close to the body and not swing out or away.\n\nStep 3: Briefly hold it above your head, then bring it down to the starting position.",
         "images": ["dumbbell_snatch_1_0.jpg", "dumbbell_snatch_1_1.jpg"],
         "video": "DUMBBELL_SNATCH_1.mp4"
     },
     {
         "id": 21,
-        "name": "PUSH-UP DUMBBELL EXTENSION",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: HOLD ONTO TWO DUMBBELLS WITH NEUTRAL GRIP. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY THE DUMBBELLS AND TOES ARE ON THE FLOOR. EXTEND FULLY THE HAND WITH DUMBBELL. \n STEP 2: YOUR ARM HAS TO BE AT THE LEVEL OF YOURAYES. \n STEP 3: RETURN TO STARTING POSITION. \n STEP 4: LIFT ONE DUMBBELL UP BY MOVING YOUR ELBOW UPWARD. YOUR HAND SHOULD MOVE IN A VERTICAL LINE. HOLD FOR ONE SECOND. \n STEP 5: RETURN TO STARTING POSITION. \n STEP 6: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. \n STEP 7: RETURN TO STARTING POSITION \n STEP 8: LIFT THE OTHER DUMBBELL UP BY MOVING YOUR ELBOW UPWARD. YOUR HAND SHOULD MOVE IN A VERTICAL LINE. HOLD ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Push-Up Dumbbell Extension",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Hold onto two dumbbells with a neutral grip. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only the dumbbells and toes are on the floor. Extend fully the hand with the dumbbell.\n\nStep 2: your arm has to be at the level of your eyes.\n\nStep 3: Return to the starting position.\n\nStep 4: lift one dumbbell up by moving your elbow upward. Your hand should move in a vertical line. Hold for one second.\n\nStep 5: Return to the starting position.\n\nStep 6: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second.\n\nStep 7: Return to starting position Step 8: lift the other dumbbell up by moving your elbow upward. Your hand should move in a vertical line. Hold one second. Return to starting position.",
         "images": ["push_up_dumbbell_extension_0.jpg", "push_up_dumbbell_extension_1.jpg", "push_up_dumbbell_extension_2.jpg", "push_up_dumbbell_extension_3.jpg"],
         "video": "PUSH-UP_DUMBBELL_EXTENSION.mp4"
     },
     {
         "id": 22,
-        "name": "WEIGHTED TWIST RUSSIAN",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: SIT DOWN WITH YOUR FEET FLAT AND KNEES BENT. GRASP A WEIGHTED WITH BOTH HANDS. LEAN BACK SLIGHTLY AS YOU FULLY EXTEND YOUR ARMS STRAIGHT IN FRONT OF YOU. \n STEP 2: TWIST YOUR TORSO IN ONE DIRECTION. HOLD FOR ONE SECOND. \n STEP 3: RETURN TO STARTING POSITION. TWIST YOUR TORSO IN THE OTHER DIRECTION. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Weighted Twist Russian",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Sit down with your feet flat and knees bent. Grasp a weighted with both hands. Lean back slightly as you fully extend your arms straight in front of you.\n\nStep 2: Twist your torso in one direction. Hold for one second.\n\nStep 3: Return to starting position. Twist your torso in the other direction. Hold for one second. Return to starting position.",
         "images": ["weighted_twist_russian_0.jpg", "weighted_twist_russian_1.jpg"],
         "video": "WEIGHTED_TWIST_RUSSIAN.mp4"
     },
     {
         "id": 23,
-        "name": "BODYWEIGHT HOP",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE PRONE ON THE FLOOR. RAISE YOURSELF UP SO THAT ONLY YOUR TOES AND HANDS ARE ON THE FLOOR. KEEP YOUR BACK STRAIGHT. \n STEP 2: WHILE KEEPING ARMS IN PLACE, HOP INWARD SO YOUR KNEES ARE CLOSE TO YOUR CHEST. HOP BACK TO STARTING POSITION.",
+        "name": "Bodyweight Hop",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie prone on the floor. Raise yourself up so that only your toes and hands are on the floor. Keep your back straight.\n\nStep 2: While keeping arms in place, hop inward so your knees are close to your chest. Hop back to starting position.",
         "images": ["bodyweight_hop_0.jpg", "bodyweight_hop_1.jpg"],
         "video": "BODYWEIGHT_HOP.mp4"
     },
     {
         "id": 24,
-        "name": "ROLLING PUSH-UP",
-        "description": "MUSCLE GROUP: PECTORALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS NEXT TO YOUR LOWER CHEST. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. LIFT YOUR BEHIND UP IN THE AIR. ARMS SHOULD STRAIGHTEN OUT. \n STEP 2: PRETENDING THAT THERE IS AN IMAGINARY BAR TWO FEET FROM THE GROUND, GO UNDER THE BAR UNTIL YOUR ENTIRE UPPER BODY PASSED THE BAR. THE ELBOWS SHOULD BEND. ARMS STRAIGHTEN OUT AT THE END OF THE MOVEMENT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Rolling Push-Up",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands next to your lower chest. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward. Lift your behind up in the air. Arms should straighten out.\n\nStep 2: Pretending that there is an imaginary bar two feet from the ground, go under the bar until your entire upper body passed the bar. The elbows should bend. Arms straighten out at the end of the movement. Hold for one second. Return to starting position.",
         "images": ["rolling_push_up_0.jpg", "rolling_push_up_1.jpg", "rolling_push_up_2.jpg"],
         "video": "ROLLING_PUSH-UP.mp4"
     },
     {
         "id": 25,
-        "name": "BENCH HIGH KNEE JUMP",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND TALL WITH YOUR BACK STRAIGHT. KEEP YOUR HANDS AT YOUR SIDES. \n STEP 2: BEND KNEES SLIGHTLY. \n STEP 3: JUMP UP AS HIGH AS YOU CAN. BRING YOUR KNEES TOWARD YOUR CHEST.",
+        "name": "Bench High Knee Jump",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand tall with your back straight. Keep your hands at your sides.\n\nStep 2: Bend knees slightly.\n\nStep 3: Jump up as high as you can. Bring your knees toward your chest.",
         "images": ["bench_high_knee_jump_0.jpg", "bench_high_knee_jump_1.jpg", "bench_high_knee_jump_2.jpg"],
         "video": "BENCH_HIGH_KNEE_JUMP.mp4"
     },
     {
         "id": 26,
-        "name": "BODYWEIGHT LEG RAISE 2",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: SIT ON THE SIDE OF THE BENCH. HOLD ONTO THE SIDE OF THE BENCH WITH BOTH HANDS AT SHOULDER WIDTH. LIE BACK AND RAISE YOUR LEGS UNTIL YOU REACH A POSITION OF BALANCE. \n STEP 2: BEND YOUR KNEES TOWARDS YOUR UPPER BODY. AT THE SAME TIME, MOVE UPPER BODY FORWARD TO MAINTAIN POSITION OF BALANCE. HOLD FOR NONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Leg Raise 2",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Sit on the side of the bench. Hold onto the side of the bench with both hands at shoulder width. Lie back and raise your legs until you reach a position of balance.\n\nStep 2: Bend your knees towards your upper body. At the same time, move the upper body forward to maintain the position of balance. Hold for none second. Return to starting position.",
         "images": ["bodyweight_leg_raise_2_0.jpg", "bodyweight_leg_raise_2_1.jpg"],
         "video": "BODYWEIGHT_LEG_RAISE_2.mp4"
     },
     {
         "id": 27,
-        "name": "MEDICINE BALL LUNGE 1",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD MEDICINE BALL OVERHEAD WITH ARMS FULLY EXTENDED. \n STEP 2: WHILE KEEPING YOUR BACK STRAIGHT, STEP FORWARD WITH ONE FOOT AND LOWER YOURSELF BY BENDING YOUR KNEES. STOP WHEN YOUR FRONT THIGH IS PARALLEL WITH THE GROUND. HOLD FOR ONE SECOND. STEP BACK AND RETURN TO STARTING POSITION. REPEAT WITH OTHER SIDE.",
+        "name": "Medicine Ball Lunge 1",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold medicine ball overhead with arms fully extended.\n\nStep 2: While keeping your back straight, step forward with one foot and lower yourself by bending your knees. Stop when your front thigh is parallel with the ground. Hold for one second.\n\nStep back and return to starting position. Repeat with the other side.",
         "images": ["medicine_ball_lunge_1_0.jpg", "medicine_ball_lunge_1_1.jpg"],
         "video": "MEDICINE_BALL_LUNGE_1.mp4"
     },
     {
         "id": 28,
-        "name": "BODYWEIGHT PLANK LEG TOUCH 1",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE PRONE ON THE FLOOR. RAISE YOURSELF UP SO THAT ONLY YOUR TOES AND FOREARMS ARE ON THE FLOOR. KEEP YOUR BACK STRAIGHT. LIFT YOUR RIGHT LEG UP. HOLD FOR AS LONG AS POSSIBLE.",
+        "name": "Bodyweight Plank Leg Touch 1",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie prone on the floor. Raise yourself up so that only your toes and forearms are on the floor. Keep your back straight. Lift your right leg up. Hold for as long as possible.",
         "images": ["bodyweight_plank_leg_touch_1_0.jpg", "bodyweight_plank_leg_touch_1_1.jpg", "bodyweight_plank_leg_touch_1_2.jpg"],
         "video": "BODYWEIGHT_PLANK_LEG_TOUCH.mp4"
     },
     {
         "id": 29,
-        "name": "ALTERNATE HEEL TOUCH",
-        "description":"MUSCLE GROUP: RECTUS ABDOMIN \n STEP 1: LAY DOWN ON THE FLOOR, BEND YOUR KNEES AND KEEP YOUR FEET 18-24 INCHES APART. KEEP YOUR ARMS STRAIGHT NEAR YOUR BODY. \n STEP 2: NOW CRUNCH OVER 3-4 INCHES AND TOUCH YOUR RIGHT HEEL ONCE. THAT CRUNCH BACK AND REPEAT IT. CRUNCH OVER AND TOUCH YOUR LEFT HEEL. WHILE CRUNCHING KEEP YOUR LOWER BACK ON THE FLOOR. REPEAT THIS REPEFIFION.",
+        "name": "Alternate Heel Touch",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lay down on the floor, bend your knees and keep your feet 18-24 inches apart. Keep your arms straight near your body.\n\nStep 2: Now crunch over 3-4 inches and touch your right heel once. That crunch back and repeat it. Crunch over and touch your left heel. While crunching keep your lower back on the floor. Repeat this repetition.",
         "images": ["alternate_heel_touch_0.jpg", "alternate_heel_touch_1.jpg"],
         "video": "ALTERNATE_HEEL_TOUCH.mp4"
     },
     {
         "id": 30,
-        "name": "MODIFIED ELBOW TO KNEE CRUNCH",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: LAI DOWN ON THE FLOOR, BEND YOUR LEGS AND PUT YOUR FEET ON THE GROUND. MOVE YOUR HANDS BEHIND YOUR EARS AND PUT YOUR ELBOWS OUT. CURVE YOUR RIGHT LEG UP AND REST YOUR FOOT ON YOUR LEFT KNEE. \n STEP 2: CRUNCH FORWARDS AND LIFT IT SIDEWAYS AND TRY TO TOUCH YOUR LEFT ELBOW TO YOUR RIGHT KNEE. THAN CRUNCH BACKWARDS, NOW SWAP AND CRUNCH FORWARD AND LIFT IT SIDEWAYS AND TRY TO TOUCH YOUR RIGHT ELBOW TO YOUR LEFT KNEE. REPEAT THIS.",
+        "name": "Modified Elbow To Knee Crunch",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie down on the floor, bend your legs and put your feet on the ground. Move your hands behind your ears and put your elbows out. Curve your right leg up and rest your foot on your left knee.\n\nStep 2: Crunch forwards and lift it sideways and try to touch your left elbow to your right knee. Than crunch backwards, now swap and crunch forward and lift it sideways and try to touch your right elbow to your left knee. Repeat this.",
         "images": ["modified_elbow_to_knee_crunch_right_2.jpg", "modified_elbow_to_knee_crunch_right_3.jpg"],
         "video": "MODIFIED_ELBOW_TO_KNEE_CRUNCH_right.mp4"
     },
     {
         "id": 31,
-        "name": "MODIFIED ELBOW TO KNEE CRUNCH SECOND SIDE",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: LAI DOWN ON THE FLOOR, BEND YOUR LEGS AND PUT YOUR FEET ON THE GROUND. MOVE YOUR HANDS BEHIND YOUR EARS AND PUT YOUR ELBOWS OUT. CURVE YOUR RIGHT LEG UP AND REST YOUR FOOT ON YOUR LEFT KNEE. \n STEP 2: CRUNCH FORWARDS AND LIFT IT SIDEWAYS AND TRY TO TOUCH YOUR LEFT ELBOW TO YOUR RIGHT KNEE. THAN CRUNCH BACKWARDS, NOW SWAP AND CRUNCH FORWARD AND LIFT IT SIDEWAYS AND TRY TO TOUCH YOUR RIGHT ELBOW TO YOUR LEFT KNEE. REPEAT THIS.",
+        "name": "Modified Elbow To Knee Crunch Second Side",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie down on the floor, bend your legs and put your feet on the ground. Move your hands behind your ears and put your elbows out. Curve your right leg up and rest your foot on your left knee.\n\nStep 2: Crunch forwards and lift it sideways and try to touch your left elbow to your right knee. Than crunch backwards, now swap and crunch forward and lift it sideways and try to touch your right elbow to your left knee. Repeat this.",
         "images": ["modified_elbow_to_knee_crunch_2.jpg", "modified_elbow_to_knee_crunch_3.jpg"],
         "video": "MODIFIED_ELBOW_TO_KNEE_CRUNCH.mp4"
     },
     {
         "id": 32,
-        "name": "BODYWEIGHT PUSH-UP TOUCH 2",
-        "description": "MUSCLE GROUP:QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART\n STEP 2: SQUAT DOWN AND TOUCH THE FLOOR WITH YOUR HANDS.\n STEP 3: JUMP BACKWARD TO A PUSHUP POSITION. ONLY YOUR HANDS AND TOES ARE TOUCHING THE GROUND\n STEP 4: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARD YOUR FEET. HOLD FOR ONE SECOND.\n STEP 5: FULL EXTEND YOUR ARMS TO GET BACK INTO PUSHUP POSITION.\n STEP 6: JUMP FORWARD SO THAT YOUR FEET NEAR YOUR HANDS. REMAIN IN A SQUAT POSITION. JUMP UPWARD WITH YOUR ARMS FULLY EXTENDED. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Push-Up Touch 2",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart.\n\nStep 2: Squat down and touch the floor with your hands.\n\nStep 3: Jump backwards to a push-up position. Only your hands and toes are touching the ground.\n\nStep 4: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend toward your feet. Hold for one second.\n\nStep 5: Fully extend your arms to get back into the push-up position.\n\nStep 6: Jump forward so that your feet near your hands. Remain in a squat position. Jump upward with your arms fully extended. Return to starting position.",
         "images": ["bodyweight_push_up_touch_2_0.jpg", "bodyweight_push_up_touch_2_1.jpg"],
         "video": "BODYWEIGHT_PUSH-UP_TOUCH_2.mp4"
     },
     {
         "id": 33,
-        "name": "DUMBBELL SNATCH-1 SECOND SIDE",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1: BEGIN BY SQUATTING LOWER OVER A DUMBBELL. MAINTAIN A LOCKED AND RIGID LOWER BACK AND HAVE YOUR FEET PLACED A SHOULDER WIDTH APART. \n STEP 2. GRASP THE DUMBBELL AND TIGHTEN THE ABDOMINAL MUSCLES. IN A RAPID AND US MOTION, LIFT THE DUMBBELL UPWARD UNTIL YOUR ARM IS STRAIGHT AND LOOKED, AS ILLUSTRATED. THE DUMBBELL SHOULD TRAVEL CLOSE TO THE BODY AND NOT SWING OUT OR AWAY. \n STEP 3. BRIEFLY HOLD IT ABOVE YOUR HEAD, THEN BRING IT DOWN TO THE STARTING POSITION.",
+        "name": "Dumbbell Snatch 1 Second Side",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Begin by squatting lower over the dumbbell. Maintain a locked and rigid lower back and have your feet placed a shoulder-width apart.\n\nStep 2: Grasp the dumbbell and tighten the abdominal muscles. In a rapid and our motion, lift the dumbbell upward until your arm is straight and looked, as illustrated. The dumbbell should travel close to the body and not swing out or away.\n\nStep 3: Briefly hold it above your head, then bring it down to the starting position.",
         "images": ["dumbbell_snatch_1_right_0.jpg", "dumbbell_snatch_1_right_1.jpg"],
         "video": "DUMBBELL_SNATCH-1_right.mp4"
     },
     {
         "id": 34,
-        "name": "BODYWEIGHT BURPEE",
-        "description": "MUSCLE GROUP:QUADRICEPS \n STEP 1: STAND STRAIGHT FEET SHOULDER WIDTH APART. ADJUST FEET TO FACE SLIGHTLY OUTWARD.\n STEP 2: LOWER YOURSELF BY BENDING YOUR KNEES. YOUR BACK SHOULD BE STRAIGHT THROUGHOUT THE WHOLE MOVEMENT. STOP WHEN YOUR THIGHS ARE PARALLEL WITH THE GROUND. WHEN YOU RETURN THE STARTING POSITION, GENERATE ENERGY FROM YOUR LOWER BACK.",
+        "name": "Bodyweight Burpee",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight feet shoulder-width apart. Adjust feet to face slightly outward.\n\nStep 2: Lower yourself by bending your knees. Your back should be straight throughout the whole movement. Stop when your thighs are parallel with the ground. When you return the starting position, generate energy from your lower back.",
         "images": ["bodyweight_burpee_0.jpg", "bodyweight_burpee_1.jpg"],
         "video": "BODYWEIGHT_BURPEE.mp4"
     },
     {
         "id": 35,
-        "name": "MEDICINE BALL TWIST",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: SIT DOWN WITH YOUR LEGS FULLY EXTEND IN FRONT OF YOU. HOLD A MEDICINE BALL WITH BOTH HANDS. LEAN BACK UNTIL YOU ARE BALANCING ON YOUR TAILBONE. \n STEP 2: TWIST YOUR TORSO IN ONE DIRECTION. HOLD FOR ONE SECOND. \n STEP 3: RETURN TO STARTING POSITION. \n STEP 4: TWIST YOUR TORSO IN THE OTHER DIRECTION. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Medicine Ball Twist",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Sit down with your legs fully extended in front of you. Hold a medicine ball with both hands. Lean back until you are balancing on your tailbone.\n\nStep 2: Twist your torso in one direction. Hold for one second.\n\nStep 3: Return to starting position.\n\nStep 4: Twist your torso in the other direction. Hold for one second. Return to starting position.",
         "images": ["medicine_ball_twist_0.jpg", "medicine_ball_twist_1.jpg"],
         "video": "MEDICINE_BALL_TWIST.mp4"
     },
     {
         "id": 36,
-        "name": "BODYWEIGHT LEG RAISE 3",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLAT BENCH. PLACE HANDS ON THE BENCH. EXTEND LEGS FULLY. \n STEP 2: RALSE AND BEND LEGS TOWARDS YOUR UPPER BODY. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Leg Raise 3",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the flat bench. Place hands on the bench. Extend legs fully.\n\nStep 2: Raise and bend legs towards your upper body. Hold for one second. Return to starting position.",
         "images": ["bodyweight_leg_raise_3_0.jpg", "bodyweight_leg_raise_3_1.jpg"],
         "video": "BODYWEIGHT_LEG_RAISE_3.mp4"
     },
     {
         "id": 37,
-        "name": "OBLIQUE V-UP SECOND SIDE",
-        "description": "MUSCLE NAME: OBLIQUES \n STEP 1: LIE ON YOUR SIDE WITH YOUR BODY IN A STRAIGHT LINE AND YOUR ARMS CROSSED AGAINST YOUR CHEST. \n STEP 2: LIFT YOUR LEGS OFF THE FLOOR, MAKING SURE TO KEEP THEM TIGHTLY BOUND CONTRACTING, EVEN THOUGHT THERE ISN'T TOO MUCH MOTION INVOLVED. \n STEP 3: PAUSE, THEN SLOWLY RETURN TO THE STARTING POSITION. REPEAT AS MANY TIMES AS NEEDED THEN SWITCH SIDES.",
+        "name": "Oblique V-Up Second Side",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie on your side with your body in a straight line and your arms crossed against your chest.\n\nStep 2: Lift your legs off the floor, making sure to keep them tightly bound contracting, even though there isn't too much motion involved.\n\nStep 3: Pause, then slowly return to the starting position. Repeat as many times as needed then switch sides.",
         "images": ["oblique_v_up_right_0.jpg", "oblique_v_up_right_1.jpg"],
         "video": "OBLIQUE_V-UP_right.mp4"
     },
     {
         "id": 38,
-        "name": "DUMBBELL DEADLIFT",
-        "description": "MUSCLE GROUP: LOWER BACK \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD DUMBBELLS OF YOUR THIGHS WITH OVERHAND GRIP. LOWER YOURSELF UNTIL DUMBBELLS ARE AROUND SHIN LEVEL. KNEES BEND SLIGHTLY. KEEP CHEST STICKING OUTWARD AND YOUR BACK STRAIGHT. \n STEP 2: LIFT YOURSELF UP UNTIL YOUR ARE STANDING STRAIGHT. KEEP YOUR CHEST OUT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Deadlift",
+        "muscle": "Lower Back",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold dumbbells of your thighs with an overhand grip. Lower yourself until dumbbells are around shin level. Knees bend slightly. Keep chest sticking outward and your back straight.\n\nStep 2: Lift yourself up until you are standing straight. Keep your chest out. Hold for one second. Return to starting position.",
         "images": ["dumbbell_deadlift_0.jpg", "dumbbell_deadlift_1.jpg"],
         "video": "DUMBBELL_DEADLIFT.mp4"
     },
     {
         "id": 39,
-        "name": "BARBELL GOOD MORNING",
-        "description": "MUSCLE GROUP: HAMSTRINGS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. PLACE BARBELL ON THE BACK OF YOUR SHOULDERS. HOLD BARBELL WITH OVERHAND GRIP. DISTANCE BETWEEN YOUR HANDS SHOULD BE WIDER THAN SHOULDER WIDTH APART. ADJUST FEET TO POINT SLIGHTLY OUTWARD. \n STEP 2: KEEP BACK STRAIGHT AND BEND UPPER BODY UNTIL IT IS PARALLEL WITH THE GROUND. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Barbell Good Morning",
+        "muscle": "Hamstrings",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Place barbell on the back of your shoulders. Hold the barbell with an overhand grip. Distance between your hands should be wider than shoulder-width apart. Adjust feet to point slightly outward.\n\nStep 2: Keep back straight and bend the upper body until it is parallel with the ground. Hold for one second. Return to starting position.",
         "images": ["barbell_good_morning_0.jpg", "barbell_good_morning_1.jpg"],
         "video": "BARBELL_GOOD_MORNING.mp4"
     },
     {
         "id": 40,
-        "name": "DUMBBELL ROW",
-        "description": "MUSCLE GROUP: LATISSIMUS DORSI \n STEP 1: BEND YOUR KNEES SLIGHTLY. KEEP BACK BENT AND STRAIGHT. HOLD DUMBBELLS TO YOUR SIDE WITH NEUTRAL GRIP. \n STEP 2: RAISE THE DUMBBELLS VERTICALLY TOWARDS YOUR CHEST. REFRAIN FROM FLARING YOUR ELBOW OUT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Row",
+        "muscle": "Latissimus Dorsi",
+        "description": "\nStep 1: Bend your knees slightly. Keep back bent and straight. Hold dumbbells to your side with a neutral grip.\n\nStep 2: Raise the dumbbells vertically towards your chest. Refrain from flaring your elbow out. Hold for one second. Return to starting position.",
         "images": ["dumbbell_row_0.jpg", "dumbbell_row_1.jpg"],
         "video": "DUMBBELL_ROW.mp4"
     },
     {
         "id": 41,
-        "name": "BODYWEIGHT SUPERMAN 3",
-        "description": "MUSCLE GROUP: LOWER BACK \n STEP 1: LIE PRONE ON THE FLOOR. KEEP YOUR ARMS BEHIND OF YOU HEAD. \n STEP 2: RAISE YOUR LEGS AND UPPER BODY TOWARDS THE CEILING. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION",
+        "name": "Bodyweight Superman 3",
+        "muscle": "Lower Back",
+        "description": "\nStep 1: Lie prone on the floor. Keep your arms behind of your head.\n\nStep 2: Raise your legs and upper body towards the ceiling. Hold for one second. Return to starting position.",
         "images": ["bodyweight_superman_3_0.jpg", "bodyweight_superman_3_1.jpg"],
         "video": "BODYWEIGHT_SUPERMAN_3.mp4"
     },
     {
         "id": 42,
-        "name": "ARMY PUSH UP",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS NEXT TO YOUR LOWER CHEST. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD \n STEP 2: ALIGN YOUR SHOULDERS WITH YOUR HANDS, AND LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Army Push-Up",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands next to your lower chest. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Align your shoulders with your hands, and lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second. Return to starting position.",
         "images": ["army_push_up_0.jpg", "army_push_up_1.jpg", "army_push_up_2.jpg", "army_push_up_3.jpg"],
         "video": "ARMY_PUSH_UP.mp4"
     },
     {
         "id": 43,
-        "name": "CURL",
-        "description": "MUSCLE GROUP: BICEBS BRACHII \n STEP 1: STAND WITH FEET ABOUT HIP-WIDTH APART, ABS ENGAGED AS YOU HOLD MEDIUM HEAVY DUMBBELLS IN FRONT OF THE THIGHS. SQUEEZE THE BICEPS AND BEND THE ARMS, CURLING THE WEIGHTS UP TOWARDS THE SHOULDERS. \n STEP 2: KEEP THE ELBOWS STATIONARY AND ONLY BRING THE WEIGHT AS HIGH AS YOU CAN WITHOUT MOVING THE ELBOWS. SLOWLY LOWER THE WEIGHTS, KEEPING A SLIGHT BEND IN THE ELBOWS AT THE BOTTOM (E.G., DON'T LOCK THE JOINTS AND TRY TO KEEP TENSION ON)",
+        "name": "Curl",
+        "muscle": "Biceps Brachii",
+        "description": "\nStep 1: Stand with feet about hip-width apart, abs engaged as you hold medium-heavy dumbbells in front of the thighs. Squeeze the biceps and bend the arms, curling the weights up towards the shoulders.\n\nStep 2: Keep the elbows stationary and only bring the weight as high as you can without moving the elbows. Slowly lower the weights, keeping a slight bend in the elbows at the bottom & don't lock the joints and try to keep tension on.",
         "images": ["curl_1.jpg", "curl_2.jpg"],
         "video": "CURL.mp4"
     },
     {
         "id": 44,
-        "name": "BODYWEIGHT LUNGE SIDE",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD YOUR ARMS IN THE FRONT OF YOUR CHEST. \n STEP 2: WHILE KEEPING YOUR BACK STRAIGHT, STEP TO YOUR SIDE WITH ONE FOOT AND LOWER YOURSELF BY BENDING YOUR KNEES. THE BACK FOOT PIVOTS BUT STAYS IN POSITION. STOP WHEN YOUR FRONT THIGH IS PARALLEL WITH THE GROUND. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Lunge Side",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold your arms in the front of your chest.\n\nStep 2: While keeping your back straight, step to your side with one foot and lower yourself by bending your knees. The back foot pivots but stays in position. Stop when your front thigh is parallel with the ground. Hold for one second. Return to starting position.",
         "images": ["bodyweight_lunge_side_1.jpg", "bodyweight_lunge_side_2.jpg"],
         "video": "BODYWEIGHT_LUNGE_SIDE.mp4"
     },
     {
         "id": 45,
-        "name": "DUMBBELL LUNGE 2",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD DUMBBELLS AT YOUR SIDES WITH NEUTRAL GRIP. \n STEP 2: WHILE KEEPING YOUR BACK STRAIGHT, STEP FORWARD WITH ONE FOOT AND LOWER YOURSELF BY BENDING YOUR KNEES. STOP WHEN YOUR FRONT THIGH IS PARALLEL WITH THE GROUND. HOLD FOR ONE SECOND. STEP BACK AND RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Lunge 2",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold dumbbells at your sides with a neutral grip.\n\nStep 2: While keeping your back straight, step forward with one foot and lower yourself by bending your knees. Stop when your front thigh is parallel with the ground. Hold for one second.\n\nStep back and return to starting position.",
         "images": ["dumbbell_lunge_2_0.jpg", "dumbbell_lunge_2_1.jpg"],
         "video": "DUMBBELL_LUNGE_2.mp4"
     },
     {
         "id": 46,
-        "name": "BODYWEIGHT LUNGE SIDE SECOND SIDE",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD YOUR ARMS IN THE FRONT OF YOUR CHEST. \n STEP 2: WHILE KEEPING YOUR BACK STRAIGHT, STEP TO YOUR SIDE WITH ONE FOOT AND LOWER YOURSELF BY BENDING YOUR KNEES. THE BACK FOOT PIVOTS BUT STAYS IN POSITION. STOP WHEN YOUR FRONT THIGH IS PARALLEL WITH THE GROUND. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Lunge Side Second Side",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold your arms in the front of your chest.\n\nStep 2: While keeping your back straight, step to your side with one foot and lower yourself by bending your knees. The back foot pivots but stays in position. Stop when your front thigh is parallel with the ground. Hold for one second. Return to starting position.",
         "images": ["bodyweight_lunge_side_right_1.jpg", "bodyweight_lunge_side_right_2.jpg"],
         "video": "BODYWEIGHT_LUNGE_SIDE_right.mp4"
     },
     {
         "id": 47,
-        "name": "BENCH SIDE JUMP",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND TALL WITH YOUR BACK STRAIGHT. KEEP YOUR HANDS AT YOUR SIDES. \n STEP 2: BEND KNEES SLIGHTLY. MOVE FROM TO THE SIDES SUPPORTING YOUR LEG ON THE BENCH. \n STEP 3: JUMP UP AS HIGH AS YOU CAN. BRING YOUR KNEES TOWARD YOUR CHEST.",
+        "name": "Bench Side Jump",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand tall with your back straight. Keep your hands at your sides.\n\nStep 2: Bend knees slightly. Move from to the sides supporting your leg on the bench.\n\nStep 3: Jump up as high as you can. Bring your knees toward your chest.",
         "images": ["bench_side_jump_0.jpg", "bench_side_jump_1.jpg"],
         "video": "BENCH_SIDE_JUMP.mp4"
     },
     {
         "id": 48,
-        "name": "DUMBBELL CLEAN AND JERK",
-        "description": "MUSCLE GROUP: HAMSTRINGS \n STEP 1: SQUAT DOWN. HOLD DUMBBELLS UNDER YOU WITH NEUTRAL GRIP. KEEP BACK STRAIGHT. STICK CHEST OUTWARD AND LOOK AHEAD. \n STEP 2: LIFT DUMBBELLS OFF THE GROUND. AS THE DUMBBELLS PASS YOUR SHIN, JUMP UPWARD. USE THE MOMENTUM TO RAISE DUMBBELLS TO YOUR SHOULDER. STEP 3: AS YOU CATCH THE DUMBBELLS ON THE SHOULDER, SQUAT DOWN WITH THE MOMENTUM. STAND UP STRAIGHT AFTERWARDS. \n STEP 4: BEND KNEES SLIGHTLY AND JUMP \n STEP 5: DURING THE JUMP, RAISE DUMBBELLS OVERHEAD. STAND STRAIGHT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Clean & Jerk",
+        "muscle": "Hamstrings",
+        "description": "\nStep 1: Squat down. Hold dumbbells under you with a neutral grip. Keep back straight. Stick chest outward and look ahead.\n\nStep 2: Lift dumbbells off the ground. As the dumbbells pass your shin, jump upward. Use the momentum to raise dumbbells to your shoulder.\n\nStep 3: As you catch the dumbbells on the shoulder, squat down with the momentum. Stand up straight afterwards.\n\nStep 4: Bend knees slightly and jump.\n\nStep 5: During the jump, raise dumbbells overhead. Stand straight. Hold for one second. Return to starting position.",
         "images": ["dumbbell_clean_and_jerk_0.jpg", "dumbbell_clean_and_jerk_1.jpg", "dumbbell_clean_and_jerk_2.jpg"],
         "video": "DUMBBELL_CLEAN_AND_JERK.mp4"
     },
     {
         "id": 49,
-        "name": "ABDOMINAL LEG RAISE 2",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE ON THE FLOOR WITH LEGS EXTENDED STRAIGHT, AND HOLD ON TO THE TOP OF THE FLOOR. \n STEP 2: RAISE YOUR LEGS STRAIGHT UP, SLIGHTLY LIFTING YOUR LOWER BACK OFF THE FLOOR. \n STEP 3: HOLD FOR A FEE SECONDS, THEN LOWER YOUR LEGS BACK DOWN TO THE START POSITION. KEEP YOUR LEGS STRAIGHT THROUGHOUT THE MOTION.",
+        "name": "Abdominal Leg Raise 2",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie on the floor with legs extended straight, and hold on to the top of the floor.\n\nStep 2: Raise your legs straight up, slightly lifting your lower back off the floor.\n\nStep 3: Hold for a few seconds, then lower your legs back down to the start position. Keep your legs straight throughout the motion.",
         "images": ["abdominal_leg_raise_2_0.jpg", "abdominal_leg_raise_2_1.jpg", "abdominal_leg_raise_2_2.jpg"],
         "video": "ABDOMINAL_LEG_RAISE_2.mp4"
     },
     {
         "id": 50,
-        "name": "BODYWEIGHT SIDE BRIDGE",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: LIE ON YOUR SIDE. MAKE SURE ONE LEG IS ON TOP OF THE OTHER. POSITION THE FOREARM ON THE FLOOR PERPENDICULAR WITH YOUR BODY. \n STEP 2: USE YOUR FOREARM TO LIFT YOUR UPPER BODY OF THE GROUND. THE OTHER ARM IS PLACED ON THE SIDE OF YOUR BODY. YOUR BODY SHOULD BE STRAIGHT. ONLY YOUR FOREARM AND THE SIDE OF YOUR FOOT SHOULD BE TOUCHING THE FLOOR. HOLD THIS POSITION.",
+        "name": "Bodyweight Side Bridge",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie on your side. Make sure one leg is on top of the other. Position the forearm on the floor perpendicular with your body.\n\nStep 2: Use your forearm to lift your upper body of the ground. The other arm is placed on the side of your body. Your body should be straight. Only your forearm and the side of your foot should be touching the floor. Hold this position.",
         "images": ["bodyweight_side_bridge_0.jpg", "bodyweight_side_bridge_1.jpg"],
         "video": "BODYWEIGHT_SIDE_BRIDGE.mp4"
     },
     {
         "id": 51,
-        "name": "BODYWEIGHT SIDE BRIDGE SECOND SIDE",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: LIE ON YOUR SIDE. MAKE SURE ONE LEG IS ON TOP OF THE OTHER. POSITION THE FOREARM ON THE FLOOR PERPENDICULAR WITH YOUR BODY. \n STEP 2: USE YOUR FOREARM TO LIFT YOUR UPPER BODY OF THE GROUND. THE OTHER ARM IS PLACED ON THE SIDE OF YOUR BODY. YOUR BODY SHOULD BE STRAIGHT. ONLY YOUR FOREARM AND THE SIDE OF YOUR FOOT SHOULD BE TOUCHING THE FLOOR. HOLD THIS POSITION.",
+        "name": "Bodyweight Side Bridge Second Side",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie on your side. Make sure one leg is on top of the other. Position the forearm on the floor perpendicular with your body.\n\nStep 2: Use your forearm to lift your upper body of the ground. The other arm is placed on the side of your body. Your body should be straight. Only your forearm and the side of your foot should be touching the floor. Hold this position.",
         "images": ["bodyweight_side_bridge_right_1.jpg"],
         "video": "BODYWEIGHT_SIDE_BRIDGE_right.mp4"
     },
     {
         "id": 52,
-        "name": "CHEER PLANK",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: POSITION LEGS ON CHEER. WHILE KEEPING BACK STRAIGHT, PLACE FOREARMS ON THE FLOOR. YOUR FOREARMS ARE PERPENDICULAR WITH YOUR UPPER ARMS. HOLD FOR AS LONG AS YOU CAN.",
+        "name": "Cheer Plank",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Position legs on cheer. While keeping back straight, place forearms on the floor. Your forearms are perpendicular with your upper arms. Hold for as long as you can.",
         "images": ["cheer_plank_0.jpg"],
         "video": "CHEER_PLANK.mp4"
     },
     {
         "id": 53,
-        "name": "BODYWEIGHT LEG RAISE",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: SIT ON THE SIDE OF THE BENCH. HOLD ONTO THE SIDE OF THE BENCH WITH BOTH HANDS AT SHOULDER WIDTH. LIE BACK AND RAISE YOUR LEGS UNTIL YOU REACH A POSITION OF BALANCE. \n STEP 2: BEND YOUR KNEES TOWARDS YOUR UPPER BODY. AT THE SAME TIME, MOVE UPPER BODY FORWARD TO MAINTAIN POSITION OF BALANCE. HOLD FOR NONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Leg Raise",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Sit on the side of the bench. Hold onto the side of the bench with both hands at shoulder width. Lie back and raise your legs until you reach a position of balance.\n\nStep 2: Bend your knees towards your upper body. At the same time, move the upper body forward to maintain the position of balance. Hold for none second. Return to starting position.",
         "images": ["bodyweight_leg_raise_0.jpg", "bodyweight_leg_raise_1.jpg"],
         "video": "BODYWEIGHT_LEG_RAISE.mp4"
     },
     {
         "id": 54,
-        "name": "STEAM ENGINE",
-        "description": "MUSCLE GROUP:RECTUS ABDOMINIS \n STEP 1. STANDING SO THAT YOUR FEET ARE SHOULDER-WIDTH APART, PLACE YOUR FINGERS BEHIND YOUR EARS\n STEP 2. TOUCH YOUR LEFT ELBOW TO YOUR RIGHT KNEE AS YOU RAISE THE KNEE WHILE YOU REACHING YOUR LEFT POINT TOWARD YOUR RIGHT HIP.\n STEP 3. RETURN TO STARTING POSITION AND REPEAT WITH THE OTHER SIDE. REPEAT THE TWO SEQUENCES REPEATEDLY.",
+        "name": "Steam Engine",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Standing so that your feet are shoulder-width apart, place your fingers behind your ears.\n\nStep 2: Touch your left elbow to your right knee as you raise the knee while you reaching your left point toward your right hip.\n\nStep 3: Return to starting position and repeat with the other side. Repeat the two sequences repeatedly.",
         "images": ["steam_engine_0.jpg", "steam_engine_1.jpg"],
         "video": "STEAM_ENGINE.mp4"
     },
     {
         "id": 55,
-        "name": "BODYWEIGHT SCISSOR KICK",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. PLACE HANDS NEXT TO YOUR SIDES. EXTEND LEGS FULLY AND SLIGHTLY ELEVATED. WHILE KEEPING LEGS STRAIGHT, RAISE ONE LEG UP \n STEP 2: AS YOU LOWER LEG, RAISE THE OTHER LEG UP THIS IS ONE REPETITION.",
+        "name": "Bodyweight Scissor Kick",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Place hands next to your sides. Extend legs fully and slightly elevated. While keeping legs straight, raise one leg up.\n\nStep 2: As you lower leg, raise the other leg up this is one repetition.",
         "images": ["bodyweight_scissor_kick_0.jpg", "bodyweight_scissor_kick_1.jpg", "bodyweight_scissor_kick_2.jpg"],
         "video": "BODYWEIGHT_SCISSOR_KICK.mp4"
     },
     {
         "id": 56,
-        "name": "WEIGHTED CRUNCH",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. FEET ARE FLAT ON THE FLOOR AND KNEES ARE BENT. FULLY EXTEND YOUR ARMS KEEPING THE WEIGHTED. \n STEP 2: RAISE YOUR UPPER BODY UPWARD WHILE KEEPING YOUR LOWER BACK ON THE FLOOR. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Weighted Crunch",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Feet are flat on the floor and knees are bent. Fully extend your arms keeping weighted.\n\nStep 2: Raise your upper body upward while keeping your lower back on the floor. Hold for one second. Return to starting position.",
         "images": ["weighted_crunch_0.jpg", "weighted_crunch_1.jpg"],
         "video": "WEIGHTED_CRUNCH.mp4"
     },
     {
         "id": 57,
-        "name": "ONE LEG DROP",
-        "description": "MUSCLE GROUSZECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR WITH YOUR HANDS ASIDE, AND YOUR FEET STRAIGHT. \n STEP 2: LIFT ONE LEG, BEND IT TO 90 DEGREES AND LAY IT OVER THE OTHER ONE, THAT STAYS STRAIGHT. \n STEP 3: MAINTAINING THIS POSITION START THE EXERCISE BY LIFTING THE STRAIGHT LEG UP. \n STEP 4: REPEAT THIS POSITION AS NECESSARY. SWITCH LEGS AND REPEAT.",
+        "name": "One Leg Drop",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor with your hands aside, and your feet straight.\n\nStep 2: Lift one leg, bend it to 90 degrees and lay it over the other one, that stays straight.\n\nStep 3: Maintaining this position start the exercise by lifting the straight leg up.\n\nStep 4: Repeat this position as necessary. Switch legs and repeat.",
         "images": ["one_leg_drop_0.jpg", "one_leg_drop_1.jpg"],
         "video": "ONE_LEG_DROP.mp4"
     },
     {
         "id": 58,
-        "name": "ONE LEG DROP SECOND SIDE",
-        "description": "MUSCLE GROUSZECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR WITH YOUR HANDS ASIDE, AND YOUR FEET STRAIGHT. \n STEP 2: LIFT ONE LEG, BEND IT TO 90 DEGREES AND LAY IT OVER THE OTHER ONE, THAT STAYS STRAIGHT. \n STEP 3: MAINTAINING THIS POSITION START THE EXERCISE BY LIFTING THE STRAIGHT LEG UP. \n STEP 4: REPEAT THIS POSITION AS NECESSARY. SWITCH LEGS AND REPEAT.",
+        "name": "One Leg Drop Second Side",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor with your hands aside, and your feet straight.\n\nStep 2: Lift one leg, bend it to 90 degrees and lay it over the other one, that stays straight.\n\nStep 3: Maintaining this position start the exercise by lifting the straight leg up.\n\nStep 4: Repeat this position as necessary. Switch legs and repeat.",
         "images": ["one_leg_drop_right_0.jpg", "one_leg_drop_right_1.jpg"],
         "video": "ONE_LEG_DROP_right.mp4"
     },
     {
         "id": 59,
-        "name": "BODYWEIGHT SIDE BRIDGE-1",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: POSITION ONE FOREARM ON THE BENCH WITH YOUR FEET ON THE FLOOR. THE ENTIRE FOREARM SHOULD BE ON THE BENCH. MAKE SURE ONE LEG IS ON TOP OF THE OTHER. THE OTHER ARM IS PLACED ON THE SIDE OF YOUR BODY. \n STEP 2: KEEP YOUR BODY STRAIGHT. ONLY YOUR FOREARM SHOULD BE TOUCHING THE BENCH AND ONLY THE SIDE OF YOUR FOOT SHOULD BE TOUCHING THE FLOOR. HOLD THIS POSITION.",
+        "name": "Bodyweight Side Bridge 1",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Position one forearm on the bench with your feet on the floor. The entire forearm should be on the bench. Make sure one leg is on top of the other. The other arm is placed on the side of your body.\n\nStep 2: Keep your body straight. Only your forearm should be touching the bench and only the side of your foot should be touching the floor. Hold this position.",
         "images": ["bodyweight_side_bridge_1_0.jpg", "bodyweight_side_bridge_1_1.jpg"],
         "video": "BODYWEIGHT_SIDE_BRIDGE_1.mp4"
     },
     {
         "id": 60,
-        "name": "BODYWEIGHT SIDE BRIDGE-1 SECOND SIDE",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: POSITION ONE FOREARM ON THE BENCH WITH YOUR FEET ON THE FLOOR. THE ENTIRE FOREARM SHOULD BE ON THE BENCH. MAKE SURE ONE LEG IS ON TOP OF THE OTHER. THE OTHER ARM IS PLACED ON THE SIDE OF YOUR BODY. \n STEP 2: KEEP YOUR BODY STRAIGHT. ONLY YOUR FOREARM SHOULD BE TOUCHING THE BENCH AND ONLY THE SIDE OF YOUR FOOT SHOULD BE TOUCHING THE FLOOR. HOLD THIS POSITION.",
+        "name": "Bodyweight Side Bridge 1 Second Side",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Position one forearm on the bench with your feet on the floor. The entire forearm should be on the bench. Make sure one leg is on top of the other. The other arm is placed on the side of your body.\n\nStep 2: Keep your body straight. Only your forearm should be touching the bench and only the side of your foot should be touching the floor. Hold this position.",
         "images": ["bodyweight_side_bridge_right_1_0.jpg", "bodyweight_side_bridge_right_1_1.jpg"],
-        "video": "BODYWEIGHT_SIDE_BRIDGE-1_right.mp4"
+        "video": "BODYWEIGHT_SIDE_BRIDGE 1_right.mp4"
     },
     {
         "id": 61,
-        "name": "BODYWEIGHT SKI JUMP",
-        "description": "MUSCLE GROUP:QUADRICEPS \n STEP 1: STAND WITH BACK STRAIGHT. KEEP YOUR HANDS AT YOUR SIDE. HOP TO THE RIGHT SIDE. AT THE SAME AND BRING YOUR LEFT LEG BEHIND THE RIGHT. FRONT KNEE IS SLIGHTLY BENT. \n STEP 2: HOP TO THE LEFT SIDE. AT THE SAME TIME, LOWER YOUR BODY AND BRING YOUR RIGHT LEG BEHIND THE OTHER. FRONT KNEE IS SLIGHTLY BENT",
+        "name": "Bodyweight Ski Jump",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand with back straight. Keep your hands at your side. Hop to the right side. At the same and bring your left leg behind the right. The front knee is slightly bent.\n\nStep 2: Hop to the left side. At the same time, lower your body and bring your right leg behind the other. The front knee is slightly bent.",
         "images": ["bodyweight_ski_jump_0.jpg", "bodyweight_ski_jump_1.jpg"],
         "video": "BODYWEIGHT_SKI_JUMP.mp4"
     },
     {
         "id": 62,
-        "name": "DUMBBELL SINGLE LEG DEADLIFT",
-        "description": "MUSCLE GROUP: GLUTES \n STEP 1. STAND HOLDING DUMBBELLS IN FRONT OF YOUR THIGHS, PALMS TURNED TOWARD YOUR BODY. YOUR FEET SHOULD BE SHOULDER-WIDTH APART, TOES POINTED FORWARD. \n STEP 2. LIFT YOUR RIGHT FOOT UP BEHIND YOU, A FEW INCHES OFF THE FLOOR, WITH YOUR RIGHT THIGH PERPENDICULAR TO THE FLOOR. PUSH YOUR HIPS BACK AND ALLOW YOUR TORSO TO BEND FORWARD, WHILE KEEPING YOUR ABS TIGHT AND BACK FLAT. YOUR LEFT KNEE SHOULD BENT SIGHTLY. \n STEP 3. BEND FORWARD AS FAR AS YOU CAN WHILE KEEPING YOUR LOWER BACK FLAT. RETURN TO THE STARTING POSITION. REPEAT WITH THE OTHER LEG.",
+        "name": "Dumbbell Single Leg Deadlift",
+        "muscle": "Glutes",
+        "description": "\nStep 1: Stand holding dumbbells in front of your thighs, palms turned toward your body. Your feet should be shoulder-width apart, toes pointed forward.\n\nStep 2: Lift your right foot up behind you, a few inches off the floor, with your right thigh perpendicular to the floor. Push your hips back and allow your torso to bend forward while keeping your abs tight and back flat. Your left knee should be bent slightly.\n\nStep 3: Bend forward as far as you can while keeping your lower back flat. Return to the starting position. Repeat with the other leg.",
         "images": ["dumbbell_single_leg_deadlift_1.jpg"],
         "video": "DUMBBELL_SINGLE_LEG_DEADLIFT.mp4"
     },
     {
         "id": 63,
-        "name": "DUMBBELL SINGLE LEG DEADLIFT SECOND SIDE",
-        "description": "MUSCLE GROUP: GLUTES \n STEP 1. STAND HOLDING DUMBBELLS IN FRONT OF YOUR THIGHS, PALMS TURNED TOWARD YOUR BODY. YOUR FEET SHOULD BE SHOULDER-WIDTH APART, TOES POINTED FORWARD. \n STEP 2. LIFT YOUR RIGHT FOOT UP BEHIND YOU, A FEW INCHES OFF THE FLOOR, WITH YOUR RIGHT THIGH PERPENDICULAR TO THE FLOOR. PUSH YOUR HIPS BACK AND ALLOW YOUR TORSO TO BEND FORWARD, WHILE KEEPING YOUR ABS TIGHT AND BACK FLAT. YOUR LEFT KNEE SHOULD BENT SIGHTLY. \n STEP 3. BEND FORWARD AS FAR AS YOU CAN WHILE KEEPING YOUR LOWER BACK FLAT. RETURN TO THE STARTING POSITION. REPEAT WITH THE OTHER LEG.",
+        "name": "Dumbbell Single Leg Deadlift Second Side",
+        "muscle": "Glutes",
+        "description": "\nStep 1: Stand holding dumbbells in front of your thighs, palms turned toward your body. Your feet should be shoulder-width apart, toes pointed forward.\n\nStep 2: Lift your right foot up behind you, a few inches off the floor, with your right thigh perpendicular to the floor. Push your hips back and allow your torso to bend forward while keeping your abs tight and back flat. Your left knee should be bent slightly.\n\nStep 3: Bend forward as far as you can while keeping your lower back flat. Return to the starting position. Repeat with the other leg.",
         "images": ["dumbbell_single_leg_deadlift_right_1.jpg"],
         "video": "DUMBBELL_SINGLE_LEG_DEADLIFT_right.mp4"
     },
     {
         "id": 64,
-        "name": "LYING HIP EXTENSION",
-        "description": "MUSCLE GROUP: GLUTES \n STEP 1. LIE FLAT ON THE FLOOR OR MAT WITH ARLÉ LEG EXTENDED STRAIGHT AND THE OTHER LEG BENT WITH THE FOOT FLAT ON THE FLOOR. PLACE YOUR ARMS DOWN ON THE MAT, ON THE SIDE OF YOUR HIPS. \n STEP 2. RAISE YOUR LOWER BACK OFF THE FLOOR WHILE KEEPING YOUR EXTENDED LEG STRAIGHT. AORD THEN RETURN TO YOUR ORIGINAL POSITION AFTER A FEW REPETITIONS, SWITCH LEGS AND REPEAT WITH THE OTHER SIDE.",
+        "name": "Lying Hip Extension",
+        "muscle": "Glutes",
+        "description": "\nStep 1: Lie flat on the floor or mat with the leg extended straight and the other leg bent with the foot flat on the floor. Place your arms down on the mat, on the side of your hips.\n\nStep 2: Raise your lower back off the floor while keeping your extended leg straight. Then returns to your original position after a few repetitions, switch legs and repeat with the other side.",
         "images": ["lying_hip_extension_0.jpg", "lying_hip_extension_1.jpg", "lying_hip_extension_2.jpg"],
         "video": "LYING_HIP_EXTENSION.mp4"
     },
     {
         "id": 65,
-        "name": "BODYWEIGHT ARM AND LEG LIFT STRAIGHT",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: KEEP YOUR LEGS DOWN AND PLACE YOUR HANDS ON THE FLOOR. RAISE YOUR RIGHT ARM AND LEFT LEG UP INTO THE AIR. \n STEP 2: BRING YOUR ARM AND LEG OUTWARD. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Arm And Leg Lift Straight",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Keep your legs down and place your hands on the floor. Raise your right arm and left leg up into the air.\n\nStep 2: Bring your arm and leg outward. Hold for one second. Return to starting position.",
         "images": ["bodyweight_arm_and_leg_lift_straight_0.jpg"],
         "video": "BODYWEIGHT_ARM_AND_LEG_LIFT_STRAIGHT.mp4"
     },
     {
         "id": 66,
-        "name": "LYING HIP EXTENSION 1",
-        "description": "MUSCLE GROUP: GLUTES \n STEP 1. LIE FLAT ON THE FLOOR OR MAT WITH ARLÉ LEG EXTENDED STRAIGHT AND THE OTHER LEG BENT WITH THE FOOT FLAT ON THE FLOOR. PLACE YOUR ARMS DOWN ON THE MAT, ON THE SIDE OF YOUR HIPS. \n STEP 2. RAISE YOUR LOWER BACK OFF THE FLOOR WHILE KEEPING YOUR EXTENDED LEG STRAIGHT. HOLD THEN RETURN TO YOUR ORIGINAL POSITION AFTER A FEW REPETITIONS, SWITCH LEGS AND REPEAT WITH THE OTHER SIDE.",
+        "name": "Lying Hip Extension 1",
+        "muscle": "Glutes",
+        "description": "\nStep 1: Lie flat on the floor or mat with the leg extended straight and the other leg bent with the foot flat on the floor. Place your arms down on the mat, on the side of your hips.\n\nStep 2: Raise your lower back off the floor while keeping your extended leg straight. Hold then return to your original position after a few repetitions, switch legs and repeat with the other side.",
         "images": ["lying_hip_extension_1_0.jpg", "lying_hip_extension_1_1.jpg"],
         "video": "LYING_HIP_EXTENSION_1.mp4"
     },
     {
         "id": 67,
-        "name": "BODYWEIGHT ARM AND LEG LIFT STRAIGHT SECOND SIDE",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: KEEP YOUR LEGS DOWN AND PLACE YOUR HANDS ON THE FLOOR. RAISE YOUR RIGHT ARM AND LEFT LEG UP INTO THE AIR. \n STEP 2: BRING YOUR ARM AND LEG OUTWARD. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Arm And Leg Lift Straight Second Side",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Keep your legs down and place your hands on the floor. Raise your right arm and left leg up into the air.\n\nStep 2: Bring your arm and leg outward. Hold for one second. Return to starting position.",
         "images": ["bodyweight_arm_and_leg_lift_straight_1.jpg"],
         "video": "BODYWEIGHT_ARM_AND_LEG_LIFT_STRAIGHT_right.mp4"
     },
     {
         "id": 68,
-        "name": "LYING HIP EXTENSION 1 SECOND SIDE",
-        "description": "MUSCLE GROUP: GLUTES \n STEP 1. LIE FLAT ON THE FLOOR OR MAT WITH ARLÉ LEG EXTENDED STRAIGHT AND THE OTHER LEG BENT WITH THE FOOT FLAT ON THE FLOOR. PLACE YOUR ARMS DOWN ON THE MAT, ON THE SIDE OF YOUR HIPS. \n STEP 2. RAISE YOUR LOWER BACK OFF THE FLOOR WHILE KEEPING YOUR EXTENDED LEG STRAIGHT. HOLD THEN RETURN TO YOUR ORIGINAL POSITION AFTER A FEW REPETITIONS, SWITCH LEGS AND REPEAT WITH THE OTHER SIDE.",
+        "name": "Lying Hip Extension 1 Second Side",
+        "muscle": "Glutes",
+        "description": "\nStep 1: Lie flat on the floor or mat with arlé leg extended straight and the other leg bent with the foot flat on the floor. Place your arms down on the mat, on the side of your hips.\n\nStep 2: Raise your lower back off the floor while keeping your extended leg straight. Hold then return to your original position after a few repetitions, switch legs and repeat with the other side.",
         "images": ["lying_hip_extension_1_right_0.jpg", "lying_hip_extension_1_right_1.jpg"],
         "video": "LYING_HIP_EXTENSION-1_right.mp4"
     },
     {
         "id": 69,
-        "name": "MEDICINE BALL CRUNCH",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. HOLD MEDICINE BALL OVERHEAD WITH ARMS FULLY EXTENDED. KEEP KNEES BENT AND FEET FLAT ON FLOOR. \n STEP 2: RAISE YOUR UPPER BODY UPWARD WHILE KEEPING YOUR LOWER BACK ON THE FLOOR. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Medicine Ball Crunch",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Hold medicine ball overhead with arms fully extended. Keep knees bent and feet flat on the floor.\n\nStep 2: Raise your upper body upward while keeping your lower back on the floor. Hold for one second. Return to starting position.",
         "images": ["medicine_ball_crunch_0.jpg", "medicine_ball_crunch_1.jpg"],
         "video": "MEDICINE_BALL_CRUNCH.mp4"
     },
     {
         "id": 70,
-        "name": "DUMBBELL ROTATING T EXTENSION",
-        "description": "MUSCLE NAME: QUADRICEPS \n STEP 1. START IN A PUSHUP POSITION. KEEPING YOUR ARMS STRAIGHT AND YOUR CORE ENGAGED \n STEP 2. SHIFT YOUR WEIGHT ONTO YOUR LEFT ARM, ROTATE YOUR TORSO TO THE RIGHT, AND RAISE YOUR RIGHT ARM TOWARD THE CEILING SO THAT YOUR BODY FORMS A T. \n STEP 3. HOLD FOR THREE SECONDS, THEN RETURN TO START AND REPEAT ON THE OTHER SIDE. THAT'S ONE REP.",
+        "name": "Dumbbell Rotating T Extension",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Start in a push-up position. Keeping your arms straight and your core engaged.\n\nStep 2: Shift your weight onto your left arm, rotate your torso to the right, and raise your right arm toward the ceiling so that your body forms a T.\n\nStep 3: Hold for three seconds, then return to start and repeat on the other side. That's one rep.",
         "images": ["dumbbell_rotating_t_extension_0.jpg", "dumbbell_rotating_t_extension_1.jpg"],
         "video": "DUMBBELL_ROTATING_T_EXTENSION.mp4"
     },
     {
         "id": 71,
-        "name": "DUMBBELL ROTATING T EXTENSION SECOND SIDE",
-        "description": "MUSCLE NAME: QUADRICEPS \n STEP 1. START IN A PUSHUP POSITION. KEEPING YOUR ARMS STRAIGHT AND YOUR CORE ENGAGED \n STEP 2. SHIFT YOUR WEIGHT ONTO YOUR LEFT ARM, ROTATE YOUR TORSO TO THE RIGHT, AND RAISE YOUR RIGHT ARM TOWARD THE CEILING SO THAT YOUR BODY FORMS A T. \n STEP 3. HOLD FOR THREE SECONDS, THEN RETURN TO START AND REPEAT ON THE OTHER SIDE. THAT'S ONE REP.",
+        "name": "Dumbbell Rotating T Extension Second Side",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Start in a push-up position. Keeping your arms straight and your core engaged.\n\nStep 2: Shift your weight onto your left arm, rotate your torso to the right, and raise your right arm toward the ceiling so that your body forms a T.\n\nStep 3: Hold for three seconds, then return to start and repeat on the other side. That's one rep.",
         "images": ["dumbbell_rotating_t_extension_right_0.jpg", "dumbbell_rotating_t_extension_right_1.jpg"],
         "video": "DUMBBELL_ROTATING_T_EXTENSION_right.mp4"
     },
     {
         "id": 72,
-        "name": "BODYWEIGHT TOE TOUCH 3",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. LIFT LEGS UNTIL LEGS ARE PERPENDICULAR WITH THE FLOOR. FULLY EXTEND YOUR ARMS ABOVE YOU. \n STEP 2: REACH FOR YOUR TOES WITH YOUR HANDS. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Toe Touch 3",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Lift legs until legs are perpendicular with the floor. Fully extend your arms above you.\n\nStep 2: Reach for your toes with your hands. Hold for one second. Return to starting position.",
         "images": ["bodyweight_toe_touch_3_0.jpg", "bodyweight_toe_touch_3_1.jpg"],
         "video": "BODYWEIGHT_TOE_TOUCH_3.mp4"
     },
     {
         "id": 73,
-        "name": "BODYWEIGHT TRUNK ROTATION",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: LIE DOWN ON THE FLOOR. LIFT LEGS UNTIL THIGHS ARE PERPENDICULAR WITH THE GROUND. BEND YOUR KNEES. FULLY EXTEND YOUR ARMS TO YOUR SIDES. \n STEP 2: WHILE TWISTING THE UPPER BODY, LOWER YOUR LEGS TO ONE SIDE. HOLD FOR ONE SECOND. \n STEP 3: RETURN TO STARTING POSITION \n STEP 4: WHILE TWISTING THE UPPER BODY, LOWER YOUR TO THE OTHER SIDE. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Trunk Rotation",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie down on the floor. Lift legs until thighs are perpendicular with the ground. Bend your knees. Fully extend your arms to your sides.\n\nStep 2: While twisting the upper body, lower your legs to one side. Hold for one second.\n\nStep 3: Return to starting position.\n\nStep 4: While twisting the upper body, lower you're to the other side. Hold for one second. Return to starting position.",
         "images": ["bodyweight_trunk_rotation_0.jpg", "bodyweight_trunk_rotation_1.jpg", "bodyweight_trunk_rotation_2.jpg"],
         "video": "BODYWEIGHT_TRUNK_ROTATION.mp4"
     },
     {
         "id": 74,
-        "name": "DUMBBELL SINGLE ARM",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD DUMBBELL WITH OVERHAND GRIP. POSITION THE DUMBBELL NEXT TO YOUR HEAD. \n STEP 2: BEND KNEES SLIGHTLY. \n STEP 3: JUMP AND PUSH THE DUMBBELL UP. RAISE DUMBBELL OVERHEAD WITH ARMS FULLY EXTENDED. LAND WITH ONE FOOT FORWARD AND ONE FOOT BEHIND. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Single Arm",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold the dumbbell with an overhand grip. Position the dumbbell next to your head.\n\nStep 2: Bend knees slightly.\n\nStep 3: Jump and push the dumbbell up. Raise dumbbell overhead with arms fully extended. Land with one foot forward and one foot behind. Hold for one second. Return to starting position.",
         "images": ["dumbbell_single_arm_0.jpg", "dumbbell_single_arm_1.jpg"],
         "video": "DUMBBELL_SINGLE_ARM.mp4"
     },
     {
         "id": 75,
-        "name": "DUMBBELL SINGLE ARM SECOND SIDE",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD DUMBBELL WITH OVERHAND GRIP. POSITION THE DUMBBELL NEXT TO YOUR HEAD. \n STEP 2: BEND KNEES SLIGHTLY. \n STEP 3: JUMP AND PUSH THE DUMBBELL UP. RAISE DUMBBELL OVERHEAD WITH ARMS FULLY EXTENDED. LAND WITH ONE FOOT FORWARD AND ONE FOOT BEHIND. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Single Arm Second Side",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold the dumbbell with an overhand grip. Position the dumbbell next to your head.\n\nStep 2: Bend knees slightly.\n\nStep 3: Jump and push the dumbbell up. Raise dumbbell overhead with arms fully extended. Land with one foot forward and one foot behind. Hold for one second. Return to starting position.",
         "images": ["dumbbell_single_arm_right_0.jpg", "dumbbell_single_arm_right_1.jpg"],
         "video": "DUMBBELL_SINGLE_ARM_right.mp4"
     },
     {
         "id": 76,
-        "name": "BODYWEIGHT PUSH-UP DRIVE BUMPER",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS NEXT TO YOUR LOWER CHEST. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. LIFT YOUR BEHIND UP IN THE AIR. ARMS SHOULD STRAIGHTEN OUT. \n STEP 2: PRETENDING THAT THERE IS AN IMAGINARY BAR TWO FEET FROM THE GROUND, GO UNDER THE BAR UNTIL YOUR ENTIRE UPPER BODY PASSED THE BAR. THE ELBOWS SHOULD BEND. ARMS STRAIGHTEN OUT AT THE END OF THE MOVEMENT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Push-Up Drive Bumper",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands next to your lower chest. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward. Lift your behind up in the air. Arms should straighten out.\n\nStep 2: Pretending that there is an imaginary bar two feet from the ground, go under the bar until your entire upper body passed the bar. The elbows should bend. Arms straighten out at the end of the movement. Hold for one second. Return to starting position.",
         "images": ["bodyweight_push_up_drive_bumper_0.jpg", "bodyweight_push_up_drive_bumper_1.jpg"],
         "video": "BODYWEIGHT_PUSH-UP_DRIVE_BUMPER.mp4"
     },
     {
         "id": 77,
-        "name": "DUMBBELL PUSH UP PRESS",
-        "description": "MUSCLE GROUP: GLUTES, QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD DUMBBELLS WITH NEUTRAL GRIP. DUMBBELLS ARE POSITIONED ON YOUR SHOULDERS. \n STEP 2: BEND KNEES SLIGHTLY. \n STEP 3: PUSH UP UNTIL YOUR ARMS ARE FULLY EXTENDED OVERHEAD. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Push-Up Press",
+        "muscle": "Glutes, Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold dumbbells with a neutral grip. Dumbbells are positioned on your shoulders.\n\nStep 2: Bend knees slightly.\n\nStep 3: Push-up until your arms are fully extended overhead. Return to starting position.",
         "images": ["dumbbell_push_up_press_0.jpg", "dumbbell_push_up_press_1.jpg"],
         "video": "DUMBBELL_PUSH_UP_PRESS.mp4"
     },
     {
         "id": 78,
-        "name": "BENCH KNEE UP",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND TALL WITH YOUR BACK STRAIGHT. KEEP YOUR HANDS AT YOUR SIDES. \n STEP 2: BEND KNEES SLIGHTLY. MOVE FROM TO THE SIDES SUPPORTING YOUR LEG ON THE BENCH. \n STEP 3: JUMP UP AS HIGH AS YOU CAN. BRING YOUR KNEES TOWARD YOUR CHEST.",
+        "name": "Bench Knee Up",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand tall with your back straight. Keep your hands at your sides.\n\nStep 2: Bend knees slightly. Move from to the sides supporting your leg on the bench.\n\nStep 3: Jump up as high as you can. Bring your knees toward your chest.",
         "images": ["bench_knee_up_0.jpg", "bench_knee_up_1.jpg", "bench_knee_up_2.jpg", "bench_knee_up_3.jpg", "bench_knee_up_4.jpg", "bench_knee_up_5.jpg"],
         "video": "BENCH_KNEE_UP.mp4"
     },
     {
         "id": 79,
-        "name": "BODYWEIGHT PUSH-UP REGULAR",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. POSITION HANDS UNDER YOUR SHOULDERS. DISTANCE BETWEEN YOUR HANDS SHOULD BE NARROWER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Push-Up Regular",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Position hands under your shoulders. Distance between your hands should be narrower than shoulder-width apart. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second. Return to starting position.",
         "images": ["bodyweight_push_up_regular_0.jpg", "bodyweight_push_up_regular_1.jpg"],
         "video": "BODYWEIGHT_PUSH-UP_REGULAR.mp4"
     },
     {
         "id": 80,
-        "name": "CHAIR BENT KNEES",
-        "description": "MUSCLE GROUP: TRICEPS BRACHII \n STEP 1: PLACE YOUR PALMS AT THE EDGE OF THE BENCH WITH FINGERS CURLED AROUND THE EDGE OF THE CHAIR. KEEP YOUR ARMS WIDER THAN SHOULDER WIDTH APART. POSITION THE REST OF YOUR BODY IN A SITTING POSITION IN FRONT OF THE CHAIR. KEEP KNEES BENT. \n STEP 2: BEND YOUR ARMS UNTIL YOUR UPPER ARMS ARE NEARLY PARALLEL WITH THE GROUND. HOLD FOR A SECOND. RETURN TO STARTING POSITION.",
+        "name": "Chair Bent Knees",
+        "muscle": "Triceps Brachii",
+        "description": "\nStep 1: Place your palms at the edge of the bench with fingers curled around the edge of the chair. Keep your arms wider than shoulder-width apart. Position the rest of your body in a sitting position in front of the chair. Keep knees bent.\n\nStep 2: Bend your arms until your upper arms are nearly parallel with the ground. Hold for a second. Return to starting position.",
         "images": ["chair_bent_knees_0.jpg", "chair_bent_knees_1.jpg"],
         "video": "CHAIR_BENT_KNEES.mp4"
     },
     {
         "id": 81,
-        "name": "BODYWEIGHT SUPERMAN",
-        "description": "MUSCLE GROUP: LOWER BACK \n STEP 1: LIE PRONE ON THE FLOOR. FULLY EXTEND YOUR ARMS IN FRONT OF YOU. \n STEP 2: RAISE YOUR LEGS AND UPPER BODY TOWARDS THE CEILING. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Superman",
+        "muscle": "Lower Back",
+        "description": "\nStep 1: Lie prone on the floor. Fully extend your arms in front of you.\n\nStep 2: Raise your legs and upper body towards the ceiling. Hold for one second. Return to starting position.",
         "images": ["bodyweight_superman_0.jpg", "bodyweight_superman_1.jpg"],
         "video": "BODYWEIGHT_SUPERMAN.mp4"
     },
     {
         "id": 82,
-        "name": "BODYWEIGHT PLANK LEG TOUCH",
-        "description": "MUSCLE GROUP: LOWER BACK \n STEP 1: LIE PRONE ON THE FLOOR. RAISE YOURSELF UP SO THAT ONLY YOUR TOES AND FOREARMS ARE ON THE FLOOR. KEEP YOUR BACK STRAIGHT. LIFT YOUR RIGHT LEG UP. TOUCH YOUR HEEL. RETURN TO THE PLANK POSITION.",
+        "name": "Bodyweight Plank Leg Touch",
+        "muscle": "Lower Back",
+        "description": "\nStep 1: Lie prone on the floor. Raise yourself up so that only your toes and forearms are on the floor. Keep your back straight. Lift your right leg up. Touch your heel. Return to the plank position.",
         "images": ["bodyweight_plank_leg_touch_0.jpg", "bodyweight_plank_leg_touch_1.jpg", "bodyweight_plank_leg_touch_2.jpg", "bodyweight_plank_leg_touch_3.jpg"],
         "video": "BODYWEIGHT_PLANK_LEG_TOUCH.mp4"
     },
     {
         "id": 83,
-        "name": "BARBELL ROW",
-        "description": "MUSCLE GROUP: LATISSIMUS DORSI \n STEP 1: BEND YOUR KNEES SLIGHTLY. KEEP BACK BENT AND STRAIGHT. HOLD BARBELL UNDER YOU WITH SHOULDER WIDTH UNDERHAND GRIP. \n STEP 2: RAISE THE BARBELL VERTICALLY TOWARDS YOUR CHEST. REFRAIN FROM FLARING YOUR ELBOWS OUT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Barbell Row",
+        "muscle": "Latissimus Dorsi",
+        "description": "\nStep 1: Bend your knees slightly. Keep back bent and straight. Hold barbell under you with a shoulder-width underhand grip.\n\nStep 2: Raise the barbell vertically towards your chest. Refrain from flaring your elbows out. Hold for one second. Return to starting position.",
         "images": ["barbell_row_0.jpg", "barbell_row_1.jpg"],
         "video": "BARBELL_ROW.mp4"
     },
     {
         "id": 84,
-        "name": "EZ CURL BAR BICEPS CURL",
-        "description": "MUSCLE GROUP: BICEPS BRACHII \n STEP 1: WHILE STANDING WITH BACK STRAIGHT, HOLD EZ CURL BAR WITH SHOULDER WIDTH UNDERHAND GRIP. EZ CURL BAR IS POSITIONED IN FRONT OF YOUR THIGHS. \n STEP 2: LIFT EZ CURL BAR UP WHILE KEEPING YOUR UPPER ARMS IN PLACE REFRAIN FROM USING YOUR SHOULDERS DURING THE MOVEMENT. HOLD FOR ONE SECOND. LOWER YOUR ARMS BACK TO STARTING POSITION.",
+        "name": "Ez Curl Bar Biceps Curl",
+        "muscle": "Biceps Brachii",
+        "description": "\nStep 1: While standing with back straight, hold EZ curl bar with a shoulder-width underhand grip. EZ curl bar is positioned in front of your thighs.\n\nStep 2: Lift EZ curl bar up while keeping your upper arms in place refrain from using your shoulders during the movement. Hold for one second. Lower your arms back to starting position.",
         "images": ["ez_curl_bar_biceps_curl_0.jpg", "ez_curl_bar_biceps_curl_1.jpg"],
         "video": "EZ_CURL_BAR_BICEPS_CURL.mp4"
     },
     {
         "id": 85,
-        "name": "BAR BENCH PRESS INCLINE",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: LIE BACK ON THE INCLINE BENCH. HOLD THE EZ CURL BAR WITH OVERHAND GRIP. DISTANCE BETWEEN YOUR HANDS IS SLIGHTER WIDER THAN SHOULDER WIDTH. HOLD THE EZ CURL BAR WITH ARMS FULLY EXTENDED. THE EZ CURL BAR IS DIRECTLY ABOVE THE CENTER OF YOUR CHEST. \n STEP 2: LOWER THE EZ CURL BAR TOWARDS YOUR LOWER CHEST AS YOU KEEP YOUR ELBOWS CLOSE TO YOUR BODY. THE EZ CURL BAR SHOULD SLIGHTLY TOUCH YOUR CHEST AT THE END OF THE MOVEMENT. REFRAIN FROM BOUNCING THE EZ CURL BAR OFF YOUR CHEST. HOLD FOR A BRIEF MOMENT. RETURN STARTING POSITION. KEEP YOUR ENTIRE BACK ON THE BENCH AT ALL TIMES. REFRAIN FROM ANY LEG MOVEMENTS.",
+        "name": "Bar Bench Press Incline",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie back on the incline bench. Hold the EZ curl bar with an overhand grip. Distance between your hands is slighter wider than shoulder-width. Hold the EZ curl bar with arms fully extended. The EZ curl bar is directly above the centre of your chest.\n\nStep 2: Lower the EZ curl bar towards your lower chest as you keep your elbows close to your body. The EZ curl bar should slightly touch your chest at the end of the movement. Refrain from bouncing the EZ curl bar off your chest. Hold for a brief moment. Return starting position. Keep your entire back on the bench at all times. Refrain from any leg movements.",
         "images": ["bar_bench_press_incline_0.jpg", "bar_bench_press_incline_1.jpg"],
         "video": "BAR_BENCH_PRESS_INCLINE.mp4"
     },
     {
         "id": 86,
-        "name": "DUMBBELL DECLINE FLY",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: LIE DOWN ON THE DECLINE BENCH. HOLD ONTO TWO DUMBBELLS WITH NEUTRAL GRIP. FULLY EXTEND YOUR ARMS ABOVE YOUR CHEST. \n STEP 2: WHILE MAINTAINING A SLIGHT BEND IN YOUR ELBOWS, LOWER DUMBBELLS TO EACH SIDE UNTIL THE DUMBBELLS ARE NEXT TO YOUR UPPER BODY. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Decline Fly",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down on the decline bench. Hold onto two dumbbells with a neutral grip. Fully extend your arms above your chest.\n\nStep 2: While maintaining a slight bend in your elbows, lower dumbbells to each side until the dumbbells are next to your upper body. Hold for one second. Return to starting position.",
         "images": ["dumbbell_decline_fly_0.jpg", "dumbbell_decline_fly_1.jpg"],
         "video": "DUMBBELL_DECLINE_FLY.mp4"
     },
     {
         "id": 87,
-        "name": "DUMBBELL FLY INCLINE BENCH",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: LIE DOWN ON THE INCLINE BENCH. HOLD ONTO TWO DUMBBELLS WITH NEUTRAL GRIP. FULLY EXTEND YOUR ARMS ABOVE YOUR CHEST. \n STEP 2: WHILE MAINTAINING A SLIGHT BEND IN YOUR ELBOWS, LOWER DUMBBELLS TO EACH SIDE UNTIL THE DUMBBELLS ARE NEXT TO YOUR UPPER BODY. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Fly Incline Bench",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down on the incline bench. Hold onto two dumbbells with a neutral grip. Fully extend your arms above your chest.\n\nStep 2: While maintaining a slight bend in your elbows, lower dumbbells to each side until the dumbbells are next to your upper body. Hold for one second. Return to starting position.",
         "images": ["dumbbell_fly_incline_bench_0.jpg", "dumbbell_fly_incline_bench_1.jpg"],
         "video": "DUMBBELL_FLY_INCLINE_BENCH.mp4"
     },
     {
         "id": 88,
-        "name": "BENCH DECLINE PUSH-UP",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1. PLACE YOUR FEET ON A BENCH OR ANY ELEVATED STEP AND GET INTO A STANDARD PUSHUP POSITION. \n STEP 2. LOWER YOUR BODY UNTIL YOUR CHEST NEARLY TOUCHES THE FLOOR, PAUSE, THEN PUSH YOURSELF BACK TO THE STARTING POSITION. MAINTAIN PROPER FORM THROUGHOUT BY PREVENTING YOUR HIPS FROM SAGGING AT ANY POINT, KEEP YOUR CORE STIFF BY BRACING YOUR ABDOMINAL MUSCLES AND STRAIGHTEN YOUR LEGS WHILE PLACING YOUR WEIGHT ON YOUR TOES.",
+        "name": "Bench Decline Push-Up",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Place your feet on a bench or any elevated step and get into a standard push-up position.\n\nStep 2: Lower your body until your chest nearly touches the floor, pause, then push yourself back to the starting position. Maintain proper form throughout by preventing your hips from sagging at any point, keep your core stiff by bracing your abdominal muscles and straighten your legs while placing your weight on your toes.",
         "images": ["bench_decline_push_up_0.jpg", "bench_decline_push_up_1.jpg"],
         "video": "BENCH_DECLINE_PUSH-UP.mp4"
     },
     {
         "id": 89,
-        "name": "DUMBBELL ROW KICKBACK",
-        "description": "MUSCLE GROUP: LOWER BACK \n STEP 1. STAND WITH YOUR FEET SHOULDER- WIDTH APART AND WITH YOUR KNEES SLIGHTLY BENT. HOLD A LIGHT DUMBBELL IN EACH HAND AND BEND FORWARD AT THE WAIST UNTIL YOUR TORSO IS ALMOST PARALLEL TO THE FLOOR. HANG YOUR ARMS STRAIGHT DOWN WITH YOUR FACING IN, AS ILLUSTRATED. \n STEP 2. ROW THE WEIGHTS STRAIGHT UP UNTIL THEY REACH THE SIDES OF YOUR CHEST AND YOUR ARHIS E BENT AT RIGHT ANGLES. IDEALLY, YOUR UPPER ARMS SHOULD BE PARALLEL TO THE FLOOR. \n STEP 4. SQUEEZE YOUR TRICEPS, THEN BEND YOUR ELBOWS TO LOWER THE WEIGHTS BACK DOWN SO THAT THEY ARE ALONG YOUR SIDES ONCE AGAIN. \n STEP 5. FINALLY, LOWER THE WEIGHTS BACK DOWN UNTIL YOUR ARMS ARE HANGING STRAIGHT DOWN.",
+        "name": "Dumbbell Row Kickback",
+        "muscle": "Lower Back",
+        "description": "\nStep 1: Stand with your feet shoulder-width apart and with your knees slightly bent. Hold a light dumbbell in each hand and bend forward at the waist until your torso is almost parallel to the floor. Hang your arms straight down with your facing in, as illustrated.\n\nStep 2: Row the weights straight up until they reach the sides of your chest and your artiste bent at right angles. Ideally, your upper arms should be parallel to the floor.\n\nStep 4: Squeeze your triceps, then bend your elbows to lower the weights back down so that they are along your sides once again.\n\nStep 5: Finally, lower the weights back down until your arms are hanging straight down.",
         "images": ["dumbbell_row_kickback_0.jpg", "dumbbell_row_kickback_1.jpg", "dumbbell_row_kickback_2.jpg"],
         "video": "DUMBBELL_ROW_KICKBACK.mp4"
     },
     {
         "id": 90,
-        "name": "BARBELL SQUAT 2",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. PLACE BARBELL ON THE BACK OF YOUR SHOULDERS. HOLD BARBELL WITH OVERHAND GRIP. DISTANCE BETWEEN YOUR HANDS SHOULD BE WIDER THAN SHOULDER WIDTH APART. ADJUST FEET TO FACE SLIGHTLY OUTWARD \n STEP 2: LOWER YOURSELF BY BENDING YOUR KNEES. YOUR BACK IS STRAIGHT THROUGHOUT THE WHOLE MOVEMENT. STOP WHEN YOUR THIGHS ARE PARALLEL WITH THE GROUND. WHEN YOU RETURN THE STARTING POSITION, GENERATE ENERGY FROM YOUR LOWER BACK.",
+        "name": "Barbell Squat 2",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Place barbell on the back of your shoulders. Hold the barbell with an overhand grip. Distance between your hands should be wider than shoulder-width apart. Adjust feet to face slightly outward.\n\nStep 2: Lower yourself by bending your knees. Your back is straight throughout the whole movement. Stop when your thighs are parallel with the ground. When you return the starting position, generate energy from your lower back.",
         "images": ["barbell_squat_2_0.jpg", "barbell_squat_2_1.jpg"],
         "video": "BARBELL_SQUAT_2.mp4"
     },
     {
         "id": 91,
-        "name": "BARBELL CALF RAISE",
-        "description": "MUSCLE GROUP: GASTROCNEMIUS \n STEP 1: WHILE STANDING WITH BACK STRAIGHT, POSITION BARBELL ON TOP OF YOUR SHOULDERS. HOLD BARBELL WITH OVERHAND GRIP. DISTANCE BETWEEN HANDS SHOULD BE WIDER THAN SHOULDER WIDTH APART. \n STEP 2: RAISE YOUR CALVES BY TIPTOEING. HOLD FOR ONE SECOND. LOWER YOUR CALVES BACK TO THE GROUND.",
+        "name": "Barbell Calf Raise",
+        "muscle": "Gastrocnemius",
+        "description": "\nStep 1: While standing with back straight, position barbell on top of your shoulders. Hold the barbell with an overhand grip. Distance between hands should be wider than shoulder-width apart.\n\nStep 2: Raise your calves by tiptoeing. Hold for one second. Lower your calves back to the ground.",
         "images": ["barbell_calf_raise_0.jpg", "barbell_calf_raise_1.jpg"],
         "video": "BARBELL_CALF_RAISE.mp4"
     },
     {
         "id": 92,
-        "name": "STANDING SCARECROW 2",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1. STAND UPRIGHT AND HOLD A LIGHT DUMBBELL ON EITHER SIDE OF YOUR LOWER CHEST, WITH FOREARMS POINTING STRAIGHT DOWN AND UPPER ARMS OUT TO THE SIDES YET SLIGHTLY LOWER THAN PARALLEL TO THE FLOOR. \n STEP 2. KEEP YOUR SHOULDERS RELAXED SHRUG YOUR SHOULDERS AS IF YOU WERE TRYING FOLTOECH THEM TO YOUR EARS \n STEP 3. HOLD THE TOP MOST POSITION, THEN GRADUALLY LOWER THEM TO THE STARTING POSITION. DO NOT BEND YOUR ELBOWS OR SHIFT YOUR HEAD FORWARD DURING THE MOTION REPEAT.",
+        "name": "Standing Scarecrow 2",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Stand upright and hold a light dumbbell on either side of your lower chest, with forearms pointing straight down and upper arms out to the sides yet slightly lower than parallel to the floor.\n\nStep 2: Keep your shoulders relaxed shrug your shoulders as if you were trying to touch  them to your ear.\n\nStep 3: Hold the topmost position, then gradually lower them to the starting position. Do not bend your elbows or shift your head forward during the motion repeat.",
         "images": ["standing_scarecrow_2_0.jpg", "standing_scarecrow_2_1.jpg", "standing_scarecrow_2_2.jpg"],
         "video": "STANDING_SCARECROW_2.mp4"
     },
     {
         "id": 93,
-        "name": "DUMBBELL SHOULDER PRESS",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1: WHILE SEATED WITH BACK STRAIGHT, HOLD DUMBBELLS WITH OVERHAND GRIP. POSITION DUMBBELLS NEXT TO THE SIDES OF YOUR HEAD. \n STEP 2: LIFT DUMBBELLS OVERHEAD UNTIL YOUR ARMS ARE FULLY EXTENDED. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Shoulder Press",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: While seated with back straight, hold dumbbells with an overhand grip. Position dumbbells next to the sides of your head.\n\nStep 2: Lift dumbbells overhead until your arms are fully extended. Hold for one second. Return to starting position.",
         "images": ["dumbbell_shoulder_press_0.jpg", "dumbbell_shoulder_press_1.jpg", "dumbbell_shoulder_press_2.jpg"],
         "video": "DUMBBELL_SHOULDER_PRESS.mp4"
     },
     {
         "id": 94,
-        "name": "DUMBBELL REAR DELT ROW",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1. BEND OVER AT THE WAIST HOLDING THE DUMBBELL WITH YOUR ARMS STRAIGHT AND PALMS FACING IN, YOUR FEET HIP-WIDTH APART. \n STEP 2. RAISE THE DUMBBELL UP AND OUTWARD TO SHOULDER HEIGHT, KEEPING YOUR BACK FLAT. BEND YOUR ELBOWS SLIGHTLY AS YOU LIFT IF NECESSARY, THEN LOWER THE DUMBBELL BACK TO THE START POSITION.",
+        "name": "Dumbbell Rear Delt Row",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Bend over at the waist holding the dumbbell with your arms straight and palms facing in, your feet hip-width apart.\n\nStep 2: Raise the dumbbell up and outward to shoulder height, keeping your back flat. Bend your elbows slightly as you lift if necessary, then lower the dumbbell back to the start position.",
         "images": ["dumbbell_rear_delt_row_0.jpg", "dumbbell_rear_delt_row_1.jpg"],
         "video": "DUMBBELL_REAR_DELT_ROW.mp4"
     },
     {
         "id": 95,
-        "name": "FRONT PLATE RAISE",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1. STAND UPRIGHT, GRAB A SINGLE WEIGHT PLATE WITH ONE HAND ON EACH SIDE OF THE PLATE SIMILAR TO A CAR STEERING WHEEL. \n STEP 2. RAISE THE IN FRONT OF YOU UNTIL YOU CAN SEE DOWN THE CENTER. \n STEP 3. PAUSE FOR A FEW SECONDS, THEN LOWER IT IN A CONTROLLED AND SLOW MOTION.",
+        "name": "Front Plate Raise",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Stand upright, grab a single weight plate with one hand on each side of the plate similar to a car steering wheel.\n\nStep 2: Raise in front of you until you can see down the centre.\n\nStep 3: Pause for a few seconds, then lower it in a controlled and slow motion.",
         "images": ["front_plate_raise_2.jpg", "front_plate_raise_3.jpg"],
         "video": "FRONT_PLATE_RAISE.mp4"
     },
     {
         "id": 96,
-        "name": "BAR UPRIGHT ROW",
-        "description": "MUSCLE GROUP: DELTOIDS \n STEP 1. STAND WITH YOUR FEET SLIGHTLY WIDER THAN FA SHOULDER-WIDTH APART AND TAKE AN OVERHAND GRIP ON A BARBELL WITH YOUR HANDS ALSO A SHOULDER-WIDTH APART. \n STEP 2. PULL UP TO THE LEVEL OF YOUR CHIN, KEEPING THE BAR CLOSE TO YOUR BODY AND KEEPING YOUR ELBOWS HIGHER THAN THE BAR. \n STEP 3. HOLD FOR A FEW SECONDS BEFORE LOWERING BACK TO THE START POSITION, ENSURING THAT YOUR ELBOWS REMAIN SLIGHTLY BENT AND AVDIDIRIG ANY BOUNCING OR JERKING MOVEMENTS.",
+        "name": "Bar Upright Row",
+        "muscle": "Deltoids",
+        "description": "\nStep 1: Stand with your feet slightly wider than fa shoulder-width apart and take an overhand grip on the barbell with your hands also a shoulder-width apart.\n\nStep 2: Pull up to the level of your chin, keeping the bar close to your body and keeping your elbows higher than the bar.\n\nStep 3: Hold for a few seconds before lowering back to the start position, ensuring that your elbows remain slightly bent and avoiding any bouncing or jerking movements.",
         "images": ["bar_upright_row_0.jpg", "bar_upright_row_1.jpg"],
         "video": "BAR_UPRIGHT_ROW.mp4"
     },
     {
         "id": 97,
-        "name": "DUMBBELL SHRUG",
-        "description": "MUSCLE GROUP: TRAPEZIUS \n STEP 1. STAND UPRIGHT AND HOLD TWO FAIRLY AEAVY DUMBBELLS AT YOUR SIDES, WITH YOUR PALMS FACING EACH OTHER (NEUTRAL-GRIP). \n STEP 2. KEEP YOUR SHOULDERS RELAXED SHRUG YOUR SHOULDERS AS IF YOU WERE TRYING FOLTOTCH THEM TO YOUR EARS. \n STEP 3. HOLD THE TOP MOST POSITION, THEN GRADUALLY LOWER THEM TO THE STARTING POSITION. DO NOT BEND YOUR ELBOWS OR SHIFT HEAD FORWARD DURING THE MOTION. REPEAT.",
+        "name": "Dumbbell Shrug",
+        "muscle": "Trapezius",
+        "description": "\nStep 1: Stand upright and hold two fairly heavy dumbbells at your sides, with your palms facing each other.\n\nStep 2: Keep your shoulders relaxed shrug your shoulders as if you were trying to touch them to your ears.\n\nStep 3: Hold the topmost position, then gradually lower them to the starting position. Do not bend your elbows or shift head forward during the motion. Repeat.",
         "images": ["dumbbell_shrug_0.jpg", "dumbbell_shrug_1.jpg"],
-        "video": "DUMBBELL_SHRUG.mp4"
+        "videO": "DUMBBELL_SHRUG.mp4"
     },
     {
         "id": 98,
-        "name": "BODYWEIGHT TOE TOUCH 1",
-        "description": "MUSCLE GRUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. EXTEND YOUR LEGS PUT YOUR HANDS BEHIND YOUR HEAD. \n STEP 2: REACH YOUR TOES WITH YOUR HANDS. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Toe Touch 1",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Extend your legs put your hands behind your head.\n\nStep 2: Reach your toes with your hands. Hold for one second. Return to starting position.",
         "images": ["bodyweight_toe_touch_1_0.jpg", "bodyweight_toe_touch_1_1.jpg", "bodyweight_toe_touch_1_2.jpg"],
         "video": "BODYWEIGHT_TOE_TOUCH_1.mp4"
     },
     {
         "id": 99,
-        "name": "BODYWEIGHT TOE TOUCH 2",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE DOWN ON THE FLOOR. LIFT LEGS UNTIL UNTIL LEGS ARE PERPENDICULAR WITH THE FLOOR. FULLY EXTEND YOUR ARMS ABOVE YOU. \n STEP 2: REACH FOR YOUR TOES WITH YOUR HAND. MOVE TO THE SIDE AFTER EVERY TOUCHING AND COME RETURN TO STARTING POSITION AT THE MIDDLE.",
+        "name": "Bodyweight Toe Touch 2",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie down on the floor. Lift legs until legs are perpendicular with the floor. Fully extend your arms above you.\n\nStep 2: Reach for your toes with your hand. Move to the side after every touching and come return to starting position in the middle.",
         "images": ["bodyweight_toe_touch_2_0.jpg", "bodyweight_toe_touch_2_1.jpg", "bodyweight_toe_touch_2_2.jpg"],
         "video": "BODYWEIGHT_TOE_TOUCH_2.mp4"
     },
     {
         "id": 100,
-        "name": "BODYWEIGHT SIT-UP",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE BACK ON THE FLOOR. PUT HANDS BEHIND YOUR HEAD. KNEES ARE BEND AND FEET ARE ON THE FLOOR. \n STEP 2: RAISE YOUR UPPER BODY UPWARD. HOLD FOR ONE SECOND. RETURN TO YOUR STARTING POSITION.",
+        "name": "Bodyweight Sit-Up",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie back on the floor. Put hands behind your head. Knees are bend and feet are on the floor.\n\nStep 2: Raise your upper body upward. Hold for one second. Return to your starting position.",
         "images": ["bodyweight_sit_up_0.jpg", "bodyweight_sit_up_1.jpg"],
         "video": "BODYWEIGHT_SIT-UP.mp4"
     },
     {
         "id": 101,
-        "name": "SWISS BALL CRUNCH",
-        "description": "MUSCLE GROUP: RECTUS ABDOMINIS \n STEP 1: LIE BACK ON THE STABILITY BALL. POSITION HANDS ON YOUR HEAD AND FEET ON THE FLOOR. \n STEP 2: RAISE YOUR UPPER BODY UPWARD WHILE KEEPING YOUR LOWER BACK ON THE STABILITY BALL. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Swiss Ball Crunch",
+        "muscle": "Rectus Abdominis",
+        "description": "\nStep 1: Lie back on the stability ball. Position hands on your head and feet on the floor.\n\nStep 2: Raise your upper body upward while keeping your lower back on the stability ball. Hold for one second. Return to starting position.",
         "images": ["swiss_ball_crunch_0.jpg", "swiss_ball_crunch_1.jpg"],
         "video": "SWISS_BALL_CRUNCH.mp4"
     },
     {
         "id": 102,
-        "name": "DUMBBELL LUNGE FORWARD",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD DUMBBELLS OVERHEAD WITH ARMS STRAIGHT. \n STEP 2: WHILE KEEPING YOUR BACK STRAIGHT, STEP FORWARD WITH ONE FOOT AND LOWER YOURSELF BY BENDING YOUR KNEES. STOP WHEN YOUR FRONT THIGH IS PARALLEL WITH THE GROUND. HOLD FOR ONE SECOND. \n STEP 3: STEP BACK AND RETURN TO STARTING POSITION. \n STEP 4: WHILE KEEPING YOUR BACK STRAIGHT, STEP FORWARD WITH THE OTHER FOOT AND LOWER YOURSELF BY BENDING YOUR KNEES. STOP WHEN YOUR FRONT THIGH IS PARALLEL WITH THE GROUND. HOLD FOR ONE SECOND. STEP BACK AND RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Lunge Forward",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold dumbbells overhead with arms straight.\n\nStep 2: While keeping your back straight, step forward with one foot and lower yourself by bending your knees. Stop when your front thigh is parallel with the ground. Hold for one second.\n\nStep 3.\n\nStep back and return to starting position.\n\nStep 4: While keeping your back straight, step forward with the other foot and lower yourself by bending your knees. Stop when your front thigh is parallel with the ground. Hold for one second.\n\nStep back and return to starting position.",
         "images": ["dumbbell_lunge_forward_2.jpg", "dumbbell_lunge_forward_3.jpg"],
         "video": "DUMBBELL_LUNGE_FORWARD.mp4"
     },
     {
         "id": 103,
-        "name": "DUMBBELL T-PUSH-UP",
-        "description": "MUSCLE GROUP: PECTORIALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR PALMS ON THE FLOOR. HOLD DUMBBELLS WITH NEUTRAL GRIP. POSITION HANDS NEXT TO YOUR LOWER CHEST. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR PALMS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST LIS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. \n STEP 3: RETURN TO STARTING POSITION. \n STEP 4: RAISE ONE ARM UNTIL DUMBBELL POINTS TO THE CEILING. HOLD FOR ONE SECONDS \n STEP 5: RETURN TO STARTING POSITION. \n STEP 6: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. \n STEP 7: RETURN TO STARTING POSITION.",
+        "name": "Dumbbell T-Push-Up",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your palms on the floor. Hold dumbbells with a neutral grip. Position hands next to your lower chest. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only your palms and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second.\n\nStep 3: Return to starting position.\n\nStep 4: Raise one arm until dumbbell points to the ceiling. Hold for one second.\n\nStep 5: Return to starting position.\n\nStep 6: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second.\n\nStep 7: Return to starting position.",
         "images": ["dumbbell_t_push_up_0.jpg", "dumbbell_t_push_up_1.jpg", "dumbbell_t_push_up_2.jpg"],
         "video": "DUMBBELL_T-PUSH-UP.mp4"
     },
     {
         "id": 104,
-        "name": "BODYWEIGHT SCISSOR HORIZONTAL",
-        "description": "MUSCLE GROUP: OBLIQUES \n STEP 1: LIE DOWN ON THE FLOOR. PLACE HANDS NEXT TO YOUR SIDES. EXTEND LEGS FULLY AND SLIGHTLY ELEVATED. WHILE, KEEPING LEGS STRAIGHT, RAISE ONE LEG HIGHER THEN THE OTHER. \n STEP 2: EXTEND BOTH LEGS WIDE AND OUTWARD. \n STEP 3: AS YOUR LOWER LEG, RAISE THE OTHER LEG UP. \n STEP 4: EXTEND BOTH LEGS WIDE AND OUTWARD.",
+        "name": "Bodyweight Scissor Horizontal",
+        "muscle": "Obliques",
+        "description": "\nStep 1: Lie down on the floor. Place hands next to your sides. Extend legs fully and slightly elevated. While keeping legs straight, raise one leg higher than the other.\n\nStep 2: Extend both legs wide and outward.\n\nStep 3: As your lower leg, raise the other leg up.\n\nStep 4: Extend both legs wide and outward.",
         "images": ["bodyweight_scissor_horizontal_0.jpg", "bodyweight_scissor_horizontal_1.jpg", "bodyweight_scissor_horizontal_2.jpg"],
         "video": "BODYWEIGHT_SCISSOR_HORIZONTAL.mp4"
     },
     {
         "id": 105,
-        "name": "MEDICINE BALL SQUAT",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT FEET SHOULDER WIDTH APART. HOLD THE MEDICINE BALL IN FRONT OF YOU. ADJUST FEET TO FACE SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF BY BENDING YOUR KNEES. YOUR BACK SHOULD BE STRAIGHT THROUGHOUT THE WHOLE MOVEMENT. STOP WHEN YOUR THIGHS ARE PARALLEL WITH THE GROUND. WHEN YOU RETURN THE STARTING POSITION, GENERATE ENERGY FROM YOUR LOWER BACK.",
+        "name": "Medicine Ball Squat",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight feet shoulder-width apart. Hold the medicine ball in front of you. Adjust feet to face slightly outward.\n\nStep 2: Lower yourself by bending your knees. Your back should be straight throughout the whole movement. Stop when your thighs are parallel with the ground. When you return the starting position, generate energy from your lower back.",
         "images": ["medicine_ball_squat_0.jpg", "medicine_ball_squat_1.jpg"],
         "video": "MEDICINE_BALL_SQUAT.mp4"
     },
     {
         "id": 106,
-        "name": "BARBELL SQUAD ASSISTED",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH A FLAT BENCH BEHIND YOU. FEET ARE SHOULDER WIDTH APART. PLACE BARBELL ON THE BACK OF YOUR SHOULDERS. HOLD BARBELL WITH OVERHAND GRIP. DISTANCE BETWEEN YOUR HANDS SHOULD BE WIDER THAN SHOULDER WIDTH APART. ADJUST FEET TO FACE SLIGHTLY OUTWARD. \n STEP 2: LOWER YOURSELF BY BENDING YOUR KNEES. YOUR BACK IS STRAIGHT THROUGHOUT THE WHOLE MOVEMENT. STOP WHEN YOUR THIGHS ARE PARALLEL WITH THE GROUND OR WHEN YOUR BEHIND TOUCHES THE BENCH. WHEN YOU RETURN THE STARTING POSITION, GENERATE ENERGY FROM YOUR LOWER BACK.",
+        "name": "Barbell Squad Assisted",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with a flat bench behind you. Feet are shoulder-width apart. Place barbell on the back of your shoulders. Hold the barbell with an overhand grip. Distance between your hands should be wider than shoulder-width apart. Adjust feet to face slightly outward.\n\nStep 2: Lower yourself by bending your knees. Your back is straight throughout the whole movement. Stop when your thighs are parallel with the ground or when your behind touches the bench. When you return the starting position, generate energy from your lower back.",
         "images": ["barbell_squad_assisted_0.jpg", "barbell_squad_assisted_1.jpg"],
         "video": "BARBELL_SQUAD_ASSISTED.mp4"
     },
     {
         "id": 107,
-        "name": "DUMBBELL BICEPS CURL",
-        "description": "MUSCLE GROUP: BRACHIORADIALIS \n STEP 1: WHILE STANDING WITH BACK STRAIGHT, HOLD DUMBBELLS AT YOUR SIDES WITH NEUTRAL GRIP. KEEP ARMS STRAIGHT. \n STEP 2: LIFT DUMBBELLS UP WHILE KEEPING YOUR UPPER ARMS IN PLACE REFRAIN FROM USING YOUR SHOULDERS DURING THE MOVEMENT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Biceps Curl",
+        "muscle": "Brachioradialis",
+        "description": "\nStep 1: While standing with back straight, hold dumbbells at your sides with a neutral grip. Keep arms straight.\n\nStep 2: Lift dumbbells up while keeping your upper arms in place refrain from using your shoulders during the movement. Hold for one second. Return to starting position.",
         "images": ["dumbbell_biceps_curl_0.jpg", "dumbbell_biceps_curl_1.jpg"],
         "video": "DUMBBELL_BICEPS_CURL.mp4"
     },
     {
         "id": 108,
-        "name": "DUMBBELL BICEPS NECURAL INCLINE",
-        "description": "MUSCLE GROUP: BRACHIORADIALIS \n STEP 1: LIE PRONE ON THE INCLINE BENCH. LET DUMBBELLS HANG NEXT TO YOU WITH NEUTRAL GRIP. KEEP ARMS STRAIGHT. \n STEP 2: LIFT DUMBBELLS UP WHILE KEEPING YOUR UPPER ARMS IN PLACE REFRAIN FROM USING YOUR SHOULDERS DURING THE MOVEMENT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Biceps Necural Incline",
+        "muscle": "Brachioradialis",
+        "description": "\nStep 1: Lie prone on the incline bench. Let dumbbells hang next to you with a neutral grip. Keep arms straight.\n\nStep 2: Lift dumbbells up while keeping your upper arms in place refrain from using your shoulders during the movement. Hold for one second. Return to starting position.",
         "images": ["dumbbell_biceps_necural_incline_0.jpg", "dumbbell_biceps_necural_incline_1.jpg"],
         "video": "DUMBBELL_BICEPS_NECURAL_INCLINE.mp4"
     },
     {
         "id": 109,
-        "name": "UMBBELL BICEPS CURL BENCH",
-        "description": "MUSCLE GROUP: BICEBS BRACHII \n STEP 1: SID DOWN ON THE BENCH. KEEP BACK BENT AND STRAIGHT. HOLD ONE DUMBBELL WITH UNDERHAND GRIP. POSITION ELBOW AT THE INNER THIGH. \n STEP 2: LIFT DUMBBELL UP WHILE KEEPING YOUR UPPER ARM IN PLACE. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Biceps Curl Bench",
+        "muscle": "Biceps Brachii",
+        "description": "\nStep 1: Sit down on the bench. Keep back bent and straight. Hold one dumbbell with an underhand grip. Position elbow at the inner thigh.\n\nStep 2: Lift the dumbbell up while keeping your upper arm in place. Hold for one second. Return to starting position.",
         "images": ["dumbbell_biceps_curl_bench_0.jpg", "dumbbell_biceps_curl_bench_1.jpg"],
         "video": "DUMBBELL_BICEPS_CURL_BENCH.mp4"
     },
     {
         "id": 110,
-        "name": "UMBBELL BICEPS CURL BENCH SECOND SIDE",
-        "description": "MUSCLE GROUP: BICEBS BRACHII \n STEP 1: SID DOWN ON THE BENCH. KEEP BACK BENT AND STRAIGHT. HOLD ONE DUMBBELL WITH UNDERHAND GRIP. POSITION ELBOW AT THE INNER THIGH. \n STEP 2: LIFT DUMBBELL UP WHILE KEEPING YOUR UPPER ARM IN PLACE. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Biceps Curl Bench Second Side",
+        "muscle": "Biceps Brachii",
+        "description": "\nStep 1: Sit down on the bench. Keep back bent and straight. Hold one dumbbell with an underhand grip. Position elbow at the inner thigh.\n\nStep 2: Lift the dumbbell up while keeping your upper arm in place. Hold for one second. Return to starting position.",
         "images": ["dumbbell_biceps_curl_bench_right_0.jpg", "dumbbell_biceps_curl_bench_right_1.jpg"],
         "video": "DUMBBELL_BICEPS_CURL_BENCH_right.mp4"
     },
     {
         "id": 111,
-        "name": "STANDING TRICEPS EXTENSION",
-        "description": "MUSCLE GROUP: TRICEPS BRACHII \n STEP 1. STAND STRAIGHT UPRIGHT WITH YOUR FEET SHOULDER-WIDTH APART, HOLDING A DUMBBELL OVERHEAD WITH BOTH HANDS UNDER THE INNER PLATE, AS SHOWN. HAVE IT HANG BEHIND YOUR UPPER BACK WITH ELBOWS BENT. \n STEP 2. RAISE THE DUMBBELL OVERHEAD BY EXTENDING YOUR ELBOWS WHILE EXTENDING YOUR WRISTS. AT THE TOP, HOLD, THEN RETURN TO THE STARTING POSITION IN A CONTROLLED MANNER. REPEAT.",
+        "name": "Standing Triceps Extension",
+        "muscle": "Triceps Brachii",
+        "description": "\nStep 1: Stand straight upright with your feet shoulder-width apart, holding the dumbbell overhead with both hands under the inner plate, as shown. Have it hang behind your upper back with elbows bent.\n\nStep 2: Raise the dumbbell overhead by extending your elbows while extending your wrists. At the top, hold, then return to the starting position in a controlled manner. Repeat.",
         "images": ["standing_triceps_extension_0.jpg", "standing_triceps_extension_1.jpg"],
         "video": "STANDING_TRICEPS_EXTENSION.mp4"
     },
     {
         "id": 112,
-        "name": "LYING ONE-ARM EXTENSION",
-        "description": "MUSCLE GROUP: TRICEPS BRACHII \n STEP 1. LIE ON A BENCH WITH YOUR KNEES BENT FARID FEET FLAT ON THE FLOOR. HOLD A FAIRLY LIGHT DUMBBELL IN YOUR LEFT HAND AND STRAIGHTEN THE ARM SO THAT THE WEIGHT IS ABOVE YOUR SHOULDER. USE YOUR RIGHT HAND TO REACH ACROSS YOUR CHEST AND UP THE UPPER PART OF YOUR LEFT ARM TO HELP STABILIZE IT. \n STEP 2. TURN THE WEIGHT SO THAT YOUR PALM FACES IN. WITHOUT MOVING YOUR UPPER ARM BEND YOUR ELBOW AND SLOWLY LOWER THE DUMBBELL UNTIL IT REACHES THE SIDE OF YOUR HEAD. \n STEP 3. SLOWLY PRESS THE WEIGHT BACK UP ABOVE YOU. FINISH THE SET, THEN SWITCH POSITIONS TO WORK YOUR RIGHT ARM.",
+        "name": "Lying One-Arm Extension",
+        "muscle": "Triceps Brachii",
+        "description": "\nStep 1: Lie on a bench with your knees bent far feet flat on the floor. Hold a fairly light dumbbell in your left hand and straighten the arm so that the weight is above your shoulder. Use your right hand to reach across your chest and up the upper part of your left arm to help stabilize it.\n\nStep 2: Turn the weight so that your palm faces in. Without moving your upper arm bend your elbow and slowly lower the dumbbell until it reaches the side of your head.\n\nStep 3: Slowly press the weight back up above you. Finish the set, then switch positions to work your right arm.",
         "images": ["lying_one_arm_extension_0.jpg", "lying_one_arm_extension_1.jpg"],
         "video": "LYING_ONE-ARM_EXTENSION.mp4"
     },
     {
         "id": 113,
-        "name": "LYING ONE-ARM EXTENSION SECOND SIDE",
-        "description": "MUSCLE GROUP: TRICEPS BRACHII \n STEP 1. LIE ON A BENCH WITH YOUR KNEES BENT FARID FEET FLAT ON THE FLOOR. HOLD A FAIRLY LIGHT DUMBBELL IN YOUR LEFT HAND AND STRAIGHTEN THE ARM SO THAT THE WEIGHT IS ABOVE YOUR SHOULDER. USE YOUR RIGHT HAND TO REACH ACROSS YOUR CHEST AND UP THE UPPER PART OF YOUR LEFT ARM TO HELP STABILIZE IT. \n STEP 2. TURN THE WEIGHT SO THAT YOUR PALM FACES IN. WITHOUT MOVING YOUR UPPER ARM BEND YOUR ELBOW AND SLOWLY LOWER THE DUMBBELL UNTIL IT REACHES THE SIDE OF YOUR HEAD. \n STEP 3. SLOWLY PRESS THE WEIGHT BACK UP ABOVE YOU. FINISH THE SET, THEN SWITCH POSITIONS TO WORK YOUR RIGHT ARM.",
+        "name": "Lying One-Arm Extension Second Side",
+        "muscle": "Triceps Brachii",
+        "description": "\nStep 1: Lie on a bench with your knees bent far feet flat on the floor. Hold a fairly light dumbbell in your left hand and straighten the arm so that the weight is above your shoulder. Use your right hand to reach across your chest and up the upper part of your left arm to help stabilize it.\n\nStep 2: Turn the weight so that your palm faces in. Without moving your upper arm bend your elbow and slowly lower the dumbbell until it reaches the side of your head.\n\nStep 3: Slowly press the weight back up above you. Finish the set, then switch positions to work your right arm.",
         "images": ["lying_one_arm_extension_right_0.jpg", "lying_one_arm_extension_right_1.jpg"],
         "video": "LYING_ONE-ARM_EXTENSION_right.mp4"
     },
     {
         "id": 114,
-        "name": "BODYWEIGHT PUSH-UP INSIDE",
-        "description": "MUSCLE GROUP: PECTORALIS \n STEP 1: LIE DOWN CHEST FIRST WITH YOUR HANDS ON THE FLOOR. FORM A DIAMOND SHAPE WITH YOUR HANDS. POSITION HANDS UNDER YOUR LOWER CHEST. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY YOUR HANDS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Bodyweight Push-Up Inside",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Lie down chest first with your hands on the floor. Form a diamond shape with your hands. Position hands under your lower chest. Lift yourself with your arms so that only your hands and toes are on the floor. Maintain a straight back.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second. Return to starting position.",
         "images": ["bodyweight_push_up_inside_0.jpg", "bodyweight_push_up_inside_1.jpg"],
         "video": "BODYWEIGHT_PUSH-UP_INSIDE.mp4"
     },
     {
         "id": 115,
-        "name": "DUMBBELL PUSH-UP ROW 1",
-        "description": "MUSCLE GROUP: PECTORALIS \n STEP 1: HOLD ONTO TWO DUMBBELLS WITH NEUTRAL GRIP. DISTANCE BETWEEN YOUR HANDS SHOULD BE SLIGHTLY WIDER THAN SHOULDER WIDTH APART. LIFT YOURSELF WITH YOUR ARMS SO THAT ONLY THE DUMBBELLS AND TOES ARE ON THE FLOOR. MAINTAIN A STRAIGHT BACK. HANDS POINT SLIGHTLY OUTWARD \n STEP 2: LOWER YOURSELF UNTIL YOUR CHEST IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. THE ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND \n STEP 3: RETURN TO STARTING POSITION \n STEP 4: LITU ONE AUMEELL UP DY MOVING YOUR ELBOW UPWARD. YOUR HAND SHOULD MOVE IN A VERTICAL LINE. HOLD FOR ONE SECOND \n STEP 5: RETURN TO STARTING POSITION. \n STEP 6: LOWER IS INCHES AWAY FROM THE FLOOR BY BENDING YOUR ELBOWS. ELBOWS SHOULD BEND TOWARDS YOUR FEET. HOLD FOR ONE SECOND \n STEP 7: RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Push-Up Row 1",
+        "muscle": "Pectoralis",
+        "description": "\nStep 1: Hold onto two dumbbells with a neutral grip. Distance between your hands should be slightly wider than shoulder-width apart. Lift yourself with your arms so that only the dumbbells and toes are on the floor. Maintain a straight back. Hands point slightly outward.\n\nStep 2: Lower yourself until your chest is inches away from the floor by bending your elbows. The elbows should bend towards your feet. Hold for one second.\n\nStep 3: Return to starting position.\n\nStep 4: Lift one dumbbell up by moving your elbow upward. Your hand should move in a vertical line. Hold for one second.\n\nStep 5: Return to starting position.\n\nStep 6: Lower is inches away from the floor by bending your elbows. Elbows should bend towards your feet. Hold for one second.\n\nStep 7: Return to starting position.",
         "images": ["dumbbell_push_up_row_1_0.jpg", "dumbbell_push_up_row_1_1.jpg", "dumbbell_push_up_row_1_2.jpg"],
         "video": "DUMBBELL_PUSH-UP_ROW_1.mp4"
     },
     {
         "id": 116,
-        "name": "BENCH LUNGE",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1. STAND UPRIGHT IN FRONT OF A BENCH WITH YOUR ARMS EXTENDED STRAIGHT DOWNWARD BY YOUR SIDE. THE BENCH SHOULD BE PLACED A COUPLE STEPS IN FRONT OF YOUR STANDING POSITION. \n STEP 2. STEP FORWARD ONTO THE BENCH, LOWERING YOUR BODY DOWNWARD SO THAT YOU HAVE ABEND IN YOUR ONE KNEE, AS ILLUSTRATED \n STEP 3. PUSH OFF OF THAT FOOT TO RETURN TO STARTING POSITION AND REPEAT. TO MAKE THE EXERCISE MORE CHALLENGING, HOLD A PAIR OF DUMBBELLS IN EACH HAND AS YOU PERFORM THE ROUTINE.",
+        "name": "Bench Lunge",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand upright in front of a bench with your arms extended straight downward by your side. The bench should be placed a couple of steps in front of your standing position.\n\nStep 2.\n\nStep forward onto the bench, lowering your body down so that you have abend in your one knee, as illustrated.\n\nStep 3: Push off of that foot to return to starting position and repeat. To make the exercise more challenging, hold a pair of dumbbells in each hand as you perform the routine.",
         "images": ["bench_lunge_0.jpg", "bench_lunge_1.jpg"],
         "video": "BENCH_LUNGE.mp4"
     },
     {
         "id": 117,
-        "name": "CURL BAR ROW 2",
-        "description": "MUSCLE GROUP: LATISSIMUS DORSI \n STEP 1: BEND YOUR KNEES SLIGHTLY. KEEP BACK BENT AND STRAIGHT. HOLD EZ CURL BAR UNDER YOU WITH SHOULDER WIDTH OVERHAND GRIP. \n STEP 2: RAISE THE EZ CURL BAR VERTICALLY TOWARDS YOUR CHEST. REFRAIN FROM FLARING YOUR ELBOWS OUT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Curl Bar Row 2",
+        "muscle": "Latissimus Dorsi",
+        "description": "\nStep 1: Bend your knees slightly. Keep back bent and straight. Hold EZ curl bar under you with a shoulder-width overhand grip.\n\nStep 2: Raise the EZ curl bar vertically towards your chest. Refrain from flaring your elbows out. Hold for one second. Return to starting position.",
         "images": ["curl_bar_row_2_0.jpg", "curl_bar_row_2_1.jpg"],
         "video": "CURL_BAR_ROW_2.mp4"
     },
     {
         "id": 118,
-        "name": "DUMBBELL ROW 2",
-        "description": "MUSCLE GROUP: LATISSIMUS DORSI \n STEP 1: KNEEL WITH ONE LEG ON A FLAT BENCH AND PLACE ONE HAND ON THE BENCH FOR SUPPORT. PLACE OTHER LEG ON THE FLOOR AND HOLD DUMBBELL WITH A NEUTRAL GRIP. \n STEP 2: RAISE THE DUMBBELL VERTICALLY TOWARDS YOUR CHEST. REFRAIN FROM FLARING YOUR ELBOW OUT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Row 2",
+        "muscle": "Latissimus Dorsi",
+        "description": "\nStep 1: Kneel with one leg on a flat bench and place one hand on the bench for support. Place another leg on the floor and hold the dumbbell with a neutral grip.\n\nStep 2: Raise the dumbbell vertically towards your chest. Refrain from flaring your elbow out. Hold for one second. Return to starting position.",
         "images": ["dumbbell_row_2_0.jpg", "dumbbell_row_2_1.jpg"],
         "video": "DUMBBELL_ROW_2.mp4"
     },
     {
         "id": 119,
-        "name": "DUMBBELL ROW 2 SECOND SIDE",
-        "description": "MUSCLE GROUP: LATISSIMUS DORSI \n STEP 1: KNEEL WITH ONE LEG ON A FLAT BENCH AND PLACE ONE HAND ON THE BENCH FOR SUPPORT. PLACE OTHER LEG ON THE FLOOR AND HOLD DUMBBELL WITH A NEUTRAL GRIP. \n STEP 2: RAISE THE DUMBBELL VERTICALLY TOWARDS YOUR CHEST. REFRAIN FROM FLARING YOUR ELBOW OUT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Row 2 Second Side",
+        "muscle": "Latissimus Dorsi",
+        "description": "\nStep 1: Kneel with one leg on a flat bench and place one hand on the bench for support. Place another leg on the floor and hold the dumbbell with a neutral grip.\n\nStep 2: Raise the dumbbell vertically towards your chest. Refrain from flaring your elbow out. Hold for one second. Return to starting position.",
         "images": ["dumbbell_row_2_right_0.jpg", "dumbbell_row_2_right_1.jpg"],
         "video": "DUMBBELL_ROW_2_right.mp4"
     },
     {
         "id": 120,
-        "name": "DUMBBELL BICEPS SEATED CURL",
-        "description": "MUSCLE GROUP: BICEPS BRACHII \n STEP 1: WHILE SEATED WITH BACK STRAIGHT, LET DUMBBELLS HANG NEXT TO YOU WITH UNDERHAND GRIP. KEEP ARMS STRAIGHT. \n STEP 2: LIFT DUMBBELLS UP WHILE KEEPING YOUR UPPER ARMS IN PLACE REFRAIN FROM USING YOUR SHOULDERS DURING THE MOVEMENT. HOLD FOR ONE SECOND. RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Biceps Seated Curl",
+        "muscle": "Biceps Brachii",
+        "description": "\nStep 1: While seated with back straight, let dumbbells hang next to you with an underhand grip. Keep arms straight.\n\nStep 2: Lift dumbbells up while keeping your upper arms in place refrain from using your shoulders during the movement. Hold for one second. Return to starting position.",
         "images": ["dumbbell_biceps_seated_curl_0.jpg", "dumbbell_biceps_seated_curl_1.jpg"],
         "video": "DUMBBELL_BICEPS_SEATED_CURL.mp4"
     },
     {
         "id": 121,
-        "name": "DUMBBELL BICEPS CURLS ON BENCH",
-        "description": "MUSCLE GROUP: BICEPS BRACHII \n STEP 1: WHILE STANDING WITH BACK STRAIGHT, HOLD ONE DUMBBELL WITH NEUTRAL GRIP. REST UPPER ARM ON THE TOP OF THE INCLINE BENCH. \n STEP 2: LIFT DUMBBELL UP WHILE KEEPING YOUR UPPER ARMS IN PLACE. HOLD FOR ONE SECOND. LOWER DUMBBELL BACK TO STARTING POSITION.",
+        "name": "Dumbbell Biceps Curls On Bench",
+        "muscle": "Biceps Brachii",
+        "description": "\nStep 1: While standing with back straight, hold one dumbbell with a neutral grip. Rest an upper arm on the top of the incline bench.\n\nStep 2: Lift the dumbbell up while keeping your upper arms in place. Hold for one second. Lower dumbbell back to starting position.",
         "images": ["dumbbell_biceps_curls_on_bench_0.jpg", "dumbbell_biceps_curls_on_bench_1.jpg"],
         "video": "DUMBBELL_BICEPS_CURLS_ON_BENCH.mp4"
     },
     {
         "id": 122,
-        "name": "DUMBBELL LUNGE PRESS",
-        "description": "MUSCLE GROUP: QUADRICEPS \n STEP 1: STAND STRAIGHT WITH FEET SHOULDER WIDTH APART. HOLD DUMBBELLS AT YOUR SIDES WITH NEUTRAL GRIP. \n STEP 2: WHILE KEEPING YOUR BACK STRAIGHT, STEP FORWARD WITH ONE FOOT AND LOWER YOURSELF BY BENDING YOUR KNEES. STOP WHEN YOUR FRONT THIGH IS PARALLEL WITH THE GROUND. HOLD DUMBBELL OVERHEAD WITH ARMS STRAIGHT. STEP BACK AND RETURN TO STARTING POSITION.",
+        "name": "Dumbbell Lunge Press",
+        "muscle": "Quadriceps",
+        "description": "\nStep 1: Stand straight with feet shoulder-width apart. Hold dumbbells at your sides with a neutral grip.\n\nStep 2: While keeping your back straight, step forward with one foot and lower yourself by bending your knees. Stop when your front thigh is parallel with the ground. Hold dumbbell overhead with arms straight.\n\nStep back and return to starting position.",
         "images": ["dumbbell_lunge_press_0.jpg", "dumbbell_lunge_press_1.jpg", "dumbbell_lunge_press_2.jpg"],
         "video": "DUMBBELL_LUNGE_PRESS.mp4"
     }

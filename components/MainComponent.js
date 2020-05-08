@@ -4,6 +4,8 @@ import Fitness from './FitnessComponent';
 import Category from './CategoryComponent';
 import Workouts from './WorkoutsComponent';
 import List from './ListComponent';
+import Exercise from './ExerciseComponent';
+import Preview from './PreviewComponent';
 import Challenges from './ChallengesComponent';
 import Day from './DayComponent';
 import Yoga from './YogaComponent';
@@ -70,6 +72,8 @@ function getFitnessNavigator() {
                 } 
             />
             <FitnessNavigator.Screen name="Category" component={Category} options={({ route }) => ({ title: route.params.name })} />
+            <FitnessNavigator.Screen name="Exercise" component={Exercise} options={ ({ route }) => ({ title: route.params.name }) } />
+            <FitnessNavigator.Screen name="Preview" component={Preview} options={ ({ route }) => ({ title: route.params.name }) } />
         </FitnessNavigator.Navigator>
     );
 }
@@ -88,6 +92,8 @@ function getWorkoutsNavigator() {
                 }
             />
             <WorkoutsNavigator.Screen name="List" component={List} options={ ({ route }) => ({ title: route.params.name }) } />
+            <WorkoutsNavigator.Screen name="Exercise" component={Exercise} options={ ({ route }) => ({ title: route.params.name }) } />
+            <WorkoutsNavigator.Screen name="Preview" component={Preview} options={ ({ route }) => ({ title: route.params.name }) } />
         </WorkoutsNavigator.Navigator>
     );
 }
@@ -106,7 +112,9 @@ function getChallengesNavigator() {
                 }
             />
             <ChallengesNavigator.Screen name="Day" component={Day} options={ ({ route }) => ({ title: route.params.name })} />
-            <WorkoutsNavigator.Screen name="List" component={List} options={ ({ route }) => ({ title: route.params.name }) } />
+            <ChallengesNavigator.Screen name="List" component={List} options={ ({ route }) => ({ title: route.params.name }) } />
+            <ChallengesNavigator.Screen name="Exercise" component={Exercise} options={ ({ route }) => ({ title: route.params.name }) } />
+            <ChallengesNavigator.Screen name="Preview" component={Preview} options={ ({ route }) => ({ title: route.params.name }) } />
         </ChallengesNavigator.Navigator>
     );
 }
@@ -126,6 +134,8 @@ function getYogaNavigator() {
             <YogaNavigator.Screen name="Poses" component={Poses} options={({ route }) => ({ title: route.params.name })} />
             <YogaNavigator.Screen name="Classes" component={Classes} options={{ title: 'Select a class' }}  />
             <YogaNavigator.Screen name="Level" component={Level} options={{ title: 'Pick a level' }} />
+            <YogaNavigator.Screen name="Exercise" component={Exercise} options={ ({ route }) => ({ title: route.params.name }) } />
+            <YogaNavigator.Screen name="Preview" component={Preview} options={ ({ route }) => ({ title: route.params.name }) } />
         </YogaNavigator.Navigator>
     );
 }
@@ -171,7 +181,7 @@ function CustomDrawerContent(props) {
                 <Image source={require('../assets/logo.png')} style={styles.drawerImage} />
             </View>
             <DrawerItemList {...props} />
-            <Text style={{ color: 'white', textAlign: 'center', fontSize: 10 }}>Developed with ❤️ by Utkarsh Soni</Text>
+            <Text style={styles.line}>Developed with ❤️ by Utkarsh Soni</Text>
         </DrawerContentScrollView>
     );
 }
@@ -229,7 +239,13 @@ const styles = StyleSheet.create({
     drawerImage: {
         width: 150,
         height: 150,
-        marginBottom: 50
+        marginBottom: 30
+    },
+    line: {
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 10,
+        marginTop: 20 
     }
 })
 

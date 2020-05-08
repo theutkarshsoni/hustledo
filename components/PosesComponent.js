@@ -14,7 +14,7 @@ class Poses extends Component{
     }
 
     render() {
-
+        const { navigate } = this.props.navigation;
         const { name } = this.props.route.params;
 
         if(name === 'Alphabetically Poses') {
@@ -68,6 +68,7 @@ class Poses extends Component{
                     title={item.name}
                     chevron
                     bottomDivider
+                    onPress={() => navigate('Exercise', { name: item.name, tag: 'Yoga', eid: item.id })}
                 />
             );
         }

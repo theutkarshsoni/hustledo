@@ -18,6 +18,7 @@ class List extends Component {
     }
 
     render(){
+        const { navigate } = this.props.navigation;
         const { wid } = this.props.route.params;
         const { cid } = this.props.route.params;
         const { did } = this.props.route.params;
@@ -87,7 +88,7 @@ class List extends Component {
             return(
                 <ListItem
                     key={index}
-                    leftAvatar={{ source: { uri: baseUrl + 'images/exercises_p/' + item.images[0] } }}
+                    leftAvatar={{ source: { uri: baseUrl + 'images/exercises/' + item.images[0] } }}
                     title={item.name}
                     subtitle={
                         <View style={styles.column}>
@@ -101,6 +102,7 @@ class List extends Component {
                     }}
                     chevron
                     bottomDivider
+                    onPress={() => navigate('Exercise', { name: item.name, tag: 'Workouts', eid: item.id })}
                 />
             );
         }
