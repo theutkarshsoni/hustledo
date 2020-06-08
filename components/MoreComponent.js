@@ -55,9 +55,9 @@ const rateUs = () => {
 
 const sendFeedback = () => {
     MailComposer.composeAsync({
-        recipients: ['hustlehutteam@gmail.com'],
+        recipients: ['teamhustledo@gmail.com'],
         subject: 'Feedback for Hustle Hut',
-        body: 'Hello, Hustle Hut Team\n\n'
+        body: 'Hello, Hustledo Team\n\n'
     });
 }
 

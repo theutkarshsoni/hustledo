@@ -1,88 +1,195 @@
 import React, { Component } from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { View, Text, ScrollView } from 'react-native';
-import { NUTRITIONS } from '../shared/nutritions';
+import { View, Text, ScrollView, Modal, Image, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
-import { Dimensions, StyleSheet } from 'react-native';
 import { baseUrl } from '../shared/baseUrl';
+import { NUTRITIONS } from '../shared/nutritions';
+import { Icon } from 'react-native-elements';
 
 const { width: screenWidth } = Dimensions.get('window');
 
-function RenderTab(props){
-    var data = props.data;
-    var start = props.start;
-    var end = props.end;
-    var meal = props.meal;
-    var lists = []; 
-    var day = 1;
-    var i = start;
-    while(i < end){
-        lists.push(
-            <View key={i}>
-                <View style={styles.dayContainer}>
-                    <Text style={styles.day}>Day {day}</Text>
-                </View>
-                <RenderCarousel min={i} max={i+6} data={data}/>
-            </View>
-        );
-        i = i + meal;
-        day++;
-    }
-    return(
-        <View>
-            {lists}
-        </View>
-    );
-}
+// function RenderTab(props){
+//     var data = props.data;
+//     var start = props.start;
+//     var end = props.end;
+//     var meal = props.meal;
+//     var lists = []; 
+//     var day = 1;
+//     var i = start;
+//     while(i < end){
+//         lists.push(
+//             <View key={i}>
+//                 <View style={styles.dayContainer}>
+//                     <Text style={styles.day}>Day {day}</Text>
+//                 </View>
+//                 <RenderCarousel min={i} max={i+6} data={data}/>
+//             </View>
+//         );
+//         i = i + meal;
+//         day++;
+//     }
+//     return(
+//         <View>
+//             {lists}
+//         </View>
+//     );
+// }
 
-function RenderCarousel(props) {
-    const nutritions = props.data;
-    const min = props.min;
-    const max = props.max;
-    return(
-        <Carousel
-            sliderWidth={screenWidth}
-            sliderHeight={screenWidth}
-            itemWidth={screenWidth - 60}
-            data={nutritions.filter((e) => e.id >= min  && e.id < max )}
-            renderItem={renderCarouselItem}
-            hasParallaxImages={true}
-        />
-    );
-}
+// function RenderCarousel(props) {
+//     const nutritions = props.data;
+//     const min = props.min;
+//     const max = props.max;
+//     return(
+//         <Carousel
+//             sliderWidth={screenWidth}
+//             sliderHeight={screenWidth}
+//             itemWidth={screenWidth - 60}
+//             data={nutritions.filter((e) => e.id >= min  && e.id < max )}
+//             renderItem={renderCarouselItem}
+//             hasParallaxImages={true}
+//         />
+//     );
+// }
 
-function renderCarouselItem ({item, index}, parallaxProps) {
-    return (
-        <View style={styles.item} key={index}>
-            <ParallaxImage
-                source={{ uri: baseUrl + 'images/nutrition/' + item.image }}
-                containerStyle={styles.imageContainer}
-                style={styles.image}
-                parallaxFactor={0.4}
-                {...parallaxProps}
-            />
-            <Text style={styles.title} numberOfLines={2}>
-                { item.name }
-            </Text>
-        </View>
-    );
-}
+// function renderCarouselItem ({item, index}, parallaxProps) {
+//     return (
+//         <TouchableOpacity onPress={() => console.log(item.id)}>
+//             <View style={styles.item} key={index}>
+//                 <ParallaxImage
+//                     source={{ uri: baseUrl + 'images/nutrition/' + item.image }}
+//                     containerStyle={styles.imageContainer}
+//                     style={styles.image}
+//                     parallaxFactor={0.4}
+//                     {...parallaxProps}
+//                 />
+//                 <Text style={styles.title} numberOfLines={2}>
+//                     { item.name }
+//                 </Text>
+//             </View>
+//         </TouchableOpacity>
+//     );
+// }
 
 class MusleTab extends Component {
 
     constructor(props){
         super(props);
         this.state = {
-            nutritions: NUTRITIONS
+            nutritions: NUTRITIONS,
+            showModal: false,
+            activeDishId: 0
         }
     }
 
-    render() {
+    toggleModal(dishId) {
+        this.setState({ showModal: !this.state.showModal, activeDishId: dishId });
+    }
+
+    render() {        
+        const RenderCarousel = (props) => {
+            const min = props.min;
+            const max = props.max;
+            return(
+                <Carousel
+                    sliderWidth={screenWidth}
+                    sliderHeight={screenWidth}
+                    itemWidth={screenWidth - 60}
+                    data={this.state.nutritions.filter((e) => e.id >= min  && e.id < max )}
+                    renderItem={RenderCarouselItem}
+                    hasParallaxImages={true}
+                />
+            );
+        }
+        
+        const RenderCarouselItem = ({item, index}, parallaxProps) => {
+            return (
+                <TouchableOpacity onPress={() => this.toggleModal(item.id)}>
+                    <View style={styles.item} key={index}>
+                        <ParallaxImage
+                            source={{ uri: baseUrl + 'images/nutrition/' + item.image }}
+                            containerStyle={styles.imageContainer}
+                            style={styles.image}
+                            parallaxFactor={0.4}
+                            {...parallaxProps}
+                        />
+                        <Text style={styles.title} numberOfLines={2}>
+                            { item.name }
+                        </Text>
+                    </View>
+                </TouchableOpacity>
+            );
+        }
+
+        const RenderModal = () => {
+            const data = this.state.nutritions.filter((e) => e.id === this.state.activeDishId)[0];
+            return(
+                <Modal animationType = {"slide"} transparent = {false} visible = {this.state.showModal}
+                    onDismiss = {() => this.toggleModal(this.state.activeDishId) }
+                    onRequestClose = {() => this.toggleModal(this.state.activeDishId) }>
+                    <ScrollView style={{ position: 'relative' }}>
+                        <View style={styles.close}>
+                            <Icon name="times" type="font-awesome-5" size={25} onPress={() => this.toggleModal(this.state.activeDishId) } />
+                        </View>
+                        <Image source={{ uri: baseUrl + 'images/nutrition/' + data.image }} style={styles.dishImage} />
+                        <Text style={styles.dishHead}>Ingredients</Text>
+                        <View style={styles.dishText}>
+                        {
+                            data.ingredients.map((item, i) => (
+                                <View key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                    <Icon name="square-full" type="font-awesome-5" color="#57A2CC" size={5} style={{ marginRight: 5 }} />
+                                    <Text>{item}</Text>
+                                </View>
+                            ))
+                        }
+                        </View>
+                        <Text style={styles.dishHead}>Steps</Text>
+                        <View style={styles.dishText}>
+                        {
+                            data.steps.replace(/[.]/g, '.#').split('#').map((item, i) => (
+                                <View key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                    <Text>Step{i+1}: {item}</Text>
+                                </View>
+                            ))
+                        }
+                        </View>
+                    </ScrollView>
+                </Modal>
+            );
+        }
+        
         return(
             <ScrollView>
-                <RenderTab data={this.state.nutritions.filter((e) => e.tag === "BM")} start={0} end={42} meal={6} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 1</Text>
+                </View>
+                <RenderCarousel min={0} max={6} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 2</Text>
+                </View>
+                <RenderCarousel min={6} max={12} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 3</Text>
+                </View>
+                <RenderCarousel min={12} max={18} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 4</Text>
+                </View>
+                <RenderCarousel min={18} max={24} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 5</Text>
+                </View>
+                <RenderCarousel min={24} max={30} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 6</Text>
+                </View>
+                <RenderCarousel min={30} max={36} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 7</Text>
+                </View>
+                <RenderCarousel min={36} max={42} />
                 <View style={{ marginBottom: 50 }}></View>
+                <RenderModal />
             </ScrollView>
         );
     }
@@ -93,15 +200,120 @@ class LeanTab extends Component {
     constructor(props){
         super(props);
         this.state = {
-            nutritions: NUTRITIONS
+            nutritions: NUTRITIONS,
+            showModal: false,
+            activeDishId: 0
         }
     }
 
-    render() {
+    toggleModal(dishId) {
+        this.setState({ showModal: !this.state.showModal, activeDishId: dishId });
+    }
+
+    render() {        
+        const RenderCarousel = (props) => {
+            const min = props.min;
+            const max = props.max;
+            return(
+                <Carousel
+                    sliderWidth={screenWidth}
+                    sliderHeight={screenWidth}
+                    itemWidth={screenWidth - 60}
+                    data={this.state.nutritions.filter((e) => e.id >= min  && e.id < max )}
+                    renderItem={RenderCarouselItem}
+                    hasParallaxImages={true}
+                />
+            );
+        }
+        
+        const RenderCarouselItem = ({item, index}, parallaxProps) => {
+            return (
+                <TouchableOpacity onPress={() => this.toggleModal(item.id)}>
+                    <View style={styles.item} key={index}>
+                        <ParallaxImage
+                            source={{ uri: baseUrl + 'images/nutrition/' + item.image }}
+                            containerStyle={styles.imageContainer}
+                            style={styles.image}
+                            parallaxFactor={0.4}
+                            {...parallaxProps}
+                        />
+                        <Text style={styles.title} numberOfLines={2}>
+                            { item.name }
+                        </Text>
+                    </View>
+                </TouchableOpacity>
+            );
+        }
+
+        const RenderModal = () => {
+            const data = this.state.nutritions.filter((e) => e.id === this.state.activeDishId)[0];
+            return(
+                <Modal animationType = {"slide"} transparent = {false} visible = {this.state.showModal}
+                    onDismiss = {() => this.toggleModal(this.state.activeDishId) }
+                    onRequestClose = {() => this.toggleModal(this.state.activeDishId) }>
+                    <ScrollView style={{ position: 'relative' }}>
+                        <View style={styles.close}>
+                            <Icon name="times" type="font-awesome-5" size={25} onPress={() => this.toggleModal(this.state.activeDishId) } />
+                        </View>
+                        <Image source={{ uri: baseUrl + 'images/nutrition/' + data.image }} style={styles.dishImage} />
+                        <Text style={styles.dishHead}>Ingredients</Text>
+                        <View style={styles.dishText}>
+                        {
+                            data.ingredients.map((item, i) => (
+                                <View key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                    <Icon name="square-full" type="font-awesome-5" color="#57A2CC" size={5} style={{ marginRight: 5 }} />
+                                    <Text>{item}</Text>
+                                </View>
+                            ))
+                        }
+                        </View>
+                        <Text style={styles.dishHead}>Steps</Text>
+                        <View style={styles.dishText}>
+                        {
+                            data.steps.replace(/[.]/g, '.#').split('#').map((item, i) => (
+                                <View key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                    <Text>Step{i+1}: {item}</Text>
+                                </View>
+                            ))
+                        }
+                        </View>
+                    </ScrollView>
+                </Modal>
+            );
+        }
+        
         return(
             <ScrollView>
-                <RenderTab data={this.state.nutritions.filter((e) => e.tag === "LB" )} start={42} end={77} meal={5} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 1</Text>
+                </View>
+                <RenderCarousel min={42} max={47} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 2</Text>
+                </View>
+                <RenderCarousel min={47} max={52} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 3</Text>
+                </View>
+                <RenderCarousel min={52} max={57} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 4</Text>
+                </View>
+                <RenderCarousel min={57} max={62} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 5</Text>
+                </View>
+                <RenderCarousel min={62} max={67} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 6</Text>
+                </View>
+                <RenderCarousel min={67} max={72} />
+                <View style={styles.dayContainer}>
+                    <Text style={styles.day}>Day 7</Text>
+                </View>
+                <RenderCarousel min={72} max={77} />
                 <View style={{ marginBottom: 50 }}></View>
+                <RenderModal />
             </ScrollView>
         );
     }
@@ -139,15 +351,38 @@ const styles = StyleSheet.create({
         marginTop: 10,
         fontSize: 16,
         textAlign: 'center'
+    },
+    close: { 
+        position: 'absolute',
+        top: 5, 
+        right: 20,
+        zIndex: 9999
+    },
+    dishImage: {
+        width: '100%',
+        height: 250,
+        marginBottom: 15
+    },
+    dishHead:{
+        backgroundColor: "#57A2CC",
+        alignSelf: "center",
+        paddingHorizontal: 20,
+        paddingVertical: 5,
+        color: "#fff",
+        fontSize: 18,
+        fontWeight: "bold"
+    },
+    dishText: {
+        padding: 10
     }
 });
 
-const tabNavigator = createMaterialTopTabNavigator();
+const TabNavigator = createMaterialTopTabNavigator();
 
 function Nutrition() {
     return(
         <NavigationContainer independent={true}>
-            <tabNavigator.Navigator
+            <TabNavigator.Navigator
                 initialRouteName="Build Musle"
                 swipeEnabled={false}
                 tabBarOptions={{
@@ -162,9 +397,9 @@ function Nutrition() {
                     scrollEnabled: false
                 }}
             >
-                <tabNavigator.Screen name="Build Musle" component={MusleTab}/>
-                <tabNavigator.Screen name="Lean Body" component={LeanTab} />
-            </tabNavigator.Navigator>
+                <TabNavigator.Screen name="Build Musle" component={MusleTab}/>
+                <TabNavigator.Screen name="Lean Body" component={LeanTab} />
+            </TabNavigator.Navigator>
         </NavigationContainer>
     );
 }
