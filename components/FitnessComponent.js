@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { SafeAreaView, FlatList } from 'react-native';
-import { CATEGORIES } from '../shared/categories';
+import { SafeAreaView, FlatList, View, Text } from 'react-native';
 import { ListItem } from 'react-native-elements';
+import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
+import { Loading } from './LoadingComponent';
+
+const mapStateToProps = state => {
+    return {
+        categories: state.categories
+    };
+}
 
 class Fitness extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            categories: CATEGORIES
-        }
-    }
-
     render(){
         const { navigate } = this.props.navigation;
 
@@ -29,18 +28,32 @@ class Fitness extends Component {
                 />
             );
         }
-        
-        return(
-            <SafeAreaView>
-                <FlatList
-                    data={this.state.categories}
-                    renderItem={renderCategoryItem}
-                    keyExtractor={item => item.id.toString()}
-                >
-                </FlatList>
-            </SafeAreaView>
-        )
+
+        if(this.props.categories.isLoading) {
+            return(
+                <Loading />
+            );
+        }
+        else if(this.props.categories.errMess) {
+            return(
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text>{this.props.categories.errMess}</Text>
+                </View>
+            );
+        }
+        else {
+            return(
+                <SafeAreaView>
+                    <FlatList
+                        data={this.props.categories.categories}
+                        renderItem={renderCategoryItem}
+                        keyExtractor={item => item.id.toString()}
+                    >
+                    </FlatList>
+                </SafeAreaView>
+            );
+        }
     }
 }
 
-export default Fitness;
+export default connect(mapStateToProps)(Fitness);

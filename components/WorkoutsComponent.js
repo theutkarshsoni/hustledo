@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 import { ListItem } from 'react-native-elements';
+import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
-import { WORKOUTS } from '../shared/workouts';
+import { Loading } from './LoadingComponent';
 
-class Workouts extends Component {
+const mapStateToProps = state => {
+    return {
+        workouts: state.workouts
+    };
+}
 
-    constructor(props){
-        super(props);
-        this.state = {
-            workouts: WORKOUTS
-        }
-    }
-    
+class Workouts extends Component {   
     render(){
-
         const { navigate } = this.props.navigation;
 
         const renderWorkoutItem = ({ item, index }) => {
@@ -40,14 +38,28 @@ class Workouts extends Component {
             );
         }
 
-        return(
-            <FlatList
-                data={this.state.workouts}
-                renderItem={renderWorkoutItem}
-                keyExtractor={item => item.id.toString()}
-            />
-        );
+        if(this.props.workouts.isLoading) {
+            return(
+                <Loading />
+            );
+        }
+        else if(this.props.workouts.errMess) {
+            return(
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text>{this.props.workouts.errMess}</Text>
+                </View>
+            );
+        }
+        else {
+            return(
+                <FlatList
+                    data={this.props.workouts.workouts}
+                    renderItem={renderWorkoutItem}
+                    keyExtractor={item => item.id.toString()}
+                />
+            );
+        }
     }
 }
 
-export default Workouts;
+export default connect(mapStateToProps)(Workouts);

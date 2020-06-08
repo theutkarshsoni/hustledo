@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 import { Tile, Icon } from 'react-native-elements';
-import { CHALLENGES } from '../shared/challenges';
+import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
+import { Loading } from './LoadingComponent';
+
+const mapStateToProps = state => {
+    return {
+        challenges: state.challenges
+    };
+}
 
 class Challenges extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            challenges: CHALLENGES
-        }
-    }
-
     render() {
 
         const { navigate } = this.props.navigation;
@@ -55,15 +54,29 @@ class Challenges extends Component {
                 </View>
             );
         }
-
-        return(
-            <ScrollView>
-                <RenderChallenge challenge={this.state.challenges[0]}/>
-                <RenderChallenge challenge={this.state.challenges[1]}/>
-                <RenderChallenge challenge={this.state.challenges[2]}/>
-                <RenderChallenge challenge={this.state.challenges[3]}/>
-            </ScrollView>
-        );
+        
+        if(this.props.challenges.isLoading) {
+            return(
+                <Loading />
+            );
+        }
+        else if(this.props.challenges.errMess) {
+            return(
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text>{this.props.challenges.errMess}</Text>
+                </View>
+            );
+        }
+        else {
+            return(
+                <ScrollView>
+                    <RenderChallenge challenge={this.props.challenges.challenges[0]}/>
+                    <RenderChallenge challenge={this.props.challenges.challenges[1]}/>
+                    <RenderChallenge challenge={this.props.challenges.challenges[2]}/>
+                    <RenderChallenge challenge={this.props.challenges.challenges[3]}/>
+                </ScrollView>
+            );
+        }
     }
 }
 
@@ -82,4 +95,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Challenges;
+export default connect(mapStateToProps)(Challenges);

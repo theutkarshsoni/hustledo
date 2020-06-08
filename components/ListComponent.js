@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, FlatList, StyleSheet } from 'react-native';
 import { ListItem, Icon } from 'react-native-elements';
-import { EXERCISES } from '../shared/exercises';
-import { WORKOUTS } from '../shared/workouts';
-import { CHALLENGES } from '../shared/challenges';
+import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
+import { Loading } from './LoadingComponent';
+
+const mapStateToProps = state => {
+    return {
+        challenges: state.challenges,
+        workouts: state.workouts,
+        exercises: state.exercises
+    };
+}
 
 class List extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            challenges: CHALLENGES,
-            workouts: WORKOUTS,
-            exercises: EXERCISES
-        }
-    }
-
     render(){
         const { navigate } = this.props.navigation;
         const { wid } = this.props.route.params;
@@ -24,11 +21,11 @@ class List extends Component {
         const { did } = this.props.route.params;
         
         if(wid === undefined) {
-            var challenge = this.state.challenges.filter((e) => e.id === cid);
+            var challenge = this.props.challenges.challenges.filter((e) => e.id === cid);
             var workout = challenge[0].days.filter((e) => e.id === did);
         }
         else {
-            var workout = this.state.workouts.filter((e) => e.id === wid);
+            var workout = this.props.workouts.workouts.filter((e) => e.id === wid);
         }
 
         function RenderView(props) {
@@ -142,16 +139,30 @@ class List extends Component {
             }
         }
         
-        return(
-            <View style={{ marginBottom: 160 }}>
-                <View style={styles.container}>
-                    <Text style={styles.heading}>{wid === undefined ? workout[0].parts : workout[0].name}</Text>
-                    <Text style={styles.subheading}>{workout[0].accessories}</Text>
-                    <RenderRow workout={workout[0]}/>
+        if(this.props.challenges.isLoading || this.props.workouts.isLoading || this.props.exercises.isLoading) {
+            return(
+                <Loading />
+            );
+        }
+        else if(this.props.challenges.errMess || this.props.workouts.errMess || this.props.exercises.errMess) {
+            return(
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text>{this.props.challenges.errMess || this.props.workouts.errMess || this.props.exercises.errMess}</Text>
                 </View>
-                <RenderView parts={workout[0].parts} rounds={workout[0].rounds} exercises={this.state.exercises} />
-            </View>
-        );
+            );
+        }
+        else {
+            return(
+                <View style={{ marginBottom: 160 }}>
+                    <View style={styles.container}>
+                        <Text style={styles.heading}>{wid === undefined ? workout[0].parts : workout[0].name}</Text>
+                        <Text style={styles.subheading}>{workout[0].accessories}</Text>
+                        <RenderRow workout={workout[0]}/>
+                    </View>
+                    <RenderView parts={workout[0].parts} rounds={workout[0].rounds} exercises={this.props.exercises.exercises} />
+                </View>
+            );
+        }
     }
 }
 
@@ -205,4 +216,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default List;
+export default connect(mapStateToProps)(List);

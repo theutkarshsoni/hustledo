@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { TRAININGS } from '../shared/trainings';
 import { FlatList } from 'react-native';
 import { ListItem } from 'react-native-elements';
+import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
+import { Loading } from './LoadingComponent';
+
+const mapStateToProps = state => {
+    return {
+        trainings: state.trainings
+    };
+}
 
 class Category extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            trainings: TRAININGS
-        }
-    }
-
     render(){
         const { navigate } = this.props.navigation;
         const { list } = this.props.route.params;
@@ -43,10 +42,24 @@ class Category extends Component {
             );
         }
 
-        return(
-            <RenderTrainings ex={this.state.trainings.filter( (e) => list.includes(e.id) ) } />
-        );
+        if(this.props.trainings.isLoading) {
+            return(
+                <Loading />
+            );
+        }
+        else if(this.props.trainings.errMess) {
+            return(
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text>{this.props.trainings.errMess}</Text>
+                </View>
+            );
+        }
+        else {
+            return(
+                <RenderTrainings ex={this.props.trainings.trainings.filter( (e) => list.includes(e.id) ) } />
+            );
+        }
     }
 }
 
-export default Category;
+export default connect(mapStateToProps)(Category);

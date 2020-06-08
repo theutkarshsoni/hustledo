@@ -19,6 +19,30 @@ import { Icon } from 'react-native-elements';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
+import { fetchCategories, fetchTrainings, fetchWorkouts, fetchChallenges,  fetchExercises, fetchYogas, fetchNutritions } from '../redux/ActionCreators';
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => {
+    return {
+        categories: state.categories,
+        trainings: state.trainings,
+        workouts: state.workouts,
+        challenges: state.challenges,
+        exercises: state.exercises,
+        yogas: state.yogas,
+        nutritions: state.nutritions
+    };
+}
+
+const mapDispatchToProps = dispatch => ({
+    fetchCategories: () => dispatch(fetchCategories()), 
+    fetchTrainings: () => dispatch(fetchTrainings()), 
+    fetchWorkouts: () => dispatch(fetchWorkouts()), 
+    fetchChallenges: () => dispatch(fetchChallenges()),  
+    fetchExercises: () => dispatch(fetchExercises()), 
+    fetchYogas: () => dispatch(fetchYogas()), 
+    fetchNutritions: () => dispatch(fetchNutritions())
+})
 
 const HomeNavigator = createStackNavigator();
 const FitnessNavigator = createStackNavigator();
@@ -187,6 +211,16 @@ function CustomDrawerContent(props) {
 }
 
 class Main extends Component {
+    componentDidMount() {
+        this.props.fetchCategories();
+        this.props.fetchTrainings();
+        this.props.fetchWorkouts();
+        this.props.fetchChallenges();
+        this.props.fetchExercises();
+        this.props.fetchYogas();
+        this.props.fetchNutritions();
+    }
+
     render(){
         return(
             <NavigationContainer>
@@ -249,4 +283,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Main;
+export default connect(mapStateToProps, mapDispatchToProps)(Main);

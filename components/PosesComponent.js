@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 import { View, Text, FlatList, SafeAreaView } from 'react-native';
 import { ListItem, Icon } from 'react-native-elements';
+import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
-import { YOGAS } from '../shared/yogas';
+import { Loading } from './LoadingComponent';
+
+const mapStateToProps = state => {
+    return {
+        yogas: state.yogas
+    };
+}
 
 class Poses extends Component{
-
-    constructor(props){
-        super(props);
-        this.state = {
-            yogas: YOGAS
-        }
-    }
-
     render() {
         const { navigate } = this.props.navigation;
         const { name } = this.props.route.params;
 
         if(name === 'Alphabetically Poses') {
-            var list = this.state.yogas;
+            var list = this.props.yogas.yogas;
         }
         else {
-            var list = this.state.yogas.filter((e) => e.classLevel.includes(name));
+            var list = this.props.yogas.yogas.filter((e) => e.classLevel.includes(name));
         }
 
         const HeaderContent = () => {
@@ -73,20 +72,34 @@ class Poses extends Component{
             );
         }
 
-        return(
-            <SafeAreaView>
-                <HeaderContent />
-                <FlatList
-                    data={list}
-                    renderItem={renderPose}
-                    keyExtractor={item => item.id.toString()}
-                    contentContainerStyle= {{ 
-                        paddingBottom: 60
-                    }}
-                />
-            </SafeAreaView>
-        );
+        if(this.props.yogas.isLoading) {
+            return(
+                <Loading />
+            );
+        }
+        else if(this.props.yogas.errMess) {
+            return(
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text>{this.props.yogas.errMess}</Text>
+                </View>
+            );
+        }
+        else {
+            return(
+                <SafeAreaView>
+                    <HeaderContent />
+                    <FlatList
+                        data={list}
+                        renderItem={renderPose}
+                        keyExtractor={item => item.id.toString()}
+                        contentContainerStyle= {{ 
+                            paddingBottom: 60
+                        }}
+                    />
+                </SafeAreaView>
+            );
+        }
     }
 }
 
-export default Poses;
+export default connect(mapStateToProps)(Poses);

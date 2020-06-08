@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, ImageBackground, TouchableOpacity, StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
+import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
-import { CHALLENGES } from '../shared/challenges';
+import { Loading } from './LoadingComponent';
 
+const mapStateToProps = state => {
+    return {
+        challenges: state.challenges
+    };
+}
 class Day extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            challenges: CHALLENGES
-        }
-    }
-
     render() {
         const { navigate } = this.props.navigation;
         const { cid } = this.props.route.params;
@@ -69,17 +67,31 @@ class Day extends Component {
             }
         }
 
-        return(
-            <ScrollView>
-                <RenderDay day={this.state.challenges[cid].days[0]}/>
-                <RenderDay day={this.state.challenges[cid].days[1]}/>
-                <RenderDay day={this.state.challenges[cid].days[2]}/>
-                <RenderDay day={this.state.challenges[cid].days[3]}/>
-                <RenderDay day={this.state.challenges[cid].days[4]}/>
-                <RenderDay day={this.state.challenges[cid].days[5]}/>
-                <RenderDay day={this.state.challenges[cid].days[6]}/>
-            </ScrollView>
-        );
+        if(this.props.challenges.isLoading) {
+            return(
+                <Loading />
+            );
+        }
+        else if(this.props.challenges.errMess) {
+            return(
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <Text>{this.props.challenges.errMess}</Text>
+                </View>
+            );
+        }
+        else {
+            return(
+                <ScrollView>
+                    <RenderDay day={this.props.challenges.challenges[cid].days[0]}/>
+                    <RenderDay day={this.props.challenges.challenges[cid].days[1]}/>
+                    <RenderDay day={this.props.challenges.challenges[cid].days[2]}/>
+                    <RenderDay day={this.props.challenges.challenges[cid].days[3]}/>
+                    <RenderDay day={this.props.challenges.challenges[cid].days[4]}/>
+                    <RenderDay day={this.props.challenges.challenges[cid].days[5]}/>
+                    <RenderDay day={this.props.challenges.challenges[cid].days[6]}/>
+                </ScrollView>
+            );
+        }
     }
 }
 
@@ -121,4 +133,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Day;
+export default connect(mapStateToProps)(Day);
