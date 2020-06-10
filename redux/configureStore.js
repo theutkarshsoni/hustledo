@@ -1,4 +1,6 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import { persistStore, persistCombineReducers } from 'redux-persist';
+import { AsyncStorage } from 'react-native';
 import thunk from 'redux-thunk';
 // import logger from 'redux-logger';
 import { categories } from './categories';
@@ -9,9 +11,15 @@ import { exercises } from './exercises';
 import { yogas } from './yogas';
 import { nutritions } from './nutritions';
 
+const config = {
+    key: 'root',
+    storage: AsyncStorage,
+    debug: true
+}
+
 export const ConfigureStore = () => {
     const store = createStore(
-        combineReducers({
+        persistCombineReducers(config, {
             categories,
             trainings,
             workouts,
@@ -23,6 +31,7 @@ export const ConfigureStore = () => {
         applyMiddleware(thunk)
         // applyMiddleware(thunk, logger)
     );
-
-    return store;
+    
+    const persistor = persistStore(store);
+    return { persistor, store };
 }
