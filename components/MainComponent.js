@@ -13,6 +13,7 @@ import Poses from './PosesComponent';
 import Classes from './ClassesComponent';
 import Level from './LevelComponent';
 import Nutrition from './NutritionComponent';
+import Meal from './MealComponent';
 import More from './MoreComponent';
 import { View, Image, StyleSheet, Text } from 'react-native';
 import { Icon } from 'react-native-elements';
@@ -177,6 +178,7 @@ function getNutritionNavigator() {
                     })
                 }
             />
+            <NutritionNavigator.Screen name="Meal" component={Meal} options={ ({ route }) => ({ title: 'Make your meal', id: route.params.id }) } />
         </NutritionNavigator.Navigator>
     );
 }

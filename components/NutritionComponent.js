@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { View, Text, ScrollView, Modal, Image, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, Modal, Image, Dimensions, StyleSheet, TouchableOpacity, BackHandler } from 'react-native';
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
-import { Icon } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
@@ -19,25 +18,34 @@ const { width: screenWidth } = Dimensions.get('window');
 const TabNavigator = createMaterialTopTabNavigator();
 
 class Nutrition extends Component {
+    // constructor(props) {
+    //     super(props);
+    //     this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+    // }
+    
+    // UNSAFE_componentWillMount() {
+    //     BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
+    //     console.log('1');
+    // }
+    
+    // componentWillUnmount() {
+    //     BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick);
+    //     console.log('2');
+    // }
+    
+    // handleBackButtonClick() {
+    //     console.log('3');
+    //     this.props.navigation.goBack(null);
+    //     return true;
+    // }
+
     render() {
+        const { navigate } = this.props.navigation;
         var isLoading = this.props.nutritions.isLoading;
         var errMess = this.props.nutritions.errMess;
         var nutritions = this.props.nutritions.nutritions;
-
+        
         class MusleTab extends Component {
-
-            constructor(props){
-                super(props);
-                this.state = {
-                    showModal: false,
-                    activeDishId: 0
-                }
-            }
-        
-            toggleModal(dishId) {
-                this.setState({ showModal: !this.state.showModal, activeDishId: dishId });
-            }
-        
             render() {
                 const RenderCarousel = (props) => {
                     const min = props.min;
@@ -56,7 +64,7 @@ class Nutrition extends Component {
                 
                 const RenderCarouselItem = ({item, index}, parallaxProps) => {
                     return (
-                        <TouchableOpacity onPress={() => this.toggleModal(item.id)}>
+                        <TouchableOpacity onPress={() => navigate('Meal', {id: item.id})}>
                             <View style={styles.item} key={index}>
                                 <ParallaxImage
                                     source={{ uri: baseUrl + 'images/nutrition/' + item.image }}
@@ -70,48 +78,6 @@ class Nutrition extends Component {
                                 </Text>
                             </View>
                         </TouchableOpacity>
-                    );
-                }
-        
-                const RenderModal = () => {
-                    const data = nutritions.filter((e) => e.id === this.state.activeDishId)[0];
-                    return(
-                        <Modal animationType = {"slide"} transparent = {false} visible = {this.state.showModal}
-                            onDismiss = {() => this.toggleModal(this.state.activeDishId) }
-                            onRequestClose = {() => this.toggleModal(this.state.activeDishId) }>
-                            <ScrollView style={{ position: 'relative' }}>
-                                <View style={styles.close}>
-                                    <Icon name="times" type="font-awesome-5" size={25} onPress={() => this.toggleModal(this.state.activeDishId) } />
-                                </View>
-                                <Image source={{ uri: baseUrl + 'images/nutrition/' + data.image }} style={styles.dishImage} />
-                                <Text style={styles.dishHead}>Ingredients</Text>
-                                <View style={styles.dishText}>
-                                {
-                                    data.ingredients.map((item, i) => (
-                                        <View key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
-                                            <Icon name="square-full" type="font-awesome-5" color="#57A2CC" size={5} style={{ marginRight: 5 }} />
-                                            <Text style={{ textTransform: 'capitalize'}}>{item}</Text>
-                                        </View>
-                                    ))
-                                }
-                                </View>
-                                <Text style={styles.dishHead}>Steps</Text>
-                                <View style={styles.dishText}>
-                                {
-                                    data.steps.replace(/[.]/g, '.#').split('# ').map((item, i) => (
-                                        <View key={i} style={{ flex: 1, flexDirection: 'row' }}>
-                                            <View style={{ flex: 1 }}>
-                                                <Text>Step {i+1}: </Text>
-                                            </View>
-                                            <View style={{ flex: 5 }}>
-                                                <Text>{item}</Text>
-                                            </View>
-                                        </View>
-                                    ))
-                                }
-                                </View>
-                            </ScrollView>
-                        </Modal>
                     );
                 }
                 
@@ -159,7 +125,6 @@ class Nutrition extends Component {
                             </View>
                             <RenderCarousel min={36} max={42} />
                             <View style={{ marginBottom: 50 }}></View>
-                            <RenderModal />
                         </ScrollView>
                     );
                 }
@@ -167,19 +132,6 @@ class Nutrition extends Component {
         }
         
         class LeanTab extends Component {
-        
-            constructor(props){
-                super(props);
-                this.state = {
-                    showModal: false,
-                    activeDishId: 0
-                }
-            }
-        
-            toggleModal(dishId) {
-                this.setState({ showModal: !this.state.showModal, activeDishId: dishId });
-            }
-        
             render() {        
                 const RenderCarousel = (props) => {
                     const min = props.min;
@@ -198,7 +150,7 @@ class Nutrition extends Component {
                 
                 const RenderCarouselItem = ({item, index}, parallaxProps) => {
                     return (
-                        <TouchableOpacity onPress={() => this.toggleModal(item.id)}>
+                        <TouchableOpacity onPress={() => navigate('Meal', {id: item.id})}>
                             <View style={styles.item} key={index}>
                                 <ParallaxImage
                                     source={{ uri: baseUrl + 'images/nutrition/' + item.image }}
@@ -214,44 +166,7 @@ class Nutrition extends Component {
                         </TouchableOpacity>
                     );
                 }
-        
-                const RenderModal = () => {
-                    const data = nutritions.filter((e) => e.id === this.state.activeDishId)[0];
-                    return(
-                        <Modal animationType = {"slide"} transparent = {false} visible = {this.state.showModal}
-                            onDismiss = {() => this.toggleModal(this.state.activeDishId) }
-                            onRequestClose = {() => this.toggleModal(this.state.activeDishId) }>
-                            <ScrollView style={{ position: 'relative' }}>
-                                <View style={styles.close}>
-                                    <Icon name="times" type="font-awesome-5" size={25} onPress={() => this.toggleModal(this.state.activeDishId) } />
-                                </View>
-                                <Image source={{ uri: baseUrl + 'images/nutrition/' + data.image }} style={styles.dishImage} />
-                                <Text style={styles.dishHead}>Ingredients</Text>
-                                <View style={styles.dishText}>
-                                {
-                                    data.ingredients.map((item, i) => (
-                                        <View key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
-                                            <Icon name="square-full" type="font-awesome-5" color="#57A2CC" size={5} style={{ marginRight: 5 }} />
-                                            <Text>{item}</Text>
-                                        </View>
-                                    ))
-                                }
-                                </View>
-                                <Text style={styles.dishHead}>Steps</Text>
-                                <View style={styles.dishText}>
-                                {
-                                    data.steps.replace(/[.]/g, '.#').split('#').map((item, i) => (
-                                        <View key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
-                                            <Text>Step{i+1}: {item}</Text>
-                                        </View>
-                                    ))
-                                }
-                                </View>
-                            </ScrollView>
-                        </Modal>
-                    );
-                }
-                
+                   
                 if(isLoading) {
                     return(
                         <Loading />
@@ -296,7 +211,6 @@ class Nutrition extends Component {
                             </View>
                             <RenderCarousel min={72} max={77} />
                             <View style={{ marginBottom: 50 }}></View>
-                            <RenderModal />
                         </ScrollView>
                     );
                 }
@@ -360,29 +274,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
         fontSize: 16,
         textAlign: 'center'
-    },
-    close: { 
-        position: 'absolute',
-        top: 5, 
-        right: 20,
-        zIndex: 9999
-    },
-    dishImage: {
-        width: '100%',
-        height: 250,
-        marginBottom: 15
-    },
-    dishHead:{
-        backgroundColor: "#57A2CC",
-        alignSelf: "center",
-        paddingHorizontal: 20,
-        paddingVertical: 5,
-        color: "#fff",
-        fontSize: 18,
-        fontWeight: "bold"
-    },
-    dishText: {
-        padding: 10
     }
 });
 
