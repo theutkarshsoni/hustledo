@@ -22,7 +22,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rabicyberlab.hustledo",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.rabicyberlab.hustledo",
+      "versionCode": 1
     }
   }
 }
